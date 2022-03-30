@@ -1,0 +1,69 @@
+.titular{
+    margin-top:-5px; 
+    text-shadow: 1px 1px 3px black; 
+    margin-left:20px;
+    color:white;
+    text-align: left;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+    min-height: 100% ;
+   }
+   .categoria{
+     text-align: left; 
+     color:orange;
+     margin-left: 20px;
+     margin-top:14px;
+     text-shadow: 5px 5px 20px black;
+     
+     
+   }
+
+   .imagenPortada{
+       padding:20px; 
+       padding-left:20px; 
+       margin-top:-30px; 
+       object-fit: cover;
+   }
+
+
+   .imgLogo{
+       position:absolute; 
+       top:-15px; 
+       left:2%; 
+       font-size: 100px;
+    }
+
+    /* Estilos del logo */
+   .h1Logo{
+    font-size: 21px; 
+    margin-left: 2px;
+    margin-top:269px;
+    color:white; 
+    text-shadow: 1px 1px 3px black;
+    background-color: orange;
+    border-radius: 6px;
+    padding: 5px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+/* posicion del logo png */
+.lugarLogo{
+    position:absolute; 
+    top:-115px;
+    left:3%; 
+    }
+
+
+    /* Recuadro negro de la portada */
+    .cuadroTitulo{
+        position:absolute;
+        min-height: 144px; 
+        top:406px;
+        margin-left:20px; 
+        background-color: rgba(0, 0, 0, 0.603);  
+        margin-right: 20px;
+    }
