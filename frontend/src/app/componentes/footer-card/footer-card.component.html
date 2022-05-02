@@ -1,0 +1,36 @@
+   
+<div class="clasePrincipal"  >
+    <div>
+       <div class="primerIcon" >
+           <mat-icon class="mr-2 stilo ml-2 " style="color:rgb(136, 136, 136)">account_circle</mat-icon>
+           <div>
+                   <h3  class="subtituloResposive2 vistas"  style="color:(136, 136, 136)">{{nota.autor}}</h3>
+           </div>
+           
+       </div>
+   </div>
+<!--   
+ 
+  <div class="segundoIcon">
+ 
+       <div  class="divSegundoIcon" >
+           <mat-icon class="mr-2 stilo">visibility</mat-icon>
+            <div>
+                    <h3  class="subtituloResposive2 vistas">22</h3>
+            </div>
+       </div>
+   </div>  -->
+ 
+  <div style="margin-top:0px; ">
+ 
+       <div  class="tercerIcon" >
+           <mat-icon  class="mr-corre mr-2 ml-2  stilo" style="color:rgb(136, 136, 136)">photo</mat-icon>
+           <div>
+           <h3 class="subtituloResposive2  fecha" style="margin-top:2px">{{nota.fotografia}}</h3>
+           <h3 *ngIf="!nota.fotografia" class="subtituloResposive2  fecha"  style="color:rgb(136, 136, 136)">CCAM</h3>
+           </div>
+       </div>
+   </div>
+ 
+   </div>
+ 

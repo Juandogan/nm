@@ -1,11 +1,15 @@
-<div style="background-image: url('../../../assets/fon.png'); height: 730px; margin:20px; object-fit: cover;margin-top: 10px;"> 
-    <div class="row" >
-      <div class="col-6" style="transform: rotate(-2deg);margin-top:20px!important;">
+<div class="fondo"> 
+    <div class="row quitar600"  >
+      <div class="col-6 col-sm-0" style="transform: rotate(-2deg);margin-top:0px!important; max-height: 800px;min-height: 900px;">
         <div style="margin-left: 35px; border-radius: 10px;">
           <div> 
-            <img src="{{link}}" width="100%" alt="" style="height: 400px; margin-top:30px; border: 20px solid orange;object-fit: cover;">
-            <div style="background-color: orange;width:100%; margin-top:-28px; padding-left:15px" >
-            <p  class="titulo" style="color: rgb(255, 255, 255);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum labore minus asperiores possimus consequuntur blanditiis harum, quis magni quae mollitia architecto dolorem cupiditate eum quo optio in deserunt corporis nobis.</p>
+            <img class="imagen" src="{{link}}" width="100%" alt="">
+            <div class="tituloBox" >
+              <a routerLink="../articulos/{{this.ruta}}"> 
+              <h1 class="titulo truncar3" style="font-size: 30px;line-height: 35px; margin-top:10px; color: rgb(255, 255, 255)">{{titulo}}</h1>
+            </a>
+            <p  routerLink="../articulos/{{this.ruta}}"  class="descripcion truncar4" style=" min-height: 160px;"  >{{descripcion}}<span></span></p>
+            
             <!-- <button class="btn btn-dark">Ingresar</button> -->
             
             <br>
@@ -15,34 +19,60 @@
         </div>
    
       </div>
-       <div class="col-6" style="margin-top:60px!important">
-  <div class="row">
-  <div class="col-1">
-    <div style="margin-top:20px">
-    <h1 class="marg" style="color: #665622;">1</h1>
-    <h1 class="marg" style="margin-left:-5px; color: #a73b0a;">2</h1>
-    <h1 class="marg" style="color:  #7C5100;margin-left:-5px; ">3</h1>
-    <h1 class="marg" style="color:#536800; margin-left:-5px; ">4</h1>
-    <h1 class="marg" style="color: #3E2800;margin-left:-5px;">5</h1>
+       <div class="col-6" style="margin-top:10px!important">
+      <div class="row">
+    <!-- <div class="col-1">
+    <div>
+ <h1 class="marg" style="color: #665622;margin-top:10px">》</h1>
+    <h1 class="marg" style="color: #a73b0a; margin-top:-13px">》</h1>
+    <h1 class="marg" style="color:  #7C5100;margin-left:-5px; ">》</h1>
+    <h1 class="marg" style=" color:#536800; margin-top:-4px ">》</h1>
+    <h1 class="marg" style="color: #3E2800;margin-left:-5px;margin-top:-4px">》</h1> 
+ 
   </div>
-  </div>
+  </div>   -->
   
-  <div class="col-11" >
-    <div style="margin-right:20px; background-color:#66562273; border-radius: 10px;">
-        <p class="titulo" (click)="link='../../../assets/foto001.jpg' ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae, nostrum officiis vero.</p>
+  <div class="col-12" style="padding:0px; margin:0px; padding-left:10px; margin-top: 20px;" >
+
+    
+    <div class="hov margenes" style=" background-color:#66562273;" (mouseover)="cambioImagen1()">
+    
+        <p class="titulo" style="margin-top:15px"  routerLink="../articulos/{{data[0]?._id}}">{{data[0]?.titulo}}</p>
+        <!-- <p class="autor" >Por: {{data[0]?.autor}}</p>  -->
+    </div>
+  
+    
+    <div class="hov margenes "  style="background-color: #a73c0a8e ;"(mouseover)="cambioImagen2()">
+    <p class="titulo"  routerLink="../articulos/{{data[1]?._id}}">{{data[1]?.titulo}}</p>
+    <!-- <p class="autor">Por: {{data[1]?.autor}}</p> -->
+    </div>
+ 
+  <div class=" hov margenes"  style="background-color: #7C5100;" (mouseover)="cambioImagen3()">
+  <p class="titulo "   routerLink="../articulos/{{data[3]?._id}}" >{{data[2]?.titulo}}</p>
+  <!-- <p class="autor">Por: {{data[2]?.autor}}</p> -->
   </div>
-  <div style="background-color: #a73c0a8e ;margin-right:20px;border-radius: 10px;;">
-  <p class="titulo" (click)="link='../../../assets/montanismo_beneficios_mindfilness_0.jpg'" >El interés de andinistas y arqueólogos de Argentina y Chile sobre las más antiguas ascensiones</p>
+ 
+  <div  class="hov margenes"  style="background-color:#536800; " (mouseover)="cambioImagen4()">
+  <p class="titulo" routerLink="../articulos/{{data[3]?._id}}" >{{data[3]?.titulo}}</p>
+  <!-- <p class="autor">Por: {{data[3]?.autor}}</p> -->
   </div>
-  <div style="background-color: #7C5100; border-radius:10px;margin-right:20px;">
-  <p class="titulo " style="margin-top:24px;">Explorando los Volcanes sagrados, Quehuar y Llullaillaco los Volcanes sagrados, Quehuar y Llullaillaco</p>
+  <div class="hov margenes"  style="background-color: #3E2800; "(mouseover)="cambioImagen5()">
+  <p class="titulo"  routerLink="../articulos/{{data[4]?._id}}"> {{data[4]?.titulo}}</p>
+  <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
   </div>
-  <div style="background-color:#536800; margin-top: -16px;border-radius:10px;margin-right:20px; ">
-  <p class="titulo tituloMargen " >El interés de andinistas y arqueólogos de Argentina y Chile sobre las más antiguas ascensiones que se conocen</p>
-  </div>
-  <div style="background-color: #3E2800;margin-top:-23px;border-radius:10px;margin-right:20px; ">
-  <p class="titulo tituloMargen">El interés de andinistas y arqueólogos de Argentina y Chile sobre las más antiguas ascensiones que se conocen</p>
-  </div>
+  <div class="hov margenes"  style="background-color: #00393e; "(mouseover)="cambioImagen6()">
+    <p class="titulo"  routerLink="../articulos/{{data[5]?._id}}"> {{data[5]?.titulo}}</p>
+    <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
+    </div>
+    <div class="hov margenes"  style="background-color: #7c510091; "(mouseover)="cambioImagen7()">
+      <p class="titulo"  routerLink="../articulos/{{data[6]?._id}}">{{data[6]?.titulo}}</p>
+      <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
+      </div>
+      <div class="hov margenes"  style="background-color: #3e002b8c; "(mouseover)="cambioImagen8()">
+        <p class="titulo"  routerLink="../articulos/{{data[7]?._id}}">{{data[7]?.titulo}}</p>
+        <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
+        </div>
+              
   
   
   </div>
@@ -52,6 +82,93 @@
   
   
       </div> 
+    </div>
+
+<!-- SOLO EN DISPOSITIVOS MOBILES -->
+    <div class="poner600">
+      <div class="row " style="margin-top: 10px;">
+      <div class="col-5"> 
+     <img  class="img" src="{{data[0]?.imagen1}}" width="100%" alt="">  
+ 
+        </div>  
+        
+
+       
+        <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+ 
+  <p class="titulo truncar3" routerLink="../articulos/{{data[0]?._id}}">{{data[0]?.titulo}}</p> 
+        
+            
+        </div>
+      </div>
+      
+      <div class="row ">
+        <div class="col-5"> 
+       <img  class="img" src="{{data[1]?.imagen1}}" width="100%" alt="">  
+   
+          </div>  
+          
+  
+         
+          <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+   
+    <p class="titulo">{{data[1]?.titulo}}</p> 
+          
+              
+          </div>
+        </div>
+        
+        <div class="row ">
+          <div class="col-5"> 
+         <img class="img" src="{{data[2]?.imagen1}}" width="100%" alt="">  
+     
+            </div>  
+            
+    
+           
+            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+     
+      <p class="titulo">{{data[2]?.titulo}}</p> 
+            
+                
+            </div>
+          </div>
+      
+               
+        <div class="row ">
+          <div class="col-5"> 
+         <img class="img" src="{{data[3]?.imagen1}}" width="100%" alt="">  
+     
+            </div>  
+            
+    
+           
+            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+     
+      <p class="titulo">{{data[3]?.titulo}}</p> 
+            
+                
+            </div>
+          </div>
+      
+                         
+        <div class="row ">
+          <div class="col-5"> 
+         <img class="img" src="{{data[4]?.imagen1}}" width="100%" alt="">  
+     
+            </div>  
+            
+    
+           
+            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+     
+      <p class="titulo">{{data[4]?.titulo}}</p> 
+            
+                
+            </div>
+          </div>
+      
+ 
     </div>
       
   

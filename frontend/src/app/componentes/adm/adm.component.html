@@ -1,0 +1,159 @@
+<div class="cuerpo margenL margenR"> 
+    <div class="barraInfo">
+        <!-- <h5 *ngIf="!loading"  class=" suscri2 quitar600" style="font-size:18px;padding:10px"><b> MES OCTUBRE | AÑO 2022</b></h5> -->
+       <div style="text-align: center;">
+            <div *ngIf="loading" class="loadingio-spinner-dual-ring-xg1vnrf2b6o " style=" margin-top: 150px;min-height: 2000px;"><div class="ldio-z7fu6e1den">
+
+        <div></div><div><div></div></div>
+        </div></div>
+<div style="text-align:left; margin-left:20px">
+    <br>
+  <h1 >ADM</h1> 
+  
+      <button class="btn btn-dark" (click)="nuevo=true" (click)="table=false"  >Crear una nueva Edición</button>  
+      <button style="margin-left:10px" class="btn btn-dark ">Publicidad</button>  
+      
+
+</div>
+<div *ngIf="table">
+<br>
+<table  class="table table-dark"   >
+    <thead class="thead-dark" style="margin-left:20px; border:none; margin-bottom: 0px;">
+      <tr>
+        <!-- <th scope="col">#</th> -->
+        <th scope="col" style="width:7%; color: orange;">Mes</th>
+        <th scope="col"style="width:7%; color: orange;">Año</th>
+        <th scope="col"style="width:7%; color: orange;">Creación</th>
+        <th scope="col" style="width:7%; color: orange;">Última Mod.</th>
+        
+        
+        <th scope="col" style="width:5%;color: orange;"class="text-center">Artículos</th>
+        <th scope="col" style="width:5%;color: orange;"class="text-center">Borrar</th>
+        <th scope="col" style="width:5%;color: orange;"class="text-center">Vistas</th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor="let articulo of articulos" style="transition: 0.2s all  ease-out; ">
+        <!-- <th scope="row">1</th> -->
+        
+        <td > <span style="color:orange">ENERO</span></td>
+        <td class="textoTableTitulo" >arara</td>
+        <td> fecha</td>
+       <td class="text-center">
+        <a >
+          <!-- data-toggle="modal" data-target="#exampleModal" (click)='editarArticulo(articulo)' (click)="this.crudService.cambioPantalla=true" -->
+       <mat-icon style="cursor:pointer"    routerLink="../editorCabecera/{{articulo?._id}}" >edit</mat-icon> 
+      </a></td>
+
+
+        <td class="text-center">                        
+          <a> <mat-icon  style="color: green; cursor:pointer">article</mat-icon>
+          </a> </td>
+        
+          <td class="text-center">                        
+            <a data-toggle="modal" data-target="#exampleModalCenter">
+              <div *ngIf="loader">
+               <mat-icon style="cursor:pointer; color:red">delete</mat-icon>
+              </div>
+              <div *ngIf="!loader">
+                <img src="../../../assets/loader.gif" alt="" width="30px"> 
+              </div>
+
+              </a>
+              
+              <td class="text-center">{{articulo.vistas}}</td>  
+          
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+<div *ngIf="nuevo">
+ <br><br> 
+<div class="row">
+    <div class="col-6">
+    <div class="row" style="text-align:left; margin-left:20px">
+<div class="col-6">
+        <h6>MES</h6>
+        <select  [(ngModel)]="this.resultadoTitulo" class="form-control" name="resultadoTitulo" id="">
+<option value="">ENERO</option>
+<option value="">FEBRERO</option>
+<option value="">MARZO</option>
+<option value="">ABRIL</option>
+<option value="">MAYO</option>
+<option value="">JUNIO</option>
+<option value="">JULIO</option>
+<option value="">AGOSTO</option>
+<option value="">SEPTIEMBRE</option>
+<option value="">OCTUBRE</option>
+<option value="">NOVIEMBRE</option>
+<option value="">DICIEMBRE</option>
+
+
+         </select>
+</div>
+<div class="col-6"  >
+        <h6>AÑO</h6>
+        <select  [(ngModel)]="this.resultadoTitulo2" class="form-control" name="resultadoTitulo2" id="">
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+            <option value="">2025</option>
+            <option value="">2026</option>
+            <option value="">2027</option>
+            <option value="">2028</option>
+            <option value="">2029</option>
+         </select>
+
+</div>
+</div>
+
+<br>
+<div style="text-align:left; margin-left:30px">
+  <hr style="margin-top:-10px">
+
+        <h6>Buscar</h6>        
+        <div class="input-group" >
+            <input  [(ngModel)]="this.busqueda" id="busqueda" type="text" class="form-control" placeholder="Número de ID del articulo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-danger" type="button" (click)="pedirUnArticulo()">Buscar</button>
+            </div>
+           </div>
+          <br>
+          <hr style="margin-top:-5px">
+        <h6>Artículo 1</h6>        
+        <input [(ngModel)]="resultadoTitulo" type="text" class="form-control">
+        <h6>Articulo 2</h6>
+        <input [(ngModel)]="resultadoTitulo2" type="text" class="form-control"> 
+        <h6>Articulo 3</h6>
+        <input  [(ngModel)]="resultadoTitulo3" type="text" class="form-control">
+        <h6>Articulo 4</h6>
+        <input [(ngModel)]="resultadoTitulo4" type="text" class="form-control">
+        <h6>Articulo 5</h6>
+        <input [(ngModel)]="resultadoTitulo5" type="text" class="form-control">
+        <h6>Articulo 6</h6>
+        <input [(ngModel)]="resultadoTitulo6" type="text" class="form-control">        
+        <h6>Articulo 7</h6>
+        <input type="text" class="form-control">        
+        <h6>Articulo 8</h6>
+        <input type="text" class="form-control">
+    </div>
+<br> 
+<div style="text-align: left; margin-left:30px">
+    <button class="btn btn-dark " >Guardar</button>
+</div>
+    <br><br>
+    </div>
+</div>  
+</div>
+
+</div>      
+
+</div>
+    
+

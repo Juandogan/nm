@@ -5,7 +5,7 @@
     color:white;
     text-align: left;
     font-size: 40px;
-    text-transform: uppercase;
+   
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 800;
     line-height: 40px;
@@ -33,7 +33,12 @@
        position:absolute; 
        top:-15px; 
        left:2%; 
-       font-size: 100px;
+ 
+
+
+    }
+
+    .logo{       width:250px;
     }
 
     /* Estilos del logo */
@@ -57,13 +62,95 @@
     left:3%; 
     }
 
-
+    .fade-in-image {
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+        -moz-animation: fadeIn 2s;
+        -o-animation: fadeIn 2s;
+        -ms-animation: fadeIn 2s;
+      }
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+ 
+ 
     /* Recuadro negro de la portada */
     .cuadroTitulo{
         position:absolute;
-        min-height: 144px; 
-        top:406px;
-        margin-left:20px; 
+        min-height: 142px; 
+        top:408px;
+
+        left:20px;
+        right:20px;
+        
         background-color: rgba(0, 0, 0, 0.603);  
-        margin-right: 20px;
+        
+    }
+
+
+    @media (max-width:600px){
+
+      .quitar{display:none}
+      .categoria{font-size:12px; margin-left:10px}
+
+      .logo{width: 160px; margin-top:20px;
+      margin-left:-5x;
+      }
+
+      .cuadroTitulo{
+        position:absolute;
+        min-height: 124px; 
+        top:248px;
+
+        left:0px;
+        right:0px;
+        
+        background-color: rgba(0, 0, 0, 0.603);  
+      }
+
+      .titular{
+        
+        font-size: 26px;
+        line-height: 28px;
+        margin-left:10px;
+      }
+     
+      /* .imgLogo{
+        top:-15px; 
+        left:2%; 
+        width: 30px;
+     } */
+
+
+     
+   .imagenPortada{
+    padding:0px; 
+    padding-left:0px; 
+    margin-top:0px; 
+    padding-top:0px!important;
+    object-fit: cover;
+    height: 370px;
+}
+
     }
