@@ -1,6 +1,6 @@
 <div class="fondo"> 
     <div class="row quitar600"  >
-      <div class="col-6 col-sm-0" style="transform: rotate(-2deg);margin-top:0px!important; max-height: 800px;min-height: 900px;">
+      <div class="col-6 col-sm-0" style="transform: rotate(-2deg);margin-top:10px!important; max-height: 800px;min-height: 900px;">
         <div style="margin-left: 35px; border-radius: 10px;">
           <div> 
             <img class="imagen" src="{{link}}" width="100%" alt="">
@@ -88,15 +88,12 @@
     <div class="poner600">
       <div class="row " style="margin-top: 10px;">
       <div class="col-5"> 
-     <img  class="img" src="{{data[0]?.imagen1}}" width="100%" alt="">  
+     <img  class="img" src="{{data[9]?.imagen1}}" width="100%" alt="">  
  
         </div>  
-        
-
-       
+              
         <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
- 
-  <p class="titulo truncar3" routerLink="../articulos/{{data[0]?._id}}">{{data[0]?.titulo}}</p> 
+   <p class="titulo truncar3" routerLink="../articulos/{{data[9]?._id}}">{{data[0]?.titulo}}</p> 
         
             
         </div>
@@ -167,7 +164,57 @@
                 
             </div>
           </div>
+                   
+          <div class="row ">
+            <div class="col-5"> 
+           <img class="img" src="{{data[5]?.imagen1}}" width="100%" alt="">  
+       
+              </div>  
+              
       
+             
+              <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+       
+        <p class="titulo">{{data[5]?.titulo}}</p> 
+              
+                  
+              </div>
+            </div>
+        
+                          
+            <div class="row ">
+              <div class="col-5"> 
+             <img class="img" src="{{data[9]?.imagen1}}" width="100%" alt="">  
+         
+                </div>  
+                
+        
+               
+                <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+         
+          <p class="titulo">{{data[6]?.titulo}}</p> 
+                
+                    
+                </div>
+              </div>
+          
+                     
+              <div class="row ">
+                <div class="col-5"> 
+               <img class="img" src="{{data[7]?.imagen1}}" width="100%" alt="">  
+           
+                  </div>  
+                  
+          
+                 
+                  <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
+           
+            <p class="titulo">{{data[7]?.titulo}}</p> 
+                  
+                      
+                  </div>
+                </div>
+            
  
     </div>
       
