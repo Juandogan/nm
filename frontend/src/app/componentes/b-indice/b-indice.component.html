@@ -1,14 +1,16 @@
 <div class="fondo"> 
     <div class="row quitar600"  >
-      <div class="col-6 col-sm-0" style="transform: rotate(-2deg);margin-top:10px!important; max-height: 800px;min-height: 900px;">
-        <div style="margin-left: 35px; border-radius: 10px;">
-          <div> 
-            <img class="imagen" src="{{link}}" width="100%" alt="">
-            <div class="tituloBox" >
+      <div class="col-6 col-sm-0" style="transform: rotate(-2deg); max-height: 800px;min-height: 900px;;">
+        <div style="margin-left: 35px; ">
+          <div > 
+            <img class="imagen" src="{{link}}" width="100%" alt="" style="border-radius: 10px">
+            
+            <div class="tituloBox" style="border-radius: 10px;">
               <a routerLink="../articulos/{{this.ruta}}"> 
-              <h1 class="titulo truncar3" style="font-size: 30px;line-height: 35px; margin-top:10px; color: rgb(255, 255, 255)">{{titulo}}</h1>
+               <h1 class="titulo truncar3" style="font-size: 30px;line-height: 35px; color:white;margin-top:10px; text-shadow: 2px 2px 2px black;">{{titulo}}</h1>
             </a>
-            <p  routerLink="../articulos/{{this.ruta}}"  class="descripcion truncar4" style=" min-height: 160px;"  >{{descripcion}}<span></span></p>
+            
+            <p  routerLink="../articulos/{{this.ruta}}"  class="descripcion truncar4" style="color:black; margin-top:0px; ">{{descripcion}}<span></span></p>
             
             <!-- <button class="btn btn-dark">Ingresar</button> -->
             
@@ -35,40 +37,40 @@
   <div class="col-12" style="padding:0px; margin:0px; padding-left:10px; margin-top: 20px;" >
 
     
-    <div class="hov margenes" style=" background-color:#66562273;" (mouseover)="cambioImagen1()">
+    <div class="hov margenes" style=" background-color:orange;" (mouseover)="cambioImagen1()">
     
-        <p class="titulo" style="margin-top:15px"  routerLink="../articulos/{{data[0]?._id}}">{{data[0]?.titulo}}</p>
+        <p class="titulo" style="margin-top:15px"  routerLink="../articulos/{{data[11]?._id}}">{{data[11]?.titulo}}</p>
         <!-- <p class="autor" >Por: {{data[0]?.autor}}</p>  -->
     </div>
   
     
-    <div class="hov margenes "  style="background-color: #a73c0a8e ;"(mouseover)="cambioImagen2()">
-    <p class="titulo"  routerLink="../articulos/{{data[1]?._id}}">{{data[1]?.titulo}}</p>
+    <div class="hov margenes "  style="background-color: orange ;"(mouseover)="cambioImagen2()">
+    <p class="titulo"  routerLink="../articulos/{{data[10]?._id}}">{{data[10]?.titulo}}</p>
     <!-- <p class="autor">Por: {{data[1]?.autor}}</p> -->
     </div>
  
-  <div class=" hov margenes"  style="background-color: #7C5100;" (mouseover)="cambioImagen3()">
-  <p class="titulo "   routerLink="../articulos/{{data[3]?._id}}" >{{data[2]?.titulo}}</p>
+  <div class=" hov margenes"  style="background-color:orange;" (mouseover)="cambioImagen3()">
+  <p class="titulo "   routerLink="../articulos/{{data[5]?._id}}" >{{data[5]?.titulo}}</p>
   <!-- <p class="autor">Por: {{data[2]?.autor}}</p> -->
   </div>
  
-  <div  class="hov margenes"  style="background-color:#536800; " (mouseover)="cambioImagen4()">
-  <p class="titulo" routerLink="../articulos/{{data[3]?._id}}" >{{data[3]?.titulo}}</p>
+  <div  class="hov margenes"  style="background-color:orange; " (mouseover)="cambioImagen4()">
+  <p class="titulo" routerLink="../articulos/{{data[4]?._id}}" >{{data[4]?.titulo}}</p>
   <!-- <p class="autor">Por: {{data[3]?.autor}}</p> -->
   </div>
-  <div class="hov margenes"  style="background-color: #3E2800; "(mouseover)="cambioImagen5()">
-  <p class="titulo"  routerLink="../articulos/{{data[4]?._id}}"> {{data[4]?.titulo}}</p>
+  <div class="hov margenes"  style="background-color:orange; "(mouseover)="cambioImagen5()">
+  <p class="titulo"  routerLink="../articulos/{{data[12]?._id}}"> {{data[12]?.titulo}}</p>
   <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
   </div>
-  <div class="hov margenes"  style="background-color: #00393e; "(mouseover)="cambioImagen6()">
+  <div class="hov margenes"  style="background-color:orange; "(mouseover)="cambioImagen6()">
     <p class="titulo"  routerLink="../articulos/{{data[5]?._id}}"> {{data[5]?.titulo}}</p>
     <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
     </div>
-    <div class="hov margenes"  style="background-color: #7c510091; "(mouseover)="cambioImagen7()">
+    <div class="hov margenes"  style="background-color: orange; "(mouseover)="cambioImagen7()">
       <p class="titulo"  routerLink="../articulos/{{data[6]?._id}}">{{data[6]?.titulo}}</p>
       <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
       </div>
-      <div class="hov margenes"  style="background-color: #3e002b8c; "(mouseover)="cambioImagen8()">
+      <div class="hov margenes"  style="background-color: orange; "(mouseover)="cambioImagen8()">
         <p class="titulo"  routerLink="../articulos/{{data[7]?._id}}">{{data[7]?.titulo}}</p>
         <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
         </div>
@@ -84,6 +86,11 @@
       </div> 
     </div>
 
+
+
+
+
+    
 <!-- SOLO EN DISPOSITIVOS MOBILES -->
     <div class="poner600">
       <div class="row " style="margin-top: 10px;">
@@ -101,7 +108,7 @@
       
       <div class="row ">
         <div class="col-5"> 
-       <img  class="img" src="{{data[1]?.imagen1}}" width="100%" alt="">  
+       <img  class="img" src="{{data[9]?.imagen1}}" width="100%" alt="">  
    
           </div>  
           
@@ -109,7 +116,7 @@
          
           <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
    
-    <p class="titulo">{{data[1]?.titulo}}</p> 
+    <p class="titulo">{{data[9]?.titulo}}</p> 
           
               
           </div>
