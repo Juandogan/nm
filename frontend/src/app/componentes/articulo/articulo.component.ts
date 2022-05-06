@@ -62,7 +62,6 @@ export class ArticuloComponent implements OnInit {
                                           aux2 = aux2.split(' .').join('. ')
                                           aux2 = aux2.split('<figure class="media"><oembed url="').join('<iframe width="100%" height="515" src="')
                                           aux2 = aux2.split('<h4>').join('<h4 style="font-size:15px; margin-top:-20px; margin-bottom:30px;">')
-                                          
                                           aux2 = aux2.split('"></oembed></figure>').join('" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
       
                                         
