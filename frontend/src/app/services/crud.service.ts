@@ -15,7 +15,7 @@ import {MatSnackBarConfig} from '@angular/material/snack-bar';
 export class CrudService {
 
   
-  readonly URL_API  = "http://168.181.187.131/articulos";
+  readonly URL_API  = "http://revistadigital.culturademontania.org.ar/articulos";
   readonly URL_API2 = "http://localhost:3000/upload";
   
   cambioPantalla = true;
