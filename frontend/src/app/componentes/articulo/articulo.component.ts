@@ -23,89 +23,57 @@ export class ArticuloComponent implements OnInit {
       this.auxContador =  this.nota[0].vistas
       })};
 
-  saltos2(data:string){
-  var aux2 = data.split('<h2>').join(`<h2 style="
-                                      font-weight: 700; 
-                                      line-height: 30px;
-                                      letter-spacing: -1px;
-                                      font-size:26px;
-                                      color:orange;
-                                      margin-bottom:25px;
-                                       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                                       `)
-
-  aux2 = aux2.split('<h3').join(`<h3 style="font-weight: 400; 
-  line-height: 30px;
-  letter-spacing: -1px;
-  font-size:122px;
-  color:orange;
-  margin-bottom:10px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
-
-                                    aux2 = aux2.split('<p').join(`<p
-                                    style="font-family: Georgia, 'Times New Roman', Times, serif; 
-                                    font-weight: 300;
-                                    margin-top:-10px;
-                                    font-size: 20px; 
-                                    line-height: 28px;
-                                    color:rgb(68, 68, 68);
-                                    "
-                                   
-                                                                      `)
-                                                                      
-                                    // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
-                                    // aux2 = aux2.split('</p></strong>').join('</p></b>')
-                                    aux2 = aux2.split('<img').join('<img style="width:100%; margin-top:10px"')
-                                    
-                                    
-
-
-  
-  return (aux2)
-
-
-   };
-   saltos(data:string){
-    var aux2 = data.split('<h2>').join(`<h2 style="
-                                        font-weight: 700; 
-                                        line-height: 30px;
-                                        letter-spacing: -1px;
-                                        font-size:26px;
-                                        color:orange;
-                                        margin-bottom:25px;
-                                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                                         `)
-  
-    aux2 = aux2.split('<h3').join(`<h3 style="font-weight: 400; 
-    line-height: 30px;
-    letter-spacing: -1px;
-    font-size:122px;
-    color:orange;
-    margin-bottom:10px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
-  
-                                      aux2 = aux2.split('<p').join(`<p
-                                      style="font-family: Georgia, 'Times New Roman', Times, serif; 
-                                      font-weight: 300;
-                                      margin-top:-10px;
-                                      font-size: 17px; 
-                                      line-height: 28px;
-                                      color:rgb(68, 68, 68);"
-                                     
-                                                                        `)
-                                                                        
-                                      // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
-                                      // aux2 = aux2.split('</p></strong>').join('</p></b>')
-                                      aux2 = aux2.split('<img').join('<img style="width:100%; margin-top:10px"')
-                                      
-                                      
-  
-  
-    
-    return (aux2)
-  
-  
-     };
+      saltos2(data:string){
+        var aux2 = data.split('<h2>').join(`<h2 style=" font-weight: 700; 
+        line-height: 32px;
+        letter-spacing: -1px;
+        font-size:25px!important;
+        color:orange;
+        margin-bottom:25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;};">
+         `)
+         
+        aux2 = aux2.split('<h3').join(`<h3 style="font-weight: 400; 
+        line-height: 30px;
+        letter-spacing: 0px;
+        font-size:122px;
+        color:orange;        
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
+      
+                                          aux2 = aux2.split('<p').join(`<p
+                                          style="
+                                          font-weight: 400;
+                                          margin-top:-10px;
+                                          font-size: 18px; 
+                                          line-height: 28px;
+                                          color:rgb(68, 68, 68);
+                                          
+                                          "
+                                         
+                                                                            `)
+                                                                            
+                                          // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
+                                          // aux2 = aux2.split('</p></strong>').join('</p></b>')
+                                          aux2 = aux2.split('<img').join('<img style="width:100%; margin-top:10px; margin-bottom:10px"')
+                                          
+                                          aux2 = aux2.split('<strong>').join('<strong style="font-size:16px;line-height: 0px!important; ">')
+                                          aux2 = aux2.split('https://www.youtube.com/watch?v=').join('https://www.youtube.com/embed/')
+                                          aux2 = aux2.split(' ,').join(', ')
+                                          aux2 = aux2.split(' .').join('. ')
+                                          aux2 = aux2.split('<figure class="media"><oembed url="').join('<iframe width="100%" height="515" src="')
+                                          aux2 = aux2.split('<h4>').join('<h4 style="font-size:15px; margin-top:-20px; margin-bottom:30px;">')
+                                          
+                                          aux2 = aux2.split('"></oembed></figure>').join('" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+      
+                                        
+      
+                                          
+      console.log('sa' + aux2)
+      
+        return (aux2)
+      
+      
+         };
    cut(value:any){
     var corte = value.slice(2)
 

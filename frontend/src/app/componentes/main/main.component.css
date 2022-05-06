@@ -117,9 +117,7 @@ h1{font-family: 'Roboto Slab', serif;}
   font-size: 15px;
   margin-bottom: 16px;
 }
-.banner{
-  margin-left:20px; padding-right:40px; margin-top:30px
-}
+
 
 h5{ font-family: 'Abel', sans-serif;
 font-size: 18px;
@@ -170,7 +168,7 @@ a{color:rgb(255, 187, 61) ; font-size: 13px;}
     color:rgba(0, 0, 0, 0.527); 
   margin-right: 17px; 
   text-shadow: 1px 1px 5px #a8a8a849;
-  transition: all 100ms ease-in;cursor: pointer;
+  
    
 }
 
@@ -188,7 +186,7 @@ a{color:rgb(255, 187, 61) ; font-size: 13px;}
   padding:10px
 
 }
-.animaNav{transform: rotate(-90deg);  color:orange ; transition: all 0.3s ease}
+.animaNav{transform: rotate(-90deg);  color:orange ; }
 
 
 .barraTexto{font-family: 'Oswald', sans-serif; color:white ; font-size: 12px; letter-spacing: 2px; }
@@ -437,9 +435,10 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 .margenL{ margin-left: 0px; }
 .margenR{margin-right: 0px; } 
 .indice{font-size:12px; margin-top:10px;margin-left:10px; margin-bottom:10px; }
-.banner{margin:0px; padding:0px }
+.banner{margin-left:20px; padding-right:40px; margin-top:30px}
 .subefuente{font-size: 20px;margin-left:20px!important}
-.responsi{width: 150px!important;}
+.responsi{width: 110px!important;}
+.responsi2{width: 90px!important;}
 .barraInfo{margin:0px}
 .logo{width: 130px;  margin-left: -10px;}
 .mobile{display:inline}

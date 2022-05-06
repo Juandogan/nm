@@ -68,11 +68,8 @@ console.log({'url': url })
 //app.use('/', express.static('client', {redirect:false}))
 app.use('/',express.static('client', {redirect:false}));
 
-
-
 app.use('/articulos',require('./routes/productos.routes'))
 app.use('/upload', express.static(path.resolve('./subidas')))
-
 app.get('*', function(req, res, next){res.sendFile(path.resolve('client/index.html'));
 }) 
 

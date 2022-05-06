@@ -10,7 +10,7 @@
                <h1 class="titulo truncar3" style="font-size: 30px;line-height: 35px; color:white;margin-top:10px; text-shadow: 2px 2px 2px black;">{{titulo}}</h1>
             </a>
             
-            <p  routerLink="../articulos/{{this.ruta}}"  class="descripcion truncar4" style="color:black; margin-top:0px; ">{{descripcion}}<span></span></p>
+            <p  routerLink="../articulos/{{this.ruta}}"  class="descripcion truncar4" style="color:black; margin-top:-10px; ">{{descripcion}}<span></span></p>
             
             <!-- <button class="btn btn-dark">Ingresar</button> -->
             
@@ -40,13 +40,13 @@
     <div class="hov margenes" style=" background-color:orange;" (mouseover)="cambioImagen1()">
     
         <p class="titulo" style="margin-top:15px"  routerLink="../articulos/{{data[11]?._id}}">{{data[11]?.titulo}}</p>
-        <!-- <p class="autor" >Por: {{data[0]?.autor}}</p>  -->
+         
     </div>
-  
+    
     
     <div class="hov margenes "  style="background-color: orange ;"(mouseover)="cambioImagen2()">
     <p class="titulo"  routerLink="../articulos/{{data[10]?._id}}">{{data[10]?.titulo}}</p>
-    <!-- <p class="autor">Por: {{data[1]?.autor}}</p> -->
+    
     </div>
  
   <div class=" hov margenes"  style="background-color:orange;" (mouseover)="cambioImagen3()">
@@ -95,12 +95,16 @@
     <div class="poner600">
       <div class="row " style="margin-top: 10px;">
       <div class="col-5"> 
-     <img  class="img" src="{{data[9]?.imagen1}}" width="100%" alt="">  
+        <a routerLink="../articulos/{{data[11]?._id}}">
+     <img  class="img" src="{{data[11]?.imagen1}}" width="100%" alt=""  style="height: 60px;">  
+    </a>
  
         </div>  
               
         <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-   <p class="titulo truncar3" routerLink="../articulos/{{data[9]?._id}}">{{data[0]?.titulo}}</p> 
+          <a routerLink="../articulos/{{data[11]?._id}}">
+   <p class="titulo truncar3" >{{data[11]?.titulo}}</p> 
+  </a>
         
             
         </div>
@@ -108,31 +112,35 @@
       
       <div class="row ">
         <div class="col-5"> 
-       <img  class="img" src="{{data[9]?.imagen1}}" width="100%" alt="">  
+          <a routerLink="../articulos/{{data[10]?._id}}">
+       <img  class="img" src="{{data[10]?.imagen1}}" width="100%" alt="">  
+       </a>
    
           </div>  
           
   
          
           <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-   
-    <p class="titulo">{{data[9]?.titulo}}</p> 
-          
+            <a routerLink="../articulos/{{data[10]?._id}}">
+            <p class="titulo">{{data[10]?.titulo}}</p> 
+            </a>
               
           </div>
         </div>
         
         <div class="row ">
           <div class="col-5"> 
-         <img class="img" src="{{data[2]?.imagen1}}" width="100%" alt="">  
-     
+            <a routerLink="../articulos/{{data[5]?._id}}">
+         <img class="img" src="{{data[5]?.imagen1}}" width="100%" alt="">  
+        </a>
             </div>  
             
     
            
             <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-     
-      <p class="titulo">{{data[2]?.titulo}}</p> 
+              <a routerLink="../articulos/{{data[5]?._id}}">
+      <p class="titulo">{{data[5]?.titulo}}</p> 
+    </a>
             
                 
             </div>
@@ -141,15 +149,18 @@
                
         <div class="row ">
           <div class="col-5"> 
-         <img class="img" src="{{data[3]?.imagen1}}" width="100%" alt="">  
+            <a routerLink="../articulos/{{data[4]?._id}}">
+         <img class="img" src="{{data[4]?.imagen1}}" width="100%" alt="">  
+        </a>
      
             </div>  
             
     
            
             <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-     
-      <p class="titulo">{{data[3]?.titulo}}</p> 
+              <a routerLink="../articulos/{{data[4]?._id}}">
+      <p class="titulo">{{data[4]?.titulo}}</p> 
+    </a>
             
                 
             </div>
@@ -158,31 +169,34 @@
                          
         <div class="row ">
           <div class="col-5"> 
-         <img class="img" src="{{data[4]?.imagen1}}" width="100%" alt="">  
-     
+            <a routerLink="../articulos/{{data[6]?._id}}">
+         <img class="img" src="{{data[6]?.imagen1}}" width="100%" style="height: 60px;" alt="">  
+     </a>
             </div>  
             
     
            
             <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-     
-      <p class="titulo">{{data[4]?.titulo}}</p> 
-            
+              <a routerLink="../articulos/{{data[6]?._id}}">
+      <p class="titulo">{{data[6]?.titulo}}</p> 
+        </a>
                 
             </div>
           </div>
                    
           <div class="row ">
             <div class="col-5"> 
-           <img class="img" src="{{data[5]?.imagen1}}" width="100%" alt="">  
-       
+              <a routerLink="../articulos/{{data[7]?._id}}">
+           <img class="img" src="{{data[7]?.imagen1}}" width="100%" alt="">  
+          </a>
               </div>  
               
       
              
               <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-       
-        <p class="titulo">{{data[5]?.titulo}}</p> 
+                <a routerLink="../articulos/{{data[7]?._id}}"> 
+        <p class="titulo">{{data[7]?.titulo}}</p> 
+        </a>
               
                   
               </div>
@@ -191,15 +205,18 @@
                           
             <div class="row ">
               <div class="col-5"> 
-             <img class="img" src="{{data[9]?.imagen1}}" width="100%" alt="">  
+                <a routerLink="../articulos/{{data[8]?._id}}">
+             <img class="img" src="{{data[8]?.imagen1}}" width="100%" alt="">  
+             </a>
          
                 </div>  
                 
         
                
                 <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-         
-          <p class="titulo">{{data[6]?.titulo}}</p> 
+                  <a routerLink="../articulos/{{data[8]?._id}}">
+          <p class="titulo">{{data[8]?.titulo}}</p> 
+          </a>
                 
                     
                 </div>
