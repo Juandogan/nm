@@ -8,10 +8,9 @@ import { ResolveNotaService } from './services/resolve-nota.service';
 
 const routes: Routes = [ 
   {path:'', component: MainComponent},
+  {path:'articulo/:_id', component: ArticuloComponent, resolve: {data: ResolveNotaService}},
   {path:'suscripcion', component: SuscripcionComponent},
-  {path:'adm', component: AdmComponent},
-  {path:'articulos/:_id', component: ArticuloComponent, resolve: {data: ResolveNotaService}},
-
+  {path:'adm', component: AdmComponent}
 
 ];
 

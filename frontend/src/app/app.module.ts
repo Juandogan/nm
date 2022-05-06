@@ -31,6 +31,7 @@ import { AdmComponent } from './componentes/adm/adm.component';
 import { FiltroRevistaPipe } from './pipes/filtro-revista.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
