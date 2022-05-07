@@ -27,53 +27,53 @@ export class BIndiceComponent implements OnInit {
   }
 
   cambioImagen1(){
-    this.link = this.data[11].imagen1
-    this.descripcion= this.data[11].subtitulo
-    this.titulo= this.data[11].titulo
-    this.ruta =this.data[11]._id
+    this.link = this.data[19].imagen1
+    this.descripcion= this.data[19].subtitulo
+    this.titulo= this.data[19].titulo
+    this.ruta =this.data[19]._id
   }
 
   cambioImagen2(){
-    this.link = this.data[10].imagen1
-    this.descripcion= this.data[10].subtitulo
-    this.titulo= this.data[10].titulo
-    this.ruta =this.data[10]._id
-  }
-  cambioImagen3(){
-    this.link = this.data[5].imagen1
-     this.descripcion= this.data[5].subtitulo
-     this.titulo= this.data[5].titulo
-     this.ruta =this.data[5]._id
-  }
-    cambioImagen4(){
     this.link = this.data[4].imagen1
     this.descripcion= this.data[4].subtitulo
     this.titulo= this.data[4].titulo
     this.ruta =this.data[4]._id
   }
+  cambioImagen3(){
+    this.link = this.data[3].imagen1
+     this.descripcion= this.data[3].subtitulo
+     this.titulo= this.data[3].titulo
+     this.ruta =this.data[3]._id
+  }
+    cambioImagen4(){
+    this.link = this.data[10].imagen1
+    this.descripcion= this.data[10].subtitulo
+    this.titulo= this.data[10].titulo
+    this.ruta =this.data[10]._id
+  }
   cambioImagen5(){
+    this.link = this.data[11].imagen1
+    this.descripcion= this.data[11].subtitulo
+    this.titulo= this.data[11].titulo
+    this.ruta =this.data[11]._id
+  }
+  cambioImagen6(){
     this.link = this.data[12].imagen1
     this.descripcion= this.data[12].subtitulo
     this.titulo= this.data[12].titulo
     this.ruta =this.data[12]._id
   }
-  cambioImagen6(){
-    this.link = this.data[5].imagen1
-    this.descripcion= this.data[5].subtitulo
-    this.titulo= this.data[5].titulo
-    this.ruta =this.data[5]._id
-  }
   cambioImagen7(){
-    this.link = this.data[6].imagen1
-    this.descripcion= this.data[6].subtitulo
-    this.titulo= this.data[6].titulo
-    this.ruta =this.data[6]._id
+    this.link = this.data[21].imagen1
+    this.descripcion= this.data[21].subtitulo
+    this.titulo= this.data[21].titulo
+    this.ruta =this.data[21]._id
   }
   cambioImagen8(){
-    this.link = this.data[7].imagen1
-    this.descripcion= this.data[7].subtitulo
-    this.titulo= this.data[7].titulo
-    this.ruta =this.data[7]._id
+    this.link = this.data[20].imagen1
+    this.descripcion= this.data[20].subtitulo
+    this.titulo= this.data[20].titulo
+    this.ruta =this.data[20]._id
   }
 
 

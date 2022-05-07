@@ -22,8 +22,8 @@
   color:rgb(68, 68, 68);
   font-size: 25px;
 }
-
-.subtitulo{margin-top:-10px; font-size: 18px;  font-family: 'Roboto', sans-serif; line-height: 26px;}
+a{  color:rgb(68, 68, 68); text-decoration: none;}
+.subtitulo{margin-top:-10px; font-size: 18px; font-family: 'Roboto', sans-serif; line-height: 26px; font-weight: 600;}
 
    
 .card{border:none}

@@ -46,10 +46,19 @@ export class ArticuloComponent implements OnInit {
                                     margin-top:-10px;
                                     font-size: 18px; 
                                     line-height: 28px;
-                                    color:rgb(68, 68, 68);"`)
+                                    color:rgb(68, 68, 68);
+                                    text-align:justify;  
+                           text-justify:inter-character;
+                                    "`)
                                                                             
                                           // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
                                           // aux2 = aux2.split('</p></strong>').join('</p></b>')
+
+                                          // <img style="width:100%; margin-top:10px" src="http://168.197.50.191/upload/_BTJMOy-ce0StAhwmUC8V_AN.jpg">
+                                          
+
+                                          
+
                                           aux2 = aux2.split('<img').join('<img style="width:100%; margin-top:10px; margin-bottom:10px"')
                                           
                                           aux2 = aux2.split('<strong>').join('<strong style="font-size:16px;line-height: 0px!important; ">')
@@ -57,14 +66,16 @@ export class ArticuloComponent implements OnInit {
                                           aux2 = aux2.split(' ,').join(', ')
                                           aux2 = aux2.split(' .').join('. ')
                                           aux2 = aux2.split('<figure class="media"><oembed url="').join('<iframe width="100%" height="515" src="')
-                                          aux2 = aux2.split('<h4>').join('<h4 style="font-size:15px; margin-top:-20px; margin-bottom:30px;">')
+                                          aux2 = aux2.split('<h4>').join('<h4 style="text-align:center; font-size:15px; margin-top:-20px; margin-bottom:30px;">')
                                           aux2 = aux2.split('"></oembed></figure>').join('" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
       
-                                        
+                                          aux2 = aux2.split('<img style="width:100%; margin-top:10px" src="').join('<a href="')
+                                          aux2 = aux2.split('ng">').join('ng"></a>')
+                                          aux2 = aux2.split('pg">').join('pg"></a>')
       
                                           
-      console.log('sa' + aux2)
-      
+      // console.log('sa' + aux2)
+      console.log(this.nota)
         return (aux2)
       
       

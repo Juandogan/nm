@@ -34,11 +34,12 @@ loader= true;
     this.crudService.getArticulos().subscribe(res =>{
     this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
     this.loading = false
-    window.scroll(0,0)
+    console.log(this.articulos)
+    console.log("hola")
   
   
       });//fin de subscribe
-    } //fin de pedirProductos
+    } //fin de pedirProductosthis.
 
 
 }
