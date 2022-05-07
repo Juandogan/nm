@@ -29,6 +29,7 @@ import { GestorComponent } from './componentes/gestor/gestor.component';
 import { QuienSomosComponent } from './componentes/quien-somos/quien-somos.component';
 import { AdmComponent } from './componentes/adm/adm.component';
 import { FiltroRevistaPipe } from './pipes/filtro-revista.pipe';
+import { ArticuloRelacionadoComponent } from './componentes/articulo-relacionado/articulo-relacionado.component';
 
 
 
@@ -47,6 +48,7 @@ import { FiltroRevistaPipe } from './pipes/filtro-revista.pipe';
     QuienSomosComponent,
     AdmComponent,
     FiltroRevistaPipe,
+    ArticuloRelacionadoComponent,
     
   ],
   imports: [

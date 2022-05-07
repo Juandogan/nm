@@ -25,32 +25,28 @@ export class ArticuloComponent implements OnInit {
 
       saltos2(data:string){
         var aux2 = data.split('<h2>').join(`<h2 style=" font-weight: 700; 
-        line-height: 32px;
-        letter-spacing: -1px;
-        font-size:25px!important;
-        color:orange;
-        margin-bottom:25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;};">
-         `)
+  line-height: 32px;
+  letter-spacing: -1px;
+  font-size:25px!important;
+  color:orange;
+  margin-bottom:15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;};">
+   `)
          
-        aux2 = aux2.split('<h3').join(`<h3 style="font-weight: 400; 
-        line-height: 30px;
-        letter-spacing: 0px;
-        font-size:122px;
-        color:orange;        
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
+   aux2 = aux2.split('<h3').join(`<h3 style="font-weight: 400; 
+   line-height: 30px;
+   letter-spacing: 0px;
+   font-size:22px;
+   color:orange;
+   margin-bottom:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
       
-                                          aux2 = aux2.split('<p').join(`<p
-                                          style="
-                                          font-weight: 400;
-                                          margin-top:-10px;
-                                          font-size: 18px; 
-                                          line-height: 28px;
-                                          color:rgb(68, 68, 68);
-                                          
-                                          "
-                                         
-                                                                            `)
+  aux2 = aux2.split('<p').join(`<p style="
+                                    font-weight: 400;
+                                    margin-top:-10px;
+                                    font-size: 18px; 
+                                    line-height: 28px;
+                                    color:rgb(68, 68, 68);"`)
                                                                             
                                           // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
                                           // aux2 = aux2.split('</p></strong>').join('</p></b>')

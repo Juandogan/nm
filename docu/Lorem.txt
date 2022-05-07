@@ -51,6 +51,12 @@ proxy_redirect off;
 
 systemctl restart nginx
 
+Salvo las imangenes
+/home/CCAM_PROD/cp -r -f subidas /home/img
+
+en raaiz/  cp -RT /home/img/ /home/CCAM_PROD/subidas/
+
+
 
 CERRANDO PUERTO POR PID
 [root@vps-2402670-x /home/CCAM_PROD] # sudo netstat -tupln
