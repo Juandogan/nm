@@ -2,13 +2,13 @@
     <br>
     <hr>
     <br>
-    <h1  *ngIf="this.nota.resultadoImagen"  class="titulo" style="margin-left:0px;margin-bottom: 10px; color:brown">| ARTÍCULOS RELACIONADOS</h1>
+    <h1  *ngIf="this.nota.art1"  class="titulo" style="margin-left:0px;margin-bottom: 10px; color:brown">| ARTÍCULOS RELACIONADOS</h1>
     <br>
      
 
     <div class="row" >
 
-      <div  *ngIf="this.nota.resultadoImagen"   class="card col-4">
+      <div      class="card col-4">
           <img class="card-img-top sombra"src="{{this.nota.resultadoImagen}}" alt="" height="200px" style="object-fit: cover;">
          <div class="card-body">        
             <h6 class="categoria"><b>{{cut(nota?.resultadoCategoria)}}</b></h6>
@@ -20,7 +20,7 @@
           </div>     
       </div>  
 
-      <div  *ngIf="this.nota.resultadoImagen2"   class="card col-4" >
+      <div  *ngIf="this.nota.art2"   class="card col-4" >
           <img class="card-img-top sombra"src="{{nota.resultadoImagen2}}" alt="" height="200px" style="object-fit: cover;">
           <div class="card-body">
               <h6 class="categoria"><b>{{cut(nota?.resultadoCategoria2)}}</b></h6>
@@ -30,7 +30,7 @@
           </div>     
       </div>  
 
-      <div *ngIf="this.nota.resultadoImagen3"  class="card col-4" >
+      <div *ngIf="this.nota.art3"  class="card col-4" >
           <img class="card-img-top sombra"src="{{nota.resultadoImagen3}}" alt="" height="200px" style="object-fit: cover;">
           <div class="card-body">
                <h6 class="categoria"><b>{{cut(nota?.resultadoCategoria3)}}</b></h6>
@@ -41,7 +41,7 @@
           
           </div>     
       </div>  
-      <div class="card col-4" *ngIf="this.nota?.resultadoImagen4" >
+      <div class="card col-4" *ngIf="this.nota?.art4" >
           <img class="card-img-top sombra"src="{{nota?.resultadoImagen4}}" alt="" height="200px" style="object-fit: cover;">
           <div class="card-body">
                <h6 class="categoria"><b>{{cut(nota?.resultadoCategoria4)}}</b></h6>
@@ -52,7 +52,7 @@
           
           </div>     
       </div>  
-      <div *ngIf="this.nota?.resultadoImagen5"  class="card col-4" >
+      <div *ngIf="this.nota?.art5"  class="card col-4" >
           <img class="card-img-top sombra"src="{{nota?.resultadoImagen5}}" alt="" height="200px" style="object-fit: cover;">
           <div class="card-body">
                <h6 class="categoria"><b>{{cut(nota?.resultadoCategoria5)}}</b></h6>
@@ -63,7 +63,7 @@
           
           </div>     
       </div>  
-      <div class="card col-4" *ngIf="this.nota?.resultadoImagen6" >
+      <div class="card col-4" *ngIf="this.nota?.art6" >
           <img class="card-img-top sombra"src="{{nota?.resultadoImagen6}}" alt="" height="200px" style="object-fit: cover;">
           <div class="card-body">
                <h6 class="categoria"><b>{{cut(nota?.resultadoCategoria6)}}</b></h6>

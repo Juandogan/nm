@@ -1,4 +1,4 @@
-<div class="cuerpo margenL margenR"> 
+<div class="cuerpo margenL margenR" style="z-index:1000"> 
     <div class="barraInfo">
       <h2 *ngIf="!loading"  class=" texto  quitar600 " style="font-size:12px;padding:5px"><b> MES: MAYO | AÑO 2022</b></h2>
       <div style="text-align: center;">
@@ -18,50 +18,57 @@
         <app-b-indice [data]="articulos" ></app-b-indice>
   
   <a class="quitar600" href="http://www.culturademontania.org.ar/Noticias/invitacion-participar-red-cultural-ccam.html" target="_blank">
-  <img src="../../../assets/baner.png" width="100%" alt=""  style="border-radius:5px">
+  <img src="../../../assets/baner.png" width="100%" alt=""  >
 </a>
   <br>
    <div style="color: white;"> 
  
     <h1 class="indice subefuente" style="margin-top:20px">Editorial</h1>
-  <div class="fondoEditorial" >
-  <div style="margin-left: 30px;">
-   <img class="responsi" src="../../../assets/logonm.png" width="135px" alt="" style="margin-top: 10px;">
-   <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;">
+  <div class="fondoEditorial" style="object-fit: cover; background-image: url('../../../assets/1.png'); ">
+  <div style="margin-left: 20px;">
+     <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> 
+   <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
    <div style="margin-left:20px;margin-right: 20px;">
+ 
     <p class=" editorialParrafo" style="margin-bottom:20px; margin-top:10px">
       Queridos amantes de la montaña,
     </p>
-    <p class=" editorialParrafo" style="margin-bottom:10px">
-      Comienza Mayo viviéndolo con mucha alegría en el Centro Cultural Argentino de Montaña!!!
+    <p class=" editorialParrafo" style="margin-bottom:20px">
+      comienza Mayo viviéndolo con mucha alegría en el Centro Cultural Argentino de Montaña!!!
     </p>
-    <p class=" editorialParrafo" style="margin-bottom:10px"><b>
+    <p class=" editorialParrafo" style="margin-bottom:20px"><b>
       Los invito a descubrir en este número de la revista digital la nueva estética y las nuevas aplicaciones!!
     </b></p>
-    <p class=" editorialParrafo">
+    <p class=" editorialParrafo" style="margin-bottom:10px; margin-top:20">
       Se aproximan vientos de renovación, cambios profundos y el renacimiento en la aventura de poner en valor a la Cultura de Montaña!!! 
-      Estamos dando los primeros pasos de una renovación total, que incluye nuevas tecnologías, una estética de presentación innovadora y actividades educativas, formativas y de divulgación,  todo lo cual llevó mucho trabajo de planificación y de desarrollo a todo el equipo del CCAM.
-      Les sugiero  estar atentos a lo que ocurrirá en los próximos meses!!! Descubramos juntos y con vision renovada  a la Cultura de Montaña!!!
+      Estamos dando los primeros pasos de una renovación total, que incluye nuevas tecnologías, una estética de presentación innovadora y actividades educativas, formativas y de divulgación,  todo lo cual llevó mucho trabajo de planificación y de desarrollo a todo el equipo del CCAM.   
     </p>
+    <p class=" editorialParrafo" style="margin-top:30px">
+    Les sugiero  estar atentos a lo que ocurrirá en los próximos meses!!! Descubramos juntos y con vision renovada  a la Cultura de Montaña!!!
+  </p>
     <br>
     <p class="editorialParrafo">
       <b> VENI Y SUMATE A LA RED DEL CCAM ! ! !</b>
     </p>
   </div>
 <br>
+<div style="text-align: right; margin-right:30px">
+<!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="120px" alt="" style="margin-top: 10px;">  -->
+</div>
       <p class="editorialParrafo" style="text-align:right; margin-right: 40px;">
   Alex G. Martin, Presidente del CCAM
+  
 </p>    
 <br><br>
   
 
   </div>
 </div>
-<div class="row quitar600" style="margin-top:30px; margin-left:10px; padding-right:35px ">
+<div class="row quitar600" style="margin-top:30px;  padding-right:35px ">
   <div class="col-4 xl-12 ">
     <div >
      <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
-       <img src="../../../assets/banner Noticias.png" width="100%" height="500px" alt=""></a>
+       <img src="../../../assets/banner Noticias.png" width="100%" height="500px" alt="" style="padding-left:20px"></a>
     </div>
   </div>
 
@@ -87,43 +94,44 @@
 
 <h1 class="indice"  style="margin-left: 23px;margin-bottom: 5px;">Ediciones anteriores </h1>
 </div>
-<div class="row" style="margin-top:30px; margin-left:10px; padding-right:35px ;">
-  <div class="col-2">
+<div class="row" style="margin-top:30px; margin-left:10px; padding-right:35px ;z-index: -1000">
+  <div class="col-sm-8	col-md-5 col-lg-4	col-xl-2">
     <a href="http://www.culturademontania.org.ar/Noticias/04_2022/noticias_04_2022.htm" target="_blank">
-      <h5>Abril 2022 - Nº 137</h5>
+      <h5  style="min-width:230px">Abril 2022 - Nº 137</h5>
       <img src="../../../assets/tap1.PNG"  width="100%" alt="" style="margin-bottom: 30px;">
   </a>
   </div>
 
   <div class="col-2">
     <a href="http://www.culturademontania.org.ar/Noticias/03_2022/noticias_03_2022.htm" target="_blank">
-    <h5>Marzo 2022 - Nº 136</h5>
+    <h5  style="min-width:230px">Marzo 2022 - Nº 136</h5>
     <img src="../../../assets/tap2.PNG" alt="" width="100%" style="height: 250px;">
   </a>
   </div>
   <div class="col-2">
     <a href="http://www.culturademontania.org.ar/Revista_Digital/02_2022/febrero_2022.htm" target="_blank">
-    <h5>Especial NOA - Nº 135</h5>
+    <h5  style="min-width:230px">Especial NOA - Nº 135</h5>
     <img src="../../../assets/tap3.PNG" alt="" width="100%" style="height: 250px;">
   </a>
   </div>
   <div class="col-2">
     <a href="http://www.culturademontania.org.ar/Noticias/02_2022/noticias_02_2022.htm" target="_blank">
-    <h5>Febrero 2022 - Nº 134</h5>
+    <h5  style="min-width:230px">Febrero 2022 - Nº 134</h5>
     <img src="../../../assets/tap4.PNG" alt="" width="100%" style="height: 250px;">
     </a>
   </div>
   <div class="col-2">
     <a href="http://www.culturademontania.org.ar/Noticias/01_2022/noticias_01_2022.htm" target="_blank">
-    <h5>Enero 2021 - Nº 133</h5>
+    <h5  style="min-width:230px">Enero 2021 - Nº 133</h5>
     <img src="../../../assets/tap5.PNG" alt="" width="100%" style="height: 250px;">
   </a>
   </div>
-  <div class="col-2">
+  <div class="col-2"  >
     <a href="http://www.culturademontania.org.ar/Noticias/12_2021/noticias_12_2021.htm" target="_blank">
-    <h5>Diciembre 2021 - Nº 132</h5>
-    <img src="../../../assets/tap6.PNG" alt="" width="100%" style="height: 250px;" target="_blank">
+    <h5 >Diciembre 2021 - Nº 132</h5>
+    <img src="../../../assets/tap6.PNG" alt="" width="100%"  height="250px" target="_blank">
   </a>
+
   </div>
   
 
@@ -246,8 +254,55 @@
   
   
       </div><!-- fin de fondo orange -->
-      
-      
+    
+      <div style="border-bottom:20px solid rgb(51, 51, 51);">
+        <br>
+
+        <div class="row"  style="background-image: url('../../../assets/fondoFoter.png') ;
+         background-repeat: none; width: 100%; height: 500px;margin-left:0px; margin-top:-140px"> 
+<div class="flex-container"> 
+  <div class="flex-items" >
+    <div style="text-align:left;" >
+    <img src="../../../assets/LogoCCAM_Entero.png" alt="" style="width: 125px; margin-top:380px; margin-left:80px; margin-right: 0px;" >
+  </div>           
+    </div>
+        
+    <div class="flex-items" style="margin-top:390px;min-width:450px">
+      <div style="text-align:left; margin-left: 10px;" >
+    <p style="color: white; font-size:18px">Mail: info@culturademontania.org.ar</p>
+    <p style="color: white; font-size:18px; margin-top:-20px">WhatsApp: (+54-011) 15-3093-9814</p>
+    <a href="https://www.instagram.com/ccam_arg/" target="_blank">
+    <p style="color: white; font-size:18px; margin-top:-22px">Instagram: @ccam_arg</p>
+  </a>
+  <a href="https://www.facebook.com/ccamontania/" target="_blank">
+    <p style="color: white; font-size:18px; margin-top:-22px">Facebook: www.facebook.com/ccamontania  </p>
+    </a>
+  
+    
+    </div>           
+      </div>
+
+      <div class="flex-items"style="align-text: left;margin-top:370px;">
+        <div style="text-align:left;" >
+          <img src="../../../assets/logonm.png" alt="" style="width: 150px;  margin-left:-20px" >      
+      </div>           
+        </div>
+
+        <div class="flex-items"style="margin-top:370px;">
+          <div style="text-align:left;margin-top:25px"  >
+        <p style="color:white; font-size: 20px;">Contáctate y comenzá</p>
+        <p style="color:white; margin-top:-22px; font-size: 20px;">la aventura de integrarte</p>
+        <p style="color:white; margin-top:-24px; font-size: 20px;">a la red cultural</p>
+        
+        
+        </div>           
+          </div>
+
+        </div>
+
+    </div>
+
+      </div>
     </div>
       
     

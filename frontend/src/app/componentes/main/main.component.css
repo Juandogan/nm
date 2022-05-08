@@ -15,7 +15,50 @@
 
   
  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap'); 
- 
+ .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
 /* TEXTO CENTRO CULTURAL ARGENTINO DE MONTAÑA */
 .cuerpo{
  background-color:  rgb(51, 51, 51);
@@ -34,6 +77,10 @@ h1{font-family: 'Roboto Slab', serif;}
    color:rgb(255, 255, 255); 
    position: absolute;
 }
+
+.foterText{margin-top:-10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;}
+
 
 .formarParte{
    left:380px; 
@@ -129,12 +176,12 @@ font-size: 18px;
    margin-right: 20px}
 
 .editorialParrafo{
-  font-family: 'Abel', sans-serif;
+ 
    letter-spacing: 1px;
   outline: none;
   padding-top:-10px;
   padding-left: 10px;
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 0px;
   margin-right: 20px
   ;
@@ -306,7 +353,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
-                justify-content: space-between;
+                
                 align-items: normal;
                 align-content: normal;
               }
@@ -428,6 +475,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 
 .fondoEditorial{
       height: 100%;
+      background-image: url('../../../assets/fondoEditorial.jpg');
     }
 
 .colorBarraMenu{margin-top:-30px}
