@@ -6,9 +6,9 @@
     <div class="dsc-carousel__content">
         <ng-container *ngFor="let section of items;" style="width:100px">
             
-            <div class="dsc-carousel__content-item" [ngStyle]="{'background-image': 'url(' + section.image + ')', 'margin-left': section.marginLeft + '%', 'object-fit':'cover', 'width':'200px'}">
+            <div class="dsc-carousel__content-item" [ngStyle]="{'background-image': 'url(' + section.image +')', 'margin-left': section.marginLeft + '%', 'object-fit':'fill', 'width':'200px', 'border-radius':'2px' }">
                 <h2 style="font-size:12px!important; padding-top:6px; margin-bottom:20px;"></h2>
-                <a href="{{section.subtitulo}}" target="_blank">
+                <a href="{{section.subtitulo}}" target="_blank" style="color:orange">
        
                     <h1 class="truncar1" style="font-size: 15px; ">  {{section.titulo}} </h1>   
            
@@ -27,5 +27,5 @@
             dsc-carousel__steps-step-{{currentPosition === item.id ? 'active': ''}}" 
             *ngFor="let item of items" (click)="setCurrentPosition(item.id)">
         </div>
-    </div> -->
+    </div>  -->
 </div>

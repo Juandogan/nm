@@ -12,7 +12,7 @@
     /*si no se declara añade los ... pero muestra todo el texto*/
   }
 
-a {text-decoration: none;}
+ 
 a :hover{color:orange}
 .robotoBlack{font-family: Roboto;
     font-size: 23px;
@@ -51,6 +51,7 @@ a :hover{color:orange}
     text-align: center;
     width: 100%;
     margin-left:20px;
+    margin-right: 20px;
     align-self: stretch;
     display: flex;
     overflow: hidden;
@@ -79,10 +80,11 @@ a :hover{color:orange}
     font-family: Roboto;
     margin-top:350px;
     margin-left:20px;
+    margin-right:20px;
     text-shadow: 2px 2px 2px  rgb(0, 0, 0);
     color: #ffbb00;
     font-weight: 900;
-  text-transform: uppercase; 
+    text-transform: uppercase; 
     z-index: 1;
     text-align: left!important;
     font-size: 12px;
@@ -96,18 +98,20 @@ a :hover{color:orange}
     font-weight: 400;
     line-height: 31px; 
     letter-spacing: -1px;
- margin-top:-29px;
+    margin-top:-29px;
     margin-left:0px;
-    margin-right: 20px;
-    text-shadow: 2px 2px 2px  rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+  
  
-text-transform: uppercase; 
-       z-index: 1;
+    color: orange;
+    z-index: 1;
     text-align: left!important;
     font-size: 25px;
+   
 }
 
+.dsc-carousel__content-item h1 :hover {color:white}
+
+ 
 
 .dsc-carousel__content-item h1 span {
     color: #ffffff;
@@ -225,7 +229,7 @@ text-transform: uppercase;
     text-shadow: 2px 2px 2px  rgb(0, 0, 0);
     color: orange;
     font-weight: 900;
-text-transform: uppercase; 
+ 
        z-index: 1;
     text-align: left!important;
     font-size: 17px;

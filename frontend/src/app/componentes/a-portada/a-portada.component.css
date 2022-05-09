@@ -107,8 +107,9 @@
         background-color: rgba(0, 0, 0, 0.603);  
         
     }
-
-
+    @media (max-width:1300px){
+    .quitar1300{display:none}
+  }
     @media (max-width:600px){
 
       .quitar{display:none}

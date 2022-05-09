@@ -59,19 +59,18 @@ export class CarouselComponent implements OnInit {
   }
 
   setCurrentPosition(position: number) {
-        this.currentPosition = position;
-    this.items.find(i => i.id === 0).marginLeft = -50 * position;
+    this.currentPosition = position;
+    this.items.find(i => i.id === 0).marginLeft = -17 * position;
   }
 
 
 
   setNext() {
-
      
     let finalPercentage = 0;
     let nextPosition = this.currentPosition + 1;
     if (nextPosition <= this.items.length - 1) {
-      finalPercentage = -50 * nextPosition;
+      finalPercentage = -17 * nextPosition;
     } else {
       nextPosition = 0;
     }
@@ -83,10 +82,10 @@ export class CarouselComponent implements OnInit {
     let finalPercentage = 0;
     let backPosition = this.currentPosition  - 1;
     if (backPosition >= 0) {
-      finalPercentage = -50 * backPosition;
+      finalPercentage = -17 * backPosition;
     } else {
       backPosition = this.items.length - 1;
-      finalPercentage = -100 * backPosition;
+      finalPercentage = -17 * backPosition;
     }
     this.items.find(i => i.id === 0).marginLeft = finalPercentage;
     this.currentPosition = backPosition;

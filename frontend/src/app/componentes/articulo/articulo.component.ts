@@ -69,10 +69,10 @@ export class ArticuloComponent implements OnInit {
                                           aux2 = aux2.split('<h4>').join('<h4 style="text-align:center; font-size:15px; margin-top:-20px; margin-bottom:30px;">')
                                           aux2 = aux2.split('"></oembed></figure>').join('" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
       
-                                          aux2 = aux2.split('<img style="width:100%; margin-top:10px" src="').join('<a href="')
-                                          aux2 = aux2.split('ng">').join('ng"></a>')
-                                          aux2 = aux2.split('pg">').join('pg"></a>')
-      
+                                          // aux2 = aux2.split('<img style="width:100%; margin-top:10px" src="').join('<a href="')
+                                          // aux2 = aux2.split('ng">').join('ng"></a>')
+                                          // aux2 = aux2.split('pg">').join('pg"></a>')
+                    
                                           
       // console.log('sa' + aux2)
       console.log(this.nota)
