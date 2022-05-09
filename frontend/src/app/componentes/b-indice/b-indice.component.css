@@ -17,11 +17,12 @@
   } 
 
 .fondo{
-   /* background-image: url('../../../assets/aconcagua.PNG');   */
-  background-color: rgb(0, 36, 36);
+ background-image: url('../../../assets/fondoindex.png'); 
+   opacity: 0.8;
+  /* background-color: rgb(0, 36, 36); */
    margin:20px; object-fit:cover;
   margin-top: 0px;
-  height:967px
+  height:900px
 }
 
   .imagen{height: 550px; margin-top:50px; border: 20px solid orange ;object-fit: cover; }
@@ -61,7 +62,7 @@
     color:black;
     margin-top:20px;
     padding:8px;
-    
+    margin-left:10px;
   
   }
 

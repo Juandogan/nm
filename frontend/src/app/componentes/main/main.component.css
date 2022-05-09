@@ -389,18 +389,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
                
               
                 }
-              @media (max-width: 1500px)
-              {
-   
-              }
-
-          
-
-              @media (max-width: 1000px)
-              {
-             
-              }
-
+         
            
          
 
@@ -422,61 +411,61 @@ ul{margin:0px; padding:5px;margin-left: 15px}
   
             
             }
+
+
             @media (max-width:3000px)
-  {.margenL{ margin-left: 33%; }
-  .margenR{margin-right: 33%; } 
-  }
-  
-
-  
-
-  
-  @media (max-width:2666px)
-  {.margenL{ margin-left: 25%; }
-  .margenR{margin-right: 25%; } 
-  }
-
-  @media (max-width:2402px)
-  {.margenL{ margin-left: 24%; }
-  .margenR{margin-right: 24%; } 
-  }
-
-  @media (max-width:2200px)
-  {.margenL{ margin-left: 20%; }
-  .margenR{margin-right: 20%; } 
-  }
-
-  @media (max-width:2000px)
-  {.margenL{ margin-left: 18%; }
-  .margenR{margin-right: 18%; } 
-  }
-
-  @media (max-width:1800px)
-  {.margenL{ margin-left: 15%; }
-  .margenR{margin-right: 15%; } 
-  }
-
-  @media (max-width:1600px)
-  {.margenL{ margin-left: 13%; }
-  .margenR{margin-right: 13%; } 
-  }
-  
-  @media (max-width:1400px)
-  {.margenL{ margin-left: 8%; }
-  .margenR{margin-right: 8%; } 
-  }
-
-@media (max-width:1200px)
-  {
-    .margenL{ margin-left: 4%; }
-   .margenR{margin-right: 4%; } 
-  }
-
-  
-@media (max-width:1000px)
-  {.margenL{ margin-left: 0%; }
-  .margenR{margin-right: 0%; } 
-  }
+            {.margenL{ margin-left: 33%; }
+            .margenR{margin-right: 33%; } 
+            }
+            
+                     
+          
+            
+            @media (max-width:2666px)
+            {.margenL{ margin-left: 25%; }
+            .margenR{margin-right: 25%; } 
+            }
+          
+            @media (max-width:2402px)
+            {.margenL{ margin-left: 24%; }
+            .margenR{margin-right: 24%; } 
+            }
+          
+            @media (max-width:2200px)
+            {.margenL{ margin-left: 20%; }
+            .margenR{margin-right: 20%; } 
+            }
+          
+            @media (max-width:2000px)
+            {.margenL{ margin-left: 18%; }
+            .margenR{margin-right: 18%; } 
+            }
+          
+            @media (max-width:1800px)
+            {.margenL{ margin-left: 15%; }
+            .margenR{margin-right: 15%; } 
+            }
+          
+            @media (max-width:1600px)
+            {.margenL{ margin-left: 13%; }
+            .margenR{margin-right: 13%; } 
+            }
+            
+            @media (max-width:1400px)
+            {.margenL{ margin-left: 8%; }
+            .margenR{margin-right: 8%; } 
+            }
+          
+            @media (max-width:1200px)
+            {.margenL{ margin-left: 0%; }
+            .margenR{margin-right: 0%; } 
+            }
+          
+            
+            @media (max-width:1000px)
+            {.margenL{ margin-left: 0%; }
+            .margenR{margin-right: 0%; } 
+            }
 
 @media (max-width:600px){
 
