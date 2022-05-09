@@ -30,6 +30,7 @@ import { QuienSomosComponent } from './componentes/quien-somos/quien-somos.compo
 import { AdmComponent } from './componentes/adm/adm.component';
 import { FiltroRevistaPipe } from './pipes/filtro-revista.pipe';
 import { ArticuloRelacionadoComponent } from './componentes/articulo-relacionado/articulo-relacionado.component';
+import { CarouselComponent } from './componentes/carousel/carousel.component';
 
 
 
@@ -49,6 +50,7 @@ import { ArticuloRelacionadoComponent } from './componentes/articulo-relacionado
     AdmComponent,
     FiltroRevistaPipe,
     ArticuloRelacionadoComponent,
+    CarouselComponent,
     
   ],
   imports: [

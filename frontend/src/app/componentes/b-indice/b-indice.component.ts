@@ -40,10 +40,10 @@ export class BIndiceComponent implements OnInit {
     this.ruta =this.data[4]._id
   }
   cambioImagen3(){
-    this.link = this.data[3].imagen1
-     this.descripcion= this.data[3].subtitulo
-     this.titulo= this.data[3].titulo
-     this.ruta =this.data[3]._id
+    this.link = this.data[5].imagen1
+     this.descripcion= this.data[5].subtitulo
+     this.titulo= this.data[5].titulo
+     this.ruta =this.data[5]._id
   }
     cambioImagen4(){
     this.link = this.data[10].imagen1

@@ -9,7 +9,7 @@ import { CrudService } from 'src/app/services/crud.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
+ 
   searchTerm$ = new Subject<string>();
   buscar:any
   buscarMensaje:string = ""
