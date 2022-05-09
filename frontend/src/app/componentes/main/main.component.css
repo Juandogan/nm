@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 /* 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
@@ -15,6 +16,9 @@
 
   
  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap'); 
+
+.fuenteTest{  font-family: 'Oswald', sans-serif;}
+
  .flex-container {
   display: flex;
   flex-direction: row;
@@ -103,10 +107,11 @@ h1{font-family: 'Roboto Slab', serif;}
 .indice{
   text-shadow: 2px 2px 10px black;
   margin-left: 20px;
-  margin-top:-5px; 
+  font-family: 'Oswald', sans-serif;
+
   margin-bottom: 20px;
   font-size: 25px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color:white}
 
   .ediMobil {display: none; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;}
@@ -296,6 +301,8 @@ input{
   
 
 }
+
+.subefuente{margin-top: 20px;; margin-left: 30px;}
 .anima2:active {
   
   background-color: rgba(0, 0, 0, 0.055);
@@ -482,7 +489,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 .fondo{background-image: none;background-color: white;}
 .margenL{ margin-left: 0px; }
 .margenR{margin-right: 0px; } 
-.indice{font-size:12px; margin-top:10px;margin-left:10px; margin-bottom:10px; }
+.indice{font-size:12px;margin-left:10px; margin-bottom:10px;margin-top: 10px; }
 .banner{margin-left:20px; padding-right:40px; margin-top:30px}
 .subefuente{font-size: 20px;margin-left:20px!important; margin-top:-12px!important; margin-bottom: 10px;}
 .responsi{width: 110px!important;}

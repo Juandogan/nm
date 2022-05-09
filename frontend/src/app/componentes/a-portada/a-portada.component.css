@@ -6,7 +6,7 @@
     text-align: left;
     font-size: 40px;
    
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-weight: 800;
     line-height: 40px;
     min-height: 100% ;
@@ -98,8 +98,8 @@
     /* Recuadro negro de la portada */
     .cuadroTitulo{
         position:absolute;
-        min-height: 142px; 
-        top:408px;
+        min-height: 167px;
+        top: 383px;
 
         left:20px;
         right:20px;
@@ -108,7 +108,11 @@
         
     }
     @media (max-width:1300px){
-    .quitar1300{display:none}
+ 
+  }
+
+  @media (max-width:1000px){
+    .quitar1300{display: none;}
   }
     @media (max-width:600px){
 
@@ -121,7 +125,7 @@
 
       .cuadroTitulo{
         position:absolute;
-        min-height: 124px; 
+        min-height: 123px;
         top:248px;
 
         left:0px;
