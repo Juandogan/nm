@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,OnDestroy} from '@angular/core';
 import {Subject} from 'rxjs';
 import { Articulos } from 'src/app/models/articulos';
 import { CrudService } from 'src/app/services/crud.service';
@@ -8,7 +8,7 @@ import { CrudService } from 'src/app/services/crud.service';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit,  OnDestroy {
  
   searchTerm$ = new Subject<string>();
   buscar:any
@@ -25,7 +25,7 @@ loader= true;
   constructor(public crudService:CrudService) { }
 
   ngOnInit(): void {
- 
+    
     this.pedirArticulos()
   }
 
@@ -34,12 +34,18 @@ loader= true;
     this.crudService.getArticulos().subscribe(res =>{
     this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
     this.loading = false
+    window.scroll(0,0)
     console.log(this.articulos)
-    console.log("hola")
+    
   
   
       });//fin de subscribe
     } //fin de pedirProductosthis.
 
+  
+
+    ngOnDestroy() {
+      window.scroll(0,0)
+    }
 
 }

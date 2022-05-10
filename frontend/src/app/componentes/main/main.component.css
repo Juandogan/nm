@@ -17,6 +17,10 @@
   
  @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap'); 
 
+ 
+
+
+
 .fuenteTest{  font-family: 'Oswald', sans-serif;}
 
  .flex-container {
@@ -329,7 +333,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
          }
 
          span {margin-left:4px}
-
+         
 .menuTexto {
         margin-top: 6px!important;
         letter-spacing: 0.5px;
@@ -468,17 +472,22 @@ ul{margin:0px; padding:5px;margin-left: 15px}
             }
 
 @media (max-width:600px){
-
+  .imagenLoading{ position:absolute; bottom:-20px;  right: 0px ; left:0px ;}
 .fondoEditorial{
       height: 100%;
       background-image: url('../../../assets/fondoEditorial.jpg');
+      object-fit: cover;
+      margin-left: 0px;
+      margin-right: 0pc;
     }
+    
+    
 
 .colorBarraMenu{margin-top:-30px}
 .fondo{background-image: none;background-color: white;}
 .margenL{ margin-left: 0px; }
 .margenR{margin-right: 0px; } 
-.indice{font-size:12px;margin-left:10px; margin-bottom:10px;margin-top: 10px; }
+.indice{font-size:13px;margin-left:15px; margin-bottom:10px;margin-top: 10px; }
 .banner{margin-left:20px; padding-right:40px; margin-top:30px}
 .subefuente{font-size: 20px;margin-left:20px!important; margin-top:-12px!important; margin-bottom: 10px;}
 .responsi{width: 110px!important;}
@@ -490,6 +499,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
 .quitar600{display:none}
 .textUp{font-size:30px; margin-top:-45px; margin-left: -25px; letter-spacing: -1px;}
 .textDown{font-size:30px; margin-left: -25px;   margin-top:-55px; letter-spacing: -1px}
+p{font-size:14px!important}
   }
  
   @keyframes ldio-z7fu6e1den {

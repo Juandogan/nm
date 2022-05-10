@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import { CrudService } from 'src/app/services/crud.service';
 import { Location } from '@angular/common';
@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./articulo.component.css'],
   // encapsulation: ViewEncapsulation.None,
 })
-export class ArticuloComponent implements OnInit {
+export class ArticuloComponent implements OnInit,OnDestroy {
 
   constructor(private ruta:ActivatedRoute, public crudService:CrudService,private location: Location) { }
 
@@ -121,7 +121,10 @@ export class ArticuloComponent implements OnInit {
   
 
    ngOnDestroy(){
+
   this.sumarContador()
+  window.scroll(0,0)
+
  
   }
 

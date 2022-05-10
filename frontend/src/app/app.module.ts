@@ -31,6 +31,7 @@ import { AdmComponent } from './componentes/adm/adm.component';
 import { FiltroRevistaPipe } from './pipes/filtro-revista.pipe';
 import { ArticuloRelacionadoComponent } from './componentes/articulo-relacionado/articulo-relacionado.component';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
+import { LateralRelacionadoComponent } from './componentes/lateral-relacionado/lateral-relacionado.component';
 
 
 
@@ -51,6 +52,7 @@ import { CarouselComponent } from './componentes/carousel/carousel.component';
     FiltroRevistaPipe,
     ArticuloRelacionadoComponent,
     CarouselComponent,
+    LateralRelacionadoComponent,
     
   ],
   imports: [
