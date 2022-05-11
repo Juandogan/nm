@@ -15,9 +15,19 @@
     color: orange;
     
   } 
+  .categoria{
+    color:orangered;
+    font-size: 12px;
+    margin-top:10px;
+    margin-left:10px;
+
+    font-family: unset;
+  
+  }
 
 .fondo{ 
  background-color: rgb(59, 52, 0)!important; 
+ background-image: url('../../../assets/2.png');
    margin:20px; object-fit:cover;
   margin-top: 0px;
   height:900px
@@ -134,10 +144,10 @@ a{text-decoration: none;}
       text-shadow: 1px 1px 3px black; 
       line-height: 20px; 
       color:white;
-      margin-top:20px;
+ 
       padding:12px;    
       border-radius:4px;
-      margin-top:10px;
+      margin-top:-5px;
       padding:0px;
       
       
