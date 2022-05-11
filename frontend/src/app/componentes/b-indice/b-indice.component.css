@@ -27,7 +27,7 @@
 
 .fondo{ 
  background-color: rgb(59, 52, 0)!important; 
- background-image: url('../../../assets/2.png');
+ background-image: url('../../../assets/fondoindex.png');
    margin:20px; object-fit:cover;
   margin-top: 0px;
   height:900px
