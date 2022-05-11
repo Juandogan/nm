@@ -26,23 +26,34 @@
                           </div>
                            <button class="btn btn-dark" (click)="subir()">Subir</button>
                            <br><br>
-                         <div *ngIf="nota">
+                         <div *ngIf="nota" class="quitar">
                           <app-articulo-relacionado [data]="nota[0]"></app-articulo-relacionado>
                          </div>
                             
   <div class="clasePrincipal"   style="margin-top:100px">
     <div>
        
- <div class="row"  style="background-color:white; background-repeat: none; width: 100%; object-fit: fill;  height:402px;margin-left:0px; margin-top: -209px;background-image: url('../../../assets/articulotFooter.png')"> 
+ <div class="row"  style="
+ 
+ background-color:white; 
+ background-repeat: none; 
+ width: 100%; 
+ object-fit: fill;  
+ height:402px;
+ margin-left:0px; 
+ margin-top: -209px;
+ background-image: url('../../../assets/articulotFooter.png')"> 
+
+
 <div class="flex-container"> 
  <div class="flex-items" >
    <div style="text-align:left;" >
     
-   <img src="../../../assets/LogoCCAM_Entero.png" alt="" style="width: 125px; margin-top:274px; margin-left: 10px; margin-right: 0px;" >
+   <img class="logoCCAMFooter" src="../../../assets/LogoCCAM_Entero.png" alt=""  >
  </div>           
    </div>
        
-   <div  class="flex-items; quitar600" style="margin-top:283px;min-width:450px">
+   <div  class="flex-items; quitar2" style="margin-top:283px;min-width:450px">
      <div style="text-align:left; margin-left: 10px;" >
    <p style="color: white; font-size:18px; color:orange">Mail: info@culturademontania.org.ar</p>
    <p style="color: white; font-size:18px; margin-top:-20px;color:orange">WhatsApp: (+54-011) 15-3093-9814</p>
@@ -65,11 +76,11 @@
 
        <div class="flex-items"style="margin-top:70px;">
          <div style="text-align: left"  >
-       <p style="color:rgb(73, 73, 73);   font-size: 20px;">Contáctate y comenzá</p>
+       <!-- <p style="color:rgb(73, 73, 73);   font-size: 20px;">Contáctate y comenzá</p>
        <p style="color:white;   font-size: 20px;">la aventura de integrarte</p>
        <p style="color:white;  font-size: 20px;">a la red cultural</p>
        
-       
+        -->
        </div>           
          </div>
 

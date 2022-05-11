@@ -132,6 +132,10 @@ a{text-decoration: none;}
   .poner600{display:none}
   
 
+  
+  @media (max-width:700px){
+      .fondo{background-image: none;}}
+
   @media (max-width:700px){
       
     p{font-size:10px}
@@ -147,7 +151,7 @@ a{text-decoration: none;}
  
       padding:12px;    
       border-radius:4px;
-      margin-top:-5px;
+      margin-top:10px;
       padding:0px;
       
       
