@@ -54,7 +54,11 @@ systemctl restart nginx
 Salvo las imangenes
 /home/CCAM_PROD/cp -r -f subidas /home/img
 
-en raaiz/  cp -RT /home/img/ /home/CCAM_PROD/subidas/
+
+********probar el -f
+en raaiz/  cp -RT -f /home/img/ /home/CCAM_PROD/subidas/
+
+
 
 
 

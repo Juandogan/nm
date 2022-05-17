@@ -84,7 +84,7 @@ this.resultadoID6 = resultadoID6
 
     
 
-    id: number = 0;
+    id: number;
     marginLeft?:number;
 
     _id: string
