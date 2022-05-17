@@ -21,6 +21,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
       this.ruta.data.subscribe((data)=>{
       this.nota = Object.entries(data).map(i => i[1]);
       this.auxContador =  this.nota[0].vistas
+ 
       this.sumarContador()
       })};
 
@@ -94,7 +95,9 @@ export class ArticuloComponent implements OnInit,OnDestroy {
  sumarContador(){
  
   //incrementa el contador
-  this.crudService.unArticulo.vistas = this.auxContador + 1
+  this.crudService.unArticulo.vistas = this.nota[0]?.vistas + 1
+ 
+ 
   this.crudService.unArticulo.imagen1 = this.nota[0]?.imagen1
   this.crudService.unArticulo.imagen2 = this.nota[0]?.imagen2
   this.crudService.unArticulo.imagen3 = this.nota[0]?.imagen3
@@ -118,7 +121,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.art4 = this.nota[0]?.art4
   this.crudService.unArticulo.art5 = this.nota[0]?.art5
   this.crudService.unArticulo.art6 = this.nota[0]?.art6
-  this.crudService.unArticulo.vistas = this.nota[0]?.vistas
+
   this.crudService.unArticulo.fecha = this.nota[0]?.fecha
 
   this.crudService.unArticulo.resultadoCategoria = this.nota[0]?.resultadoCategoria 
