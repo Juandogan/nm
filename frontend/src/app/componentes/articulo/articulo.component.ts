@@ -29,6 +29,10 @@ export class ArticuloComponent implements OnInit,OnDestroy {
         window.scroll(0,0)
       }
 
+      alerta(){
+        alert('en contrucción')
+      }
+
       saltos2(data:string){
         var aux2 = data.split('<h2>').join(`<h2 style=" font-weight: 700; 
   line-height: 32px;

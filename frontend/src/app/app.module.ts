@@ -32,6 +32,7 @@ import { FiltroRevistaPipe } from './pipes/filtro-revista.pipe';
 import { ArticuloRelacionadoComponent } from './componentes/articulo-relacionado/articulo-relacionado.component';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { LateralRelacionadoComponent } from './componentes/lateral-relacionado/lateral-relacionado.component';
+import { Carousel2Component } from './componentes/carousel2/carousel2.component';
 
 
 
@@ -53,6 +54,7 @@ import { LateralRelacionadoComponent } from './componentes/lateral-relacionado/l
     ArticuloRelacionadoComponent,
     CarouselComponent,
     LateralRelacionadoComponent,
+    Carousel2Component,
     
   ],
   imports: [

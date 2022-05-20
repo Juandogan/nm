@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
-
-.truncar1 {
-
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow-wrap: break-word;
-    overflow: hidden!important;
-    line-height: 100px;
-    /*si no se declara añade los ... pero muestra todo el texto*/
-  }
-
- 
-a :hover{color:orange}
 .robotoBlack{font-family: Roboto;
     font-size: 23px;
     font-style: normal;
@@ -39,7 +25,7 @@ a :hover{color:orange}
 .dsc-carousel::before {
     content: '';
     height: 30%;
-    /* width: 100%; */
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0; 
@@ -50,8 +36,6 @@ a :hover{color:orange}
 .dsc-carousel__content {
     text-align: center;
     width: 100%;
-    margin-left:20px;
-    margin-right: 20px;
     align-self: stretch;
     display: flex;
     overflow: hidden;
@@ -65,11 +49,12 @@ a :hover{color:orange}
     flex-direction: column;
     /* align-items: left; */
     justify-content: center;
-    margin:15px;
-    height: 297px;
-    min-width: 200px;
+    min-width: 100%;
+    height: 500px; 
+
+
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     transition: 0.5s all ease-in;
 }
@@ -80,36 +65,33 @@ a :hover{color:orange}
     font-family: Roboto;
     margin-top:350px;
     margin-left:20px;
-    margin-right:20px;
     text-shadow: 2px 2px 2px  rgb(0, 0, 0);
     color: #ffbb00;
     font-weight: 900;
-    text-transform: uppercase; 
+  text-transform: uppercase; 
     z-index: 1;
     text-align: left!important;
     font-size: 12px;
-    border-radius: 5px;
 }
 .dsc-carousel__content-item h1 {
     /* position: absolute;
     bottom:60px;
     left:30px; */
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 31px; 
-    letter-spacing: 0px;
-    margin-top:-152px;
-    margin-left:0px;
-      color: orange;
-    z-index: 1;
+    letter-spacing: -1px;
+     margin-top:-25px;
+    margin-left:20px;
+    margin-right: 20px;
+    text-shadow: 2px 2px 2px  rgb(0, 0, 0);
+    color: orange;
+ 
+text-transform: uppercase; 
+       z-index: 1;
     text-align: left!important;
     font-size: 25px;
-   
 }
-
-.dsc-carousel__content-item h1 :hover {color:white}
-
- 
 
 .dsc-carousel__content-item h1 span {
     color: #ffffff;
@@ -136,27 +118,24 @@ a :hover{color:orange}
   
 
 }
-.d{background-image: url('../../../assets/1.png');}
 .dsc-carousel__btns {
     position: absolute;
-    width: 95%;
-    top:120px;
+    width: 90%;
     margin: auto;
     display: flex;
-    z-index: 10000;
+    
     justify-content: space-between;
 }
 .dsc-carousel__btns > i {
-    opacity: 0.9;
-    color: orange;
-    z-index: 10000;
+    opacity: 0.7;
+    color: rgb(175, 175, 175);
+    
     font-size: 45px;
     cursor: pointer;
     justify-content: space-between;
 }
 .dsc-carousel__btns > i:hover {
     opacity: 1;
-    z-index: 10000;
 }
 .dsc-carousel__steps {
     position: absolute;
@@ -206,8 +185,7 @@ a :hover{color:orange}
 
 .dsc-carousel__btns > i {
     opacity: 0.7;
-    color: rgb(233, 10, 10);
-    z-index: 100;
+    color: rgb(202, 202, 202);
     margin-top:-20px;
     font-size: 45px;
     cursor: pointer;
@@ -221,17 +199,17 @@ a :hover{color:orange}
      font-size: 10px;
 }
 .dsc-carousel__content-item h1 {
-     
+     margin-top:-30px;
     margin-left:20px;
     margin-right: 20px;
     text-shadow: 2px 2px 2px  rgb(0, 0, 0);
     color: orange;
-    font-weight: 900; 
-    z-index: 1;
+    font-weight: 900;
+text-transform: uppercase; 
+       z-index: 1;
     text-align: left!important;
     font-size: 17px;
     line-height: 22px;
-    margin-top: -153px;
 }
 
 .dsc-carousel__content-item h1 span {

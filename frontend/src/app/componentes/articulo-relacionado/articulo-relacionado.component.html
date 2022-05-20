@@ -1,14 +1,14 @@
  
     <br>
-    <hr>
+ 
     <br>
-    <h1  *ngIf="this.nota.art1"  class="titulo" style="margin-left:0px;margin-bottom: 10px; color:brown">| ARTÍCULOS RELACIONADOS</h1>
+    <h1  *ngIf="this.nota.art1"  class="titulo" style="margin-left:0px;margin-bottom: 10px; color:orange">| ARTÍCULOS RELACIONADOS</h1>
     <br>
      
 
     <div class="row" >
 
-      <div class="card col-4">
+      <div *ngIf="this.nota.art1" class="card col-4">
         <a routerLink="../../articulo/{{this.nota.resultadoID}}"  target="_blank">
           <img class="card-img-top sombra"src="{{this.nota.resultadoImagen}}" alt="" height="200px" style="object-fit: cover;">
           </a>

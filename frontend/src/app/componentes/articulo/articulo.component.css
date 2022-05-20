@@ -102,7 +102,7 @@
   float:right;
    padding:10px; 
   }
-
+.hrMargen{ opacity: 0.3;}
     
 .clasePrincipal{
      
@@ -120,7 +120,7 @@
 }
 .poner600{display:none}
 .logoCCAMFooter{
-  width: 125px; margin-top:274px; margin-left: 10px; margin-right: 0px;
+  width: 125px; margin-top: 268px;  margin-left: 125px; margin-right: 0px;
 }
 
 @media (max-width:520px)
