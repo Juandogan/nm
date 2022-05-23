@@ -33,7 +33,8 @@ import { ArticuloRelacionadoComponent } from './componentes/articulo-relacionado
 import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { LateralRelacionadoComponent } from './componentes/lateral-relacionado/lateral-relacionado.component';
 import { Carousel2Component } from './componentes/carousel2/carousel2.component';
-
+import { CkeditorComponent } from './componentes/ckeditor/ckeditor.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 @NgModule({
@@ -55,6 +56,8 @@ import { Carousel2Component } from './componentes/carousel2/carousel2.component'
     CarouselComponent,
     LateralRelacionadoComponent,
     Carousel2Component,
+    CkeditorComponent,
+
     
   ],
   imports: [
@@ -64,7 +67,9 @@ import { Carousel2Component } from './componentes/carousel2/carousel2.component'
     MatIconModule,
     HttpClientModule,
     MatSnackBarModule,
-    FormsModule
+    CKEditorModule,
+    FormsModule,
+  
   ],
   providers: [CrudService, ResolveNotaService],
   bootstrap: [AppComponent]

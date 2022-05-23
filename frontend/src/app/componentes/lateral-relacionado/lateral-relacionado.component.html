@@ -9,7 +9,7 @@
 
     <div class="row" >
 
-      <div      class="card col-12" style="    background-color: rgb(239, 239, 239);">
+      <div  *ngIf="this.nota.art1"      class="card col-12" style="    background-color: rgb(239, 239, 239);">
         <a routerLink="../../articulo/{{this.nota.resultadoID}}"  target="_blank">
           <img class="card-img-top sombra"src="{{this.nota.resultadoImagen}}" alt="" height="200px" style="object-fit: cover;">
           </a>

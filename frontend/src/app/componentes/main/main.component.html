@@ -28,38 +28,18 @@
   <div>
      <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> 
    <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
-   <div style="margin-left:10px;margin-right: 20px;">
  
-    <p class=" editorialParrafo" style="margin-bottom:20px; margin-top:10px">
-      Queridos amantes de la montaña,
-    </p>
-    <p class=" editorialParrafo" style="margin-bottom:20px">
-      comienza Mayo viviéndolo con mucha alegría en el Centro Cultural Argentino de Montaña!!!
-    </p>
-    <p class=" editorialParrafo" style="margin-bottom:20px"><b>
-      Los invito a descubrir en este número de la revista digital la nueva estética y las nuevas aplicaciones!!
-    </b></p>
-    <p class=" editorialParrafo" style="margin-bottom:10px; margin-top:20">
-      Se aproximan vientos de renovación, cambios profundos y el renacimiento en la aventura de poner en valor a la Cultura de Montaña!!! 
-      Estamos dando los primeros pasos de una renovación total, que incluye nuevas tecnologías, una estética de presentación innovadora y actividades educativas, formativas y de divulgación,  todo lo cual llevó mucho trabajo de planificación y de desarrollo a todo el equipo del CCAM.   
-    </p>
-    <p class=" editorialParrafo" style="margin-top:30px">
-    Les sugiero  estar atentos a lo que ocurrirá en los próximos meses!!! Descubramos juntos y con vision renovada  a la Cultura de Montaña!!!
+   <p class="editorialParrafo" style="font-size:24px!important; margin-right:30px;margin-bottom:20px; margin-top:10px; margin-left:20px" [innerHTML]=saltos2(articulos[0]?.autor)|sanetizer >
+      
   </p>
-    <br>
-    <p class="editorialParrafo">
-      <b> VENI Y SUMATE A LA RED DEL CCAM ! ! !</b>
-    </p>
-  </div>
+
+
   <br>
 <br>
 <div style="text-align: right; margin-right:30px">
 <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="120px" alt="" style="margin-top: 10px;">  -->
 </div>
-      <p class="editorialParrafo" style="text-align:right; margin-right: 40px;">
-  Alex G. Martin, Presidente del CCAM
-  
-</p>    
+    
 <br><br>
   
 
@@ -137,7 +117,7 @@
 
 </div> -->
  
-<app-carousel [data]="articulos" [altura]="400"></app-carousel> 
+<app-carousel [data]="articulos" ></app-carousel> 
 
 </div>
 
@@ -280,7 +260,7 @@
     <p style="color: white; font-size:18px; margin-top:-22px">Instagram: @ccam_arg</p>
   </a>
   <a href="https://www.facebook.com/ccamontania/" target="_blank" style="color:white">
-    <p style="color: white; font-size:18px; margin-top:-22px">Facebook: www.facebook.com/ccamontania  </p>
+    <p style="color: white; font-size:18px; margin-top:-22px">www.facebook.com/ccamontania  </p>
     </a>
   
     

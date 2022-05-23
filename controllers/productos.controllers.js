@@ -36,12 +36,17 @@ productosCtrl.newProductos = async(req,res) => {
         art4:req.body.art4,
         art5:req.body.art5,
         art6:req.body.art6,
+        art7:req.body.art7,
+        art8:req.body.art8,
         resultadoID:req.body.resultadoID,
         resultadoID2:req.body.resultadoID2,
         resultadoID3:req.body.resultadoID3,
         resultadoID4:req.body.resultadoID4,
         resultadoID5:req.body.resultadoID5,
         resultadoID6:req.body.resultadoID6,
+        resultadoID7:req.body.resultadoID7,
+        resultadoID8:req.body.resultadoID8,
+        
         posicion:req.body.posicion,
         resultadoCategoria:req.body.resultadoCategoria,
         resultadoCategoria2:req.body.resultadoCategoria2,
@@ -49,14 +54,16 @@ productosCtrl.newProductos = async(req,res) => {
         resultadoCategoria4:req.body.resultadoCategoria4,
         resultadoCategoria5:req.body.resultadoCategoria5,
         resultadoCategoria6:req.body.resultadoCategoria6,
-
+        resultadoCategoria7:req.body.resultadoCategoria7,
+        resultadoCategoria8:req.body.resultadoCategoria8,
         resultadoImagen:req.body.resultadoImagen,
         resultadoImagen2:req.body.resultadoImagen2,
         resultadoImagen3:req.body.resultadoImagen3,
         resultadoImagen4:req.body.resultadoImagen4,
         resultadoImagen5:req.body.resultadoImagen5,
         resultadoImagen6:req.body.resultadoImagen6,
-
+        resultadoImagen7:req.body.resultadoImagen7,
+        resultadoImagen8:req.body.resultadoImagen8,
 
     });
        await productos.save();
@@ -97,12 +104,17 @@ productosCtrl.modificarProducto = async (req,res) => {
         art4:req.body.art4,
         art5:req.body.art5,
         art6:req.body.art6,
+        art7:req.body.art7,
+        art8:req.body.art8,
+
         resultadoID:req.body.resultadoID,
         resultadoID2:req.body.resultadoID2,
         resultadoID3:req.body.resultadoID3,
         resultadoID4:req.body.resultadoID4,
         resultadoID5:req.body.resultadoID5,
         resultadoID6:req.body.resultadoID6,
+        resultadoID7:req.body.resultadoID7,
+        resultadoID8:req.body.resultadoID8,
         posicion:req.body.posicion,
 
         resultadoCategoria:req.body.resultadoCategoria,
@@ -111,6 +123,8 @@ productosCtrl.modificarProducto = async (req,res) => {
         resultadoCategoria4:req.body.resultadoCategoria4,
         resultadoCategoria5:req.body.resultadoCategoria5,
         resultadoCategoria6:req.body.resultadoCategoria6,
+        resultadoCategoria7:req.body.resultadoCategoria7,
+        resultadoCategoria8:req.body.resultadoCategoria8,
 
         resultadoImagen:req.body.resultadoImagen,
         resultadoImagen2:req.body.resultadoImagen2,
@@ -118,6 +132,8 @@ productosCtrl.modificarProducto = async (req,res) => {
         resultadoImagen4:req.body.resultadoImagen4,
         resultadoImagen5:req.body.resultadoImagen5,
         resultadoImagen6:req.body.resultadoImagen6,
+        resultadoImagen7:req.body.resultadoImagen7,
+        resultadoImagen8:req.body.resultadoImagen8,
         
                                
 

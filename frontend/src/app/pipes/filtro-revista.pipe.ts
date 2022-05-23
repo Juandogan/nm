@@ -4,17 +4,18 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'filtroRevista'
 })
 export class FiltroRevistaPipe implements PipeTransform {
+  transform(value:any, args:any): any {
+    const resultPost =  [];
 
-  transform(value: any, args: boolean): any {
-       const resultPosts = [];
     for(const post of value){
-      if(post.revista === true  ){
-         resultPosts.push(post);
-      };
-    };
-    console.log(resultPosts)
-    return resultPosts;
+      var aux = post?.categoria
+
+      if (aux?.toLowerCase().indexOf(args?.toLowerCase()) > -1)
+      {resultPost.push(post) }
+
+    }
+
+    return resultPost;
   }
 
-  }
-
+}
