@@ -41,7 +41,8 @@ openInput6:Boolean = true;
   articulos: Articulos[] = [] 
   articuloBusqueda:any
   busqueda="";
-  nuevo=false
+  nuevo=false;
+  vistas : number = 0;
   fecha	  = ""
   fechaMod = new Date();    	        
   password = false; 
@@ -93,6 +94,8 @@ hash:string = "";
 categoria:string = "";
 fotografia:string = "";
 edicionFotografia:string = "";
+imagen2=""
+imagen3=""
 likes = 0
 
 
@@ -144,12 +147,14 @@ resultadoImagen8:string =""
 
   ngOnInit(): void {
     this.fecha = String(new Date())
+
     this.pedirArticulos();
 
   }
 
   cargarEdit(x){
         this.crudService.getOneArticulo(x).subscribe(res=>{this.articuloBusqueda = res as Articulos[]
+      
    
       if(this.articuloBusqueda.length > 2){   
         this.crudService.snack('No se encontro');
@@ -174,10 +179,21 @@ resultadoImagen8:string =""
           this.resultadoTitulo6 = this.articuloBusqueda?.art6
           this.resultadoTitulo7 = this.articuloBusqueda?.art7
           this.resultadoTitulo8 = this.articuloBusqueda?.art8      
+          
           this.crudService.unArticulo.autor = this.articuloBusqueda?.autor            
           this.autor =this.articuloBusqueda?.autor  
+          
           this.imagen1 = this.articuloBusqueda?.imagen1   
           this.crudService.unArticulo.imagen1 = this.articuloBusqueda?.imagen1
+
+          this.imagen2 = this.articuloBusqueda?.imagen2   
+          this.crudService.unArticulo.imagen2 = this.articuloBusqueda?.imagen2
+
+          this.imagen3 = this.articuloBusqueda?.imagen3
+          this.crudService.unArticulo.imagen3 = this.articuloBusqueda?.imagen3
+
+
+
           this.nuevo=true;
           this.table = false 
 
@@ -273,12 +289,14 @@ resultadoImagen8:string =""
     
   this.inputActivo = !this.inputActivo
      if (this.inputActivo === false ){
-      this.resultadoTitulo = ""
+     
        }
        
      if(this.inputActivo === true){
       this.crudService.unArticulo.art1 = this.resultadoTitulo 
               }
+
+         
   
       }
 
@@ -286,7 +304,7 @@ resultadoImagen8:string =""
     
         this.inputActivo2 = !this.inputActivo2
            if (this.inputActivo2 === false ){
-            this.resultadoTitulo2 = ""
+          
              }
              
           else{
@@ -300,7 +318,7 @@ resultadoImagen8:string =""
     
               this.inputActivo3 = !this.inputActivo3
                  if (this.inputActivo3 === false ){
-                  this.resultadoTitulo3 = ""
+               
                    }
                    
                 else{
@@ -312,7 +330,7 @@ resultadoImagen8:string =""
     
                     this.inputActivo4 = !this.inputActivo4
                        if (this.inputActivo4 === false ){
-                        this.resultadoTitulo4 = ""
+                   
                          }
                          
                       else{
@@ -324,7 +342,7 @@ resultadoImagen8:string =""
     
                           this.inputActivo5 = !this.inputActivo5
                              if (this.inputActivo5 === false ){
-                              this.resultadoTitulo5 = ""
+                           
                                }
                                
                             else{
@@ -336,7 +354,7 @@ resultadoImagen8:string =""
     
                                 this.inputActivo6 = !this.inputActivo6
                                    if (this.inputActivo6 === false ){
-                                    this.resultadoTitulo6 = ""
+                                
                                      }
                                      
                                   else{
@@ -348,7 +366,7 @@ resultadoImagen8:string =""
     
                                       this.inputActivo7 = !this.inputActivo7
                                          if (this.inputActivo7 === false ){
-                                          this.resultadoTitulo7 = ""
+                                   
                                            }
                                            
                                         else{
@@ -360,7 +378,7 @@ resultadoImagen8:string =""
     
                                             this.inputActivo8 = !this.inputActivo8
                                                if (this.inputActivo8 === false ){
-                                                this.resultadoTitulo8 = ""
+                                               
                                                  }
                                                  
                                               else{
@@ -392,6 +410,8 @@ resultadoImagen8:string =""
          this.crudService.unArticulo.resultadoID = this.articuloBusqueda?._id
          this.crudService.unArticulo.resultadoCategoria = this.articuloBusqueda?.subtitulo
          this.crudService.unArticulo.resultadoImagen = this.articuloBusqueda?.imagen1
+         this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
          this.crudService.unArticulo.art1 = this.resultadoTitulo          
          
          this.busqueda = ""  
@@ -407,6 +427,8 @@ resultadoImagen8:string =""
           this.crudService.unArticulo.resultadoID2 = this.articuloBusqueda?._id
           this.crudService.unArticulo.resultadoCategoria2 = this.articuloBusqueda?.subtitulo
           this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen1
+          this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
           this.crudService.unArticulo.art2 = this.resultadoTitulo2
            this.busqueda = "" 
           this.aux=3
@@ -419,6 +441,8 @@ resultadoImagen8:string =""
           this.crudService.unArticulo.resultadoID3 = this.articuloBusqueda?._id
           this.crudService.unArticulo.resultadoCategoria3 = this.articuloBusqueda?.subtitulo
           this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen1
+          this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
           this.crudService.unArticulo.art3 = this.resultadoTitulo3
            this.busqueda = ""  
                    this.aux=4
@@ -430,6 +454,8 @@ resultadoImagen8:string =""
           this.crudService.unArticulo.resultadoID4 = this.articuloBusqueda?._id
           this.crudService.unArticulo.resultadoCategoria4 = this.articuloBusqueda?.subtitulo
           this.crudService.unArticulo.resultadoImagen4 = this.articuloBusqueda?.imagen1
+          this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
           this.crudService.unArticulo.nota = this.articuloBusqueda?.nota
           this.crudService.unArticulo.art4 = this.resultadoTitulo4
           this.busqueda = ""   
@@ -442,6 +468,8 @@ resultadoImagen8:string =""
             this.resultadoTitulo5 = this.articuloBusqueda?.titulo
             this.crudService.unArticulo.resultadoCategoria5 = this.articuloBusqueda?.subtitulo
             this.crudService.unArticulo.resultadoImagen5 = this.articuloBusqueda?.imagen1
+            this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
             this.crudService.unArticulo.art5 = this.resultadoTitulo5
              this.busqueda = "" 
              this.aux = 6
@@ -452,6 +480,8 @@ resultadoImagen8:string =""
               this.resultadoTitulo6 = this.articuloBusqueda?.titulo
               this.crudService.unArticulo.resultadoCategoria6 = this.articuloBusqueda?.subtitulo
               this.crudService.unArticulo.resultadoImagen6 = this.articuloBusqueda?.imagen1
+              this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
               this.crudService.unArticulo.art6 = this.resultadoTitulo6
                this.busqueda = ""  
                this.aux = 7
@@ -461,6 +491,8 @@ resultadoImagen8:string =""
                 this.resultadoTitulo7 = this.articuloBusqueda?.titulo
                 this.crudService.unArticulo.resultadoCategoria7 = this.articuloBusqueda?.subtitulo
                 this.crudService.unArticulo.resultadoImagen7 = this.articuloBusqueda?.imagen1
+                this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
                 this.crudService.unArticulo.art7 = this.resultadoTitulo7
                  this.busqueda = ""  
                  this.aux = 8
@@ -470,6 +502,8 @@ resultadoImagen8:string =""
                   this.resultadoTitulo8 = this.articuloBusqueda?.titulo
                   this.crudService.unArticulo.resultadoCategoria8 = this.articuloBusqueda?.subtitulo
                   this.crudService.unArticulo.resultadoImagen8 = this.articuloBusqueda?.imagen1
+                  this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
+                  this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
                   this.crudService.unArticulo.art8 = this.resultadoTitulo8
                    this.busqueda = ""  
                 
@@ -478,6 +512,8 @@ resultadoImagen8:string =""
          
                   this.crudService.unArticulo.autor = this.autor
                   this.crudService.unArticulo.imagen1 = this.imagen1
+                  this.crudService.unArticulo.imagen2 = this.imagen2
+                  this.crudService.unArticulo.imagen3 = this.imagen3
   
       
      })
@@ -493,6 +529,11 @@ resultadoImagen8:string =""
     this.articulos = this.articulos.reverse()
     // this.loader2 = false
     console.log(this.articulos)
+
+    for (let i = 0 ; i  < this.articulos.length; i++ ){ 
+        this.vistas = this.vistas + this.articulos[i].vistas
+    }
+      console.log(this.vistas)
     
       });//fin de subscribe
     } //fin de pedirProductos
@@ -564,6 +605,8 @@ fnOcultar(){
        this.crudService.unArticulo.subtitulo = this.subtitulo
        this.crudService.unArticulo.autor = this.autor
        this.crudService.unArticulo.imagen1 = this.imagen1
+       this.crudService.unArticulo.imagen2 = this.imagen2
+       this.crudService.unArticulo.imagen3 = this.imagen3
 
       // this.crudService.unArticulo.art1 = this.resultadoTitulo
       // this.crudService.unArticulo.art2 = this.resultadoTitulo2
@@ -604,7 +647,7 @@ fnOcultar(){
         if( this.crudService.unArticulo?._id)
         {  
               this.crudService.modificarArticulo(this.crudService.unArticulo)
-        .subscribe(res => { this.crudService.snack('Modificado!'); console.log('modificado')});
+        .subscribe(res => {this.crudService.snack('Modificado!')});
        
       }
         else  {
@@ -615,6 +658,8 @@ fnOcultar(){
       this.crudService.unArticulo.fechaMod = String(this.fechaPublicacion)
       this.crudService.unArticulo.autor = this.articuloBusqueda?.autor
       this.crudService.unArticulo.imagen1 = this.articuloBusqueda?.imagen1
+      this.crudService.unArticulo.imagen2 = this.articuloBusqueda?.imagen2
+      this.crudService.unArticulo.imagen3 = this.articuloBusqueda?.imagen3
       
       // this.crudService.unArticulo.fecha = String(this.fechaPublicacion)
       // this.crudService.unArticulo.titulo = this.titulo;
@@ -660,6 +705,8 @@ fnOcultar(){
                     this.crudService.unArticulo._id  = this._id
                     this.crudService.unArticulo.autor = this.articuloBusqueda?.autor     
                     this.crudService.unArticulo.imagen1 = this.articuloBusqueda?.imagen1
+                    this.crudService.unArticulo.imagen2 = this.articuloBusqueda?.imagen2
+                    this.crudService.unArticulo.imagen3 = this.articuloBusqueda?.imagen3
      console.log(this.crudService.unArticulo,'bandera')
           
           this.crudService.addArticulo(this.crudService.unArticulo).subscribe(res => { this.crudService.snack('creado'); 

@@ -20,6 +20,6 @@ export class ResolveNotaService implements Resolve<any>{
     }else {
     return this.crudService.getArticulos();
   }
-   
+  
   }
 }

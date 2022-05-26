@@ -35,6 +35,7 @@ import { LateralRelacionadoComponent } from './componentes/lateral-relacionado/l
 import { Carousel2Component } from './componentes/carousel2/carousel2.component';
 import { CkeditorComponent } from './componentes/ckeditor/ckeditor.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { Main2Component } from './componentes/main2/main2.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     LateralRelacionadoComponent,
     Carousel2Component,
     CkeditorComponent,
+    Main2Component,
 
     
   ],

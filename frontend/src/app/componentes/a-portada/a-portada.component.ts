@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CrudService } from 'src/app/services/crud.service';
 
 @Component({
   selector: 'app-a-portada',
@@ -9,10 +10,14 @@ export class APortadaComponent implements OnInit {
   
   @Input('data') data : any ;
 
-
-  constructor() { }
+ link=""
+  constructor(private crudService:CrudService) { }
 
   ngOnInit(): void {
+
+    this.link = this.data?.resultadoImagen
+
+
   }
 
   cut(value:any){
@@ -20,5 +25,10 @@ export class APortadaComponent implements OnInit {
 
    return corte
  }; 
+
+hola(){
+  this.crudService.snack('')
+}
+
 
 }

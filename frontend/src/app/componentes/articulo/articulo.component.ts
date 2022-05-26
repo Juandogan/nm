@@ -17,11 +17,15 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   auxContador:number=0
 
   ngOnInit(): void {
+    var height = document.getElementById("head").offsetHeight;
+      document.getElementById("content").style.height = height + 'px';
+      console.log(height)
       window.scroll(0,0)
       this.ruta.data.subscribe((data)=>{
       this.nota = Object.entries(data).map(i => i[1]);
       this.auxContador =  this.nota[0].vistas
  
+
       this.sumarContador()
       })};
 

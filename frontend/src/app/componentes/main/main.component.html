@@ -8,14 +8,14 @@
         </div></div>
       </div>
   
-      <app-a-portada  *ngIf="!loading"  [data]="articulos" ></app-a-portada>
+      <app-a-portada  *ngIf="!loading"  [data]="articulos[0]"></app-a-portada>
   
   <!-- <img src="../../../assets/fondo2.png" alt="" style="margin-top:-260px"> -->
   
         <div  *ngIf="!loading" style="text-align: left;">
         <h1 class="indice" >INDICE - MAYO </h1>
         
-        <app-b-indice [data]="articulos" ></app-b-indice>
+        <app-b-indice [data]="articulos[0]" ></app-b-indice>
   
   <a class="quitar600" href="http://www.culturademontania.org.ar/Noticias/invitacion-participar-red-cultural-ccam.html" target="_blank">
   <img src="../../../assets/baner.png" width="100%" alt=""  >
@@ -28,10 +28,12 @@
   <div>
      <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> 
    <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
- 
-   <p class="editorialParrafo" style="font-size:24px!important; margin-right:30px;margin-bottom:20px; margin-top:10px; margin-left:20px" [innerHTML]=saltos2(articulos[0]?.autor)|sanetizer >
-      
-  </p>
+    <p class="editorialParrafo" 
+     style="font-size:24px!important;
+     margin-right:30px;margin-bottom:20px; 
+     margin-top:10px; margin-left:20px" 
+     [innerHTML]=saltos2(this.editorial)|sanetizer > 
+     </p>
 
 
   <br>
@@ -60,7 +62,7 @@
     </div>
   </div>
 
-  <div class="col-4">
+  <div class="col-4" style="padding-right: 0px">
     <div >
      <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
        <img src="../../../assets/formarparte.png" width="100%" height="500px"  alt=""></a>
@@ -244,7 +246,7 @@
 <div  *ngIf="!loading  " class="flex-container quitar600"> 
   <div class="flex-items" >
     <div style="text-align:left;" >
-    <img src="../../../assets/LogoCCAM_Entero.png" alt="" style="width: 125px; margin-top:380px;     margin-left: 112px; margin-right: 0px;" >
+    <img class="logoCCAM" src="../../../assets/LogoCCAM_Entero.png" alt="" >
   </div>           
     </div>
         
@@ -270,7 +272,7 @@
       <div class="flex-items"style="align-text: left;margin-top:370px;">
         <div style="text-align:left;" >
           <a href="http://www.culturademontania.org.ar/" target="_blank">
-          <img src="../../../assets/logonm.png" alt="" style="width: 150px;  margin-left:-20px" >      
+          <img class="logonm" src="../../../assets/logonm.png" alt=""  >      
         </a>
 
       </div>           

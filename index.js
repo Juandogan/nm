@@ -37,7 +37,7 @@ app.set('port', process.env.PORT || 3000);  // tomo app e nsu propiedad .set  //
 app.use(morgan('dev')); // morgan es una funcion, la pegamos en la propiedad use de app. y pasamos el parametro dev que indica que mostrara el mensaje por consola de desarrollo. 
 app.use(express.json()); // habilita para que el servidor entienda formato json, es una propiedad de la dependencia Express.npom
 
-app.use(cors('http://168.181.187.131/'));
+app.use(cors('http://168.181.187.131'));
 app.use(bodyParser.json({limit: '200mb'}));
 app.use(bodyParser.urlencoded({limit: '200mb', extended: true}));
 

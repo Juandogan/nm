@@ -42,14 +42,14 @@
     
     <div class="hov margenes" style=" background-color:orange; box-shadow: 1px 1px 3px rgb(57, 57, 57);" (mouseover)="cambioImagen1()">
       <a  target="_blank" href="/articulo/{{this.ruta}}" >
-            <p class="titulo" style="margin-top:15px; margin-left:10px"  >{{this.data[0]?.art1}} </p>
+            <p class="titulo" style="margin-top:15px; margin-left:10px"  >{{this.data?.art1}} </p>
       </a>
     </div>
     
     
     <div class="hov margenes "  style="background-color: orange ;box-shadow: 1px 1px 3px rgb(57, 57, 57);"(mouseover)="cambioImagen2()">
       <a   target="_blank" href="/articulo/{{this.ruta}}" target="_blank">
-    <p class="titulo">{{ this.data[0]?.art2}}</p>
+    <p class="titulo">{{ this.data?.art2}}</p>
       </a>
     
     </div>
@@ -58,7 +58,7 @@
     <a routerLink="/articulo/{{this.ruta}}" 
       target="_blank">
   <p class="titulo ">
-    {{this.data[0]?.art3}}</p>
+    {{this.data?.art3}}</p>
   </a>
   <!-- <p class="autor">Por: {{data[2]?.autor}}</p> -->
   </div>
@@ -66,35 +66,35 @@
   <div  class="hov margenes"  style="background-color:orange;box-shadow: 1px 1px 3px rgb(57, 57, 57); " (mouseover)="cambioImagen4()">
     <a routerLink="/articulo/{{this.ruta}}" 
       target="_blank">
-  <p class="titulo" >{{this.data[0]?.art4}}</p>
+  <p class="titulo" >{{this.data?.art4}}</p>
   </a>
   <!-- <p class="autor">Por: {{data[3]?.autor}}</p> -->
   </div>
   <div class="hov margenes"  style="background-color:orange;box-shadow: 1px 1px 3px rgb(57, 57, 57); "(mouseover)="cambioImagen5()">
     <a routerLink="/articulo/{{this.ruta}}" 
       target="_blank">
-  <p class="titulo" >{{this.data[0]?.art5}}</p>
+  <p class="titulo" >{{this.data?.art5}}</p>
 </a>
   <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
   </div>
   <div class="hov margenes"  style="background-color:orange; box-shadow: 1px 1px 3px rgb(57, 57, 57);"(mouseover)="cambioImagen6()">
     <a routerLink="/articulo/{{this.ruta}}" 
     target="_blank">
-    <p class="titulo"  >{{this.data[0]?.art6}}</p>
+    <p class="titulo"  >{{this.data?.art6}}</p>
     </a>
     <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
     </div>
     <div class="hov margenes"  style="background-color: orange; box-shadow: 1px 1px 3px rgb(57, 57, 57);"(mouseover)="cambioImagen7()">
       <a routerLink="/articulo/{{this.ruta}}" 
       target="_blank">
-      <p class="titulo" >{{this.data[0]?.art7}}</p>
+      <p class="titulo" >{{this.data?.art7}}</p>
       </a>
       <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
       </div>
       <div class="hov margenes"  style="background-color: orange; box-shadow: 1px 1px 3px rgb(57, 57, 57);"(mouseover)="cambioImagen8()">
         <a routerLink="/articulo/{{this.ruta}}" 
         target="_blank">
-        <p class="titulo">{{this.data[0]?.art8}}</p>
+        <p class="titulo">{{this.data?.art8}}</p>
         </a>
         <!-- <p class="autor">Por: {{data[4]?.autor}}</p> -->
         </div>

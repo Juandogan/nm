@@ -97,6 +97,8 @@
 
 .colorFondo{background-color:rgb(255, 255, 255); }
 
+.sticky{position: sticky; top:0}
+
 
 .image-style-side{
   float:right;

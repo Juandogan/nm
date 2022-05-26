@@ -15,7 +15,8 @@ import {MatSnackBarConfig} from '@angular/material/snack-bar';
 export class CrudService {
 
   
-  readonly URL_API  = "http://168.197.50.191/articulos";
+  readonly URL_API  = "http://168.181.187.131/articulos";
+  readonly URL_APIx  = "http://localhost:3000/articulos";
   readonly URL_API2 = "http://localhost:3000/upload";
   
   cambioPantalla = true;
@@ -82,7 +83,9 @@ export class CrudService {
 
 
 
-snack(value:any){
+
+ snack(value:any){
+
   this.snackBar.open(value,'',{duration:2000, horizontalPosition:'center', verticalPosition:'bottom',   panelClass: ['blue-snackbar']})
 
 

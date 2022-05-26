@@ -34,10 +34,10 @@ const ProductoSchema = new Schema({
   resultadoID4:{type: String, required : false},
   resultadoID5:{type: String, required : false},
   resultadoID6:{type: String, required : false},
-resultadoID7:{type: String, required : false},
+  resultadoID7:{type: String, required : false},
   resultadoID8:{type: String, required : false},
 
-  resultadoCategoria:{type: String, required : false},
+  resultadoCategoria: {type: String, required : false},
   resultadoCategoria2:{type: String, required : false},
   resultadoCategoria3:{type: String, required : false},
   resultadoCategoria4:{type: String, required : false},

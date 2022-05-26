@@ -5,3 +5,21 @@ body { margin: 0px;padding:0px; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ 
+
+.blue-snackbar{background-color:rgb(185, 14, 14) ; color:rgb(255, 255, 255);  top:50px }
+.mat-snack-bar-container {
+    text-align: center;
+    margin:0px ;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:fixed;
+    top:40%;
+    left:40%;
+    /* transform: translate(-50%,-50%); */
+    z-index:10000000000000
+}
+
+
+.mat-simple-snackbar {
+    display: inline-block !important;
+}

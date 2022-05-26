@@ -11,7 +11,7 @@
         </div></div>
 <div  *ngIf="!loader2" style="text-align:left; margin-left:40px">
     <br>
-  <h1 >ADM</h1> 
+  
   
       <button class="btn btn-dark" (click)="nuevo=true" (click)="table=false"  >Crear una nueva Edición</button>  
       <button style="margin-left:10px" class="btn btn-dark ">Publicidad</button>  
@@ -30,7 +30,7 @@
         <th scope="col" style="width:7%; color: orange;">Editar</th>
         
         
-        <th scope="col" style="width:5%;color: orange;"class="text-center">Artículos</th>
+        
         <th scope="col" style="width:5%;color: orange;"class="text-center">Borrar</th>
         <th scope="col" style="width:5%;color: orange;"class="text-center">Vistas</th>
         
@@ -52,10 +52,7 @@
       </a></td>
 
 
-        <td class="text-center">                        
-          <a> <mat-icon  style="color: green; cursor:pointer">article</mat-icon>
-          </a> </td>
-        
+      
           <td class="text-center">                        
             <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
               <div *ngIf="loader">
@@ -67,7 +64,7 @@
 
               </a>
               
-              <td class="text-center">{{articulo.vistas}}</td>  
+              <td class="text-center">{{this.vistas}}</td>  
           
       </tr>
       
@@ -79,25 +76,26 @@
 <div *ngIf="nuevo">
  <br><br> 
  <div style="margin-top:10px; max-width:500px;" >
-  <div *ngIf="ocultar2" style="margin-left:40px"> 
-
-    <h6 style ="text-align: left;margin-bottom: 10px;">SELECCIONES IMAGEN DE PORTADA</h6>
-    
-        <input type="file"  style="  overflow: none"  (change)="onFileChange($event); ">
-        <div style="text-align: left">
-    <button class="btn-sm btn btn-danger btn-upload ml-2" (click)="this.loading2=true" (click)="onUpload()" style="margin-top:2px">Subir</button>
+  <div *ngIf="ocultar2" style="margin-left:40px; min-height: 120px;"> 
+   <h6 style ="text-align: left;margin-bottom: 10px; margin-top: -51px;">IMAGEN DE PORTADA</h6>
+    <div class="input-group"  >
+        <input class="form-control" type="file" id="formFile"  type="file"  style="  overflow: none"  (change)="onFileChange($event); ">
+        <div class="input-group-append">
+    <button class="btn btn-danger btn-upload" (click)="this.loading2=true" (click)="onUpload()" style="margin-top:2px">Subir</button>
   </div>
+
+</div>
     <br>
   </div>
-    <div *ngIf="this.loading2" > 
+   <div *ngIf="this.loading2" > 
            <div style="text-align: left;"> 
-              <img src="../../../assets/loading4.gif"  width="50px" alt="" style="margin-top:-100px; margin-left:110px">
+              <img src="../../../assets/loading4.gif"  width="50px" alt="" style="margin-top:-41px; margin-left:40px">
               
           </div>
-       </div>
+       </div> 
    
    <div *ngIf="this.loading3">
-    <h6 style="color:green; font-size: 15px;">✓ Subida! <span style="font-size:14px; color:brown" (click)="fnOcultar()"> Deshacer</span></h6>
+    <h6 style="    margin-left: -351px;    margin-top: -26px;color:green; font-size: 15px;">✓ Subida! </h6>
       </div>
  </div>
 <div class="row">
@@ -153,6 +151,11 @@
 
 
 
+
+<h6>Titulo</h6>    
+<input [(ngModel)]="imagen2"  type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+<h6>Subtitulo</h6>  
+<input [(ngModel)]="imagen3"  type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
 
 
 
@@ -442,11 +445,12 @@
                               
                               
                     
-          
-          
 
 
     </div>
+
+
+
 <br> 
 
 <div style="text-align: left; margin-top:20px">

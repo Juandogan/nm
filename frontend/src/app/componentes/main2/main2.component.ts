@@ -1,18 +1,18 @@
 import { Component, OnInit ,OnDestroy} from '@angular/core';
-import {Subject} from 'rxjs';
+
 import { Articulos } from 'src/app/models/articulos';
 import { CrudService } from 'src/app/services/crud.service';
-import {ActivatedRoute} from '@angular/router';
+
 
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-main2',
+  templateUrl: './main2.component.html',
+  styleUrls: ['./main2.component.css']
 })
-export class MainComponent implements OnInit,  OnDestroy {
+export class Main2Component implements OnInit,  OnDestroy {
  
-  searchTerm$ = new Subject<string>();
+ 
   buscar:any
   buscarMensaje:string = ""
   claseAnima = false;
@@ -24,20 +24,12 @@ nota:any
 loader= true;
 editorial = ""
 
-  constructor(public crudService:CrudService,private ruta:ActivatedRoute) { }
+  constructor(public crudService:CrudService) { }
  
 
   ngOnInit(): void {
 
 
-      // this.ruta.data.subscribe((data)=>{
-      // this.nota = Object.entries(data).map(i => i[1]);
-        
-      //   this.editorial = this.nota[0]?.autor
-      //   console.log(this.nota,'llega por link')
-      //   this.loading = false
-      //   this.articulos = this.nota
-      // })
       this.pedirArticulos()
   }
 
@@ -46,6 +38,7 @@ editorial = ""
     const resultPost =  [];
     this.crudService.getArticulos().subscribe(res =>{
     this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
+console.log(res)
     for(const post of this.articulos){
       var aux = post?.categoria
       if (aux?.indexOf('revista'.toLowerCase()) > -1)
@@ -53,12 +46,11 @@ editorial = ""
                 
         resultPost.push(post) 
       this.articulos = resultPost
-      this.editorial = this.articulos[0]?.autor
      console.log(this.articulos,"esto es main 1")
       }
 
     }
-    this.loading = false
+     this.loading = true
     window.scroll(0,0)
 
     
