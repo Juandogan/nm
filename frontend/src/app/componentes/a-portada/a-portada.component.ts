@@ -15,7 +15,7 @@ export class APortadaComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.link = this.data?.resultadoImagen
+    this.link = this.data?.imagen1
 
 
   }

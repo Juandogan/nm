@@ -119,30 +119,28 @@
     <div class="poner600" style="margin-top: 10px;">
       <div class="row">
       <div class="col-5"> 
-        <a routerLink="../articulo/{{data[19]?._id}}">
-     <img  class="img" src="{{data[19]?.imagen1}}" width="100%" alt="" style="height: 100px!important;">  
+        <a routerLink="../articulo/{{data?.resultadoID}}">
+     <img  class="img" src="{{this.data?.resultadoImagen}}" width="100%" alt="" style="height: 100px!important;">  
     </a> 
         </div>              
         <div  class="col-7" style=" background-color:#66562273;padding:0px" (click)="cambioImagen1()">
-          <a routerLink="../articulo/{{data[19]?._id}}">
-          
-           <p class="titulo truncar3" >Histórico reportaje al legendario montañista y escritor barilochense Vojko Arko</a> 
+          <a routerLink="../articulo/{{data?.resultadoID}}">
+          <p class="titulo truncar3" >{{this.data?.art1}}</a> 
         </div>
       </div>
       
       <div class="row  ">
         <div class="col-5"> 
-          <a routerLink="../articulo/{{data[4]?._id}}">
-       <img  class="img" src="{{data[4]?.imagen1}}" width="100%" alt="" height="100%">  
+          <a routerLink="../articulo/{{data?.resultadoID2}}">
+       <img  class="img" src="{{data?.resultadoImagen2}}" width="100%" alt="" height="100%">  
        </a>
-   
-          </div>  
-          
+       </div>  
+      
   
          
           <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-            <a routerLink="../articulo/{{data[4]?._id}}">
-            <p class="titulo" style="margin-left:0px">Enterate cómo, en un lejano 1336, comenzó la aventura del montañismo en Europa</p> 
+            <a routerLink="../articulo/{{data?.resultadoID2}}">
+            <p class="titulo" style="margin-left:0px">{{this.data?.art2}}</p> 
             </a>
               
           </div>
@@ -150,16 +148,16 @@
         
         <div class="row ">
           <div class="col-5"> 
-            <a routerLink="../articulo/{{data[5]?._id}}">
-         <img class="img" src="{{data[5]?.imagen1}}" width="100%" alt="" height="100%">  
+            <a routerLink="../articulo/{{data?.resultadoID3">
+         <img class="img" src="{{data?.resultadoImagen3}}" width="100%" alt="" height="100%">  
         </a>
             </div>  
             
     
            
             <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-              <a routerLink="../articulo/{{data[5]?._id}}">
-      <p class="titulo"style="margin-left:0px">Ascensión a los cerros El Barco y el Alto San Juan en los Andes centrales, con el propósito de promover un Parque Nacional en Chile</p> 
+              <a routerLink="../articulo/{{data?.resultadoID3}}">
+      <p class="titulo"style="margin-left:0px">{{this.data?.art3}}</p> 
     </a>
             
                 
@@ -169,8 +167,8 @@
                
         <div class="row ">
           <div class="col-5"> 
-            <a routerLink="../articulo/{{data[101]?._id}}">
-         <img class="img" src="{{data[10]?.imagen1}}" width="100%" alt="" height="100%">  
+            <a routerLink="../articulo/{{data?.resultadoID4}}">
+         <img class="img" src="{{data?.resultadoImagen4}}" width="100%" alt="" height="100%">  
         </a>
      
             </div>  
@@ -178,8 +176,8 @@
     
            
             <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-              <a routerLink="../articulo/{{data[10]?._id}}">
-      <p class="titulo"style="margin-left:0px">Los invitamos a conocer algunas leyendas de los cerros de Argentina de la mano de la filóloga puntana Berta Elena Vidal de Battini</p> 
+              <a routerLink="../articulo/{{data?.resultadoID4}}">
+      <p class="titulo"style="margin-left:0px">{{data?.art4}}</p> 
     </a>
             
                 
@@ -189,16 +187,16 @@
                          
         <div class="row ">
           <div class="col-5"> 
-            <a routerLink="../articulo/{{data[11]?._id}}">
-         <img class="img" src="{{data[11]?.imagen1}}" width="100%" height="100%" alt="">  
+            <a routerLink="../articulo/{{data?.resultadoID5}}">
+         <img class="img" src="{{data?.resultadoImagen5}}" width="100%" height="100%" alt="">  
      </a>
             </div>  
             
     
            
             <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-              <a routerLink="../articulo/{{data[11]?._id}}">
-      <p class="titulo"style="margin-left:0px">Biografía de Albrecht Maass, quien realizo el primer ascenso chileno al Aconcagua, una leyenda del Club Alemán Andino</p> 
+              <a routerLink="../articulo/{{data?.resultadoID5}}">
+      <p class="titulo"style="margin-left:0px">{{data?.art5}}</p> 
         </a>
                 
             </div>
@@ -206,16 +204,16 @@
                    
           <div class="row ">
             <div class="col-5"> 
-              <a routerLink="../articulo/{{data[12]?._id}}">
-           <img class="img" src="{{data[12]?.imagen1}}" width="100%" height="100%"alt="">  
+              <a routerLink="../articulo/{{data?.resultadoID6}}">
+           <img class="img" src="{{data?.resultadoImagen6}}" width="100%" height="100%"alt="">  
           </a>
               </div>  
               
       
              
               <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-                <a routerLink="../articulo/{{data[12]?._id}}"> 
-        <p class="titulo"style="margin-left:0px">La momia del Aconcagua, el hallazgo arqueológico más importante de la provincia de Mendoza</p> 
+                <a routerLink="../articulo/{{data?.resultadoID6}}"> 
+        <p class="titulo"style="margin-left:0px">{{data?.art6}}</p> 
         </a>
               
                   
@@ -225,8 +223,8 @@
                           
             <div class="row ">
               <div class="col-5"> 
-                <a routerLink="../articulo/{{data[21]?._id}}">
-             <img class="img" src="{{data[21]?.imagen1}}" width="100%" height="100%"alt="">  
+                <a routerLink="../articulo/{{data?.resultadoID7}}">
+             <img class="img" src="{{data?.resultadoImagen7}}" width="100%" height="100%"alt="">  
              </a>
          
                 </div>  
@@ -234,8 +232,8 @@
         
                
                 <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-                  <a routerLink="../articulo/{{data[21]?._id}}">
-          <p class="titulo"style="margin-left:0px"> En 1913 se realizó el difícil primer ascenso al Monte Mc Kinley, la montaña más alta de América del Norte, en la cordillera de Alaska</p> 
+                  <a routerLink="../articulo/{{data?.resultadoID7}}">
+          <p class="titulo"style="margin-left:0px"> {{data?.art7}}</p> 
           </a>
                 
                     
@@ -245,16 +243,16 @@
                      
               <div class="row ">
                 <div class="col-5" style="margin-bottom: 20px;"> 
-                  <a routerLink="../articulo/{{data[20]?._id}}">
-               <img class="img" src="{{data[20]?.imagen1}}" width="100%" height="100%" alt="" >  
+                  <a routerLink="../articulo/{{data?.resultadoID8}}">
+               <img class="img" src="{{data?.resultadoImagen8}}" width="100%" height="100%" alt="" >  
                       </a>
                   </div>  
                   
           
                  
                   <div  class="col-7" style=" background-color:#66562273;margin-bottom: 20px;" (click)="cambioImagen1()">
-                    <a routerLink="../articulo/{{data[20]?._id}}">
-            <p class="titulo"style="margin-left:0px">Las controversias sobre los tres niños que dieron su vida por un fin religioso, en la cumbre del Volcán Llullaillaco</p> 
+                    <a routerLink="../articulo/{{data?.resultadoID8}}">
+            <p class="titulo"style="margin-left:0px">{{data.art8}}</p> 
             </a>
                   
                       
