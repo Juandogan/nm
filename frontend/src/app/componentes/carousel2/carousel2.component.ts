@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Articulos } from 'src/app/models/articulos';
-import { carouselDataItems } from '../../models/dataCarousel';
+
 import { Carousel } from '../../models/carousel';
 
 @Component({
@@ -14,7 +14,7 @@ export class Carousel2Component implements OnInit {
    */
   @Input() height = 400;
   @Input() isFullScreen = false;
-  @Input() items: Carousel[]= []
+  @Input() items: Articulos[] = [];
   @Input('data') data : any ;
 
   /**
@@ -28,17 +28,18 @@ export class Carousel2Component implements OnInit {
    }
 
   ngOnInit() {
-    this.items = carouselDataItems
+    
     this.items.map( ( i, index ) => {
       i.id = index;
       i.marginLeft = 0;
 
     });
+  
     
     for(let i = 1; i < this.data.length + 1 ; ++i){
  
       let segundos = i * 8000
-      setTimeout(() => {this.setNext2()}, segundos); 
+      setTimeout(() => {this.setNext()}, segundos); 
   
 
     }
@@ -48,18 +49,22 @@ export class Carousel2Component implements OnInit {
   }
 
   cronometro(){
-    setTimeout(() => this.setNext2(), 2000);
+    setTimeout(() => this.setNext(), 2000);
   }
 
   setCurrentPosition(position: number) {
     this.currentPosition = position;
-    this.items.find(i => i.id === 0).marginLeft = -50 * position;
+    // this.items.find(i => i.id === 0).marginLeft 
+    this.items[0].marginLeft = -50 * position; 
+    
+  
   }
 
 
 
-  setNext2() {
-   
+  setNext() {
+
+     
     let finalPercentage = 0;
     let nextPosition = this.currentPosition + 1;
     if (nextPosition <= this.items.length - 1) {
@@ -67,11 +72,15 @@ export class Carousel2Component implements OnInit {
     } else {
       nextPosition = 0;
     }
-    this.items.find(i => i.id === 0).marginLeft = finalPercentage;
+    // this.items.find(i => i.id === 0).marginLeft = finalPercentage;
+    this.items[0].marginLeft = finalPercentage;
+    
+  
+
     this.currentPosition = nextPosition;
   }
 
-  setBack2() {
+  setBack() {
     let finalPercentage = 0;
     let backPosition = this.currentPosition  - 1;
     if (backPosition >= 0) {

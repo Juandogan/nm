@@ -36,6 +36,7 @@ import { Carousel2Component } from './componentes/carousel2/carousel2.component'
 import { CkeditorComponent } from './componentes/ckeditor/ckeditor.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { Main2Component } from './componentes/main2/main2.component';
+import { PosicionesPipe } from './pipes/posiciones.pipe';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { Main2Component } from './componentes/main2/main2.component';
     Carousel2Component,
     CkeditorComponent,
     Main2Component,
+    PosicionesPipe,
 
     
   ],

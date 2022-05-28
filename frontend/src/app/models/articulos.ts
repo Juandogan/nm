@@ -1,6 +1,8 @@
 export class Articulos {
 
     constructor(  
+
+        
         resultadoCategoria = '',
         resultadoCategoria2='',
         resultadoCategoria3='',
@@ -41,8 +43,28 @@ export class Articulos {
         
         
         
-        _id ='', fecha ='',fechaMod ='', titulo='', tituloAlt='', tituloImagen='', subtitulo='', nota='', imagen1='', imagen2=''
-    ,imagen3='',fotografia='', edicionFotografia='',autor='', likes=0,categoria='', vistas=0,hash='' ){
+        _id ='', 
+        fecha ='',
+        fechaMod ='', 
+        titulo='', 
+        tituloAlt='',
+         tituloImagen='',
+          subtitulo='', 
+          nota='', 
+          imagen1='',
+           imagen2='',
+           imagen3='',
+           fotografia='',
+            edicionFotografia='',
+            autor='',
+             likes=0,
+             categoria='',
+              vistas=0,
+              hash='',
+              id=0,
+              marginLeft=0
+
+              ){
 
 //    this.resultadoTitulo = resultadoTitulo
 //    this.resultadoTitulo2 = resultadoTitulo2
@@ -51,7 +73,7 @@ export class Articulos {
 //    this.resultadoTitulo5 = resultadoTitulo5
 //    this.resultadoTitulo6 = resultadoTitulo6
 
-
+this.id= id
 this.art1 =  art1
 this.art2 =  art2
 this.art3 =  art3
@@ -60,7 +82,7 @@ this.art5 =  art5
 this.art6 =  art6
 this.art7 =  art7
 this.art8 =  art8
-
+this.marginLeft = marginLeft
 this.posicion =posicion
 
 this.resultadoCategoria=  resultadoCategoria
@@ -115,7 +137,6 @@ this.resultadoID8 = resultadoID8
     }
 
 
-    
 
     id: number;
     marginLeft?:number;

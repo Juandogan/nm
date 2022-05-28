@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import { CrudService } from 'src/app/services/crud.service';
 import { Location } from '@angular/common';
+import { Articulos } from 'src/app/models/articulos';
 
 @Component({
   selector: 'app-articulo',
@@ -10,24 +11,46 @@ import { Location } from '@angular/common';
   // encapsulation: ViewEncapsulation.None,
 })
 export class ArticuloComponent implements OnInit,OnDestroy {
-
+  articulos:Articulos[]
+  articulos2:any
   constructor(private ruta:ActivatedRoute, public crudService:CrudService,private location: Location) { }
-
-  nota:any
-  auxContador:number=0
+   
+   nota:any
+   auxContador:number=0
 
   ngOnInit(): void {
-    var height = document.getElementById("head").offsetHeight;
-      document.getElementById("content").style.height = height + 'px';
+      var height = document.getElementById("head").offsetHeight;
+      document.getElementById("content").style.height = height * 2.3 + 'px';
       console.log(height)
       window.scroll(0,0)
       this.ruta.data.subscribe((data)=>{
       this.nota = Object.entries(data).map(i => i[1]);
       this.auxContador =  this.nota[0].vistas
- 
-
       this.sumarContador()
-      })};
+      this.pedirArticulos()
+      })
+      
+    };
+
+
+      pedirArticulos(){    // llamo al servicio del crud y susbscribo la respuesta luego guardo la data en el front en el servicio y en este componente.
+        // const resultPost =  [];
+        this.crudService.getArticulos().subscribe(res =>{
+        this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
+        this.articulos2 = this.articulos
+        // for(const post of this.articulos){
+        //      var aux = post?.categoria
+        //   if (aux?.indexOf('revista'.toLowerCase()) > -1)
+        //      {                  
+        //    resultPost.push(post) 
+        //    this.articulos = resultPost          
+        //    }    
+        //  }
+         });//fin de subscribe
+       } //
+
+
+
 
       subir(){
         window.scroll(0,0)
@@ -103,9 +126,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
  sumarContador(){
  
   //incrementa el contador
-  this.crudService.unArticulo.vistas = this.nota[0]?.vistas + 1
- 
- 
+  this.crudService.unArticulo.vistas = this.nota[0]?.vistas + 1 
   this.crudService.unArticulo.imagen1 = this.nota[0]?.imagen1
   this.crudService.unArticulo.imagen2 = this.nota[0]?.imagen2
   this.crudService.unArticulo.imagen3 = this.nota[0]?.imagen3
@@ -130,6 +151,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.art5 = this.nota[0]?.art5
   this.crudService.unArticulo.art6 = this.nota[0]?.art6
 
+
   this.crudService.unArticulo.fecha = this.nota[0]?.fecha
 
   this.crudService.unArticulo.resultadoCategoria = this.nota[0]?.resultadoCategoria 
@@ -138,6 +160,9 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoCategoria4 = this.nota[0]?.resultadoCategoria4
   this.crudService.unArticulo.resultadoCategoria5 = this.nota[0]?.resultadoCategoria5
   this.crudService.unArticulo.resultadoCategoria6 = this.nota[0]?.resultadoCategoria6
+  this.crudService.unArticulo.resultadoCategoria7 = this.nota[0]?.resultadoCategoria7
+  this.crudService.unArticulo.resultadoCategoria8 = this.nota[0]?.resultadoCategoria8
+
 
   this.crudService.unArticulo.resultadoImagen = this.nota[0]?.resultadoImagen
   this.crudService.unArticulo.resultadoImagen2 = this.nota[0]?.resultadoImagen2
@@ -145,6 +170,9 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoImagen4 = this.nota[0]?.resultadoImagen4
   this.crudService.unArticulo.resultadoImagen5 = this.nota[0]?.resultadoImagen5
   this.crudService.unArticulo.resultadoImagen6 = this.nota[0]?.resultadoImagen6
+  this.crudService.unArticulo.resultadoImagen7 = this.nota[0]?.resultadoImagen7
+  this.crudService.unArticulo.resultadoImagen8 = this.nota[0]?.resultadoImagen8
+
 
   this.crudService.unArticulo.resultadoID = this.nota[0]?.resultadoID
   this.crudService.unArticulo.resultadoID2 = this.nota[0]?.resultadoID2
@@ -152,6 +180,9 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoID4 = this.nota[0]?.resultadoID4
   this.crudService.unArticulo.resultadoID5 = this.nota[0]?.resultadoID5
   this.crudService.unArticulo.resultadoID6 = this.nota[0]?.resultadoID6
+  this.crudService.unArticulo.resultadoID7 = this.nota[0]?.resultadoID7
+  this.crudService.unArticulo.resultadoID8 = this.nota[0]?.resultadoID8
+
 
   
 

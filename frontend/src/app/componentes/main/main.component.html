@@ -1,6 +1,6 @@
 <div class="cuerpo margenL margenR" style="z-index:1000 ; "> 
     <div class="barraInfo">
-      <h2 *ngIf="!loading"  class=" texto  quitar600 " style="font-size:12px;padding:5px"><b> MES: MAYO | AÑO 2022</b></h2>
+      <h2 *ngIf="!loading"  class=" texto  quitar600 " style="font-size:12px;padding:5px"><b style="text-transform:uppercase;"> MES:  {{articulos[0]?.titulo}} | AÑO 2022</b></h2>
       <div style="text-align: center;">
       <div *ngIf="loading " class="loadingio-spinner-dual-ring-xg1vnrf2b6o" style=" margin-top: 150px;height: 500px;"><div class="ldio-z7fu6e1den">
         
@@ -118,41 +118,15 @@
   </div>
 
 </div> -->
- 
-<app-carousel [data]="articulos" ></app-carousel> 
-
+<div style="margin-left:20px; margin-right:20px">
+<app-carousel  [data]="articulos[0]"  ></app-carousel> 
 </div>
-
-
-<!-- <div  class="ediMobil mobile" >
-  <br>
-<div style="background-color: #8b5a00;">  
-<h1 class="indice"  style="margin-left: 23px;margin-bottom: 5px;">Ediciones anteriores </h1>
 </div>
-
-
-<div  class="row">
-  <div class="col-2" style="padding-left:20px;">
-<img src="../../../assets/tap1.PNG" alt="">
-  </div>
-  <div class="col-4">
-<h2>Marzo 2021 Nro:200</h2>
-  </div>
-
-</div>
-
-</div> -->
-
-
-
-
-
-
-
 
 
   <br><br>
       </div>
+      
     <!--
   <div style="margin-right: 20px;">
     <h1 style="margin-left:20px; margin-top:20px">Novedades</h1>

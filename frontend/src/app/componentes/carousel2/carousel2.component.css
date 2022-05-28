@@ -123,7 +123,7 @@ text-transform: uppercase;
     width: 90%;
     margin: auto;
     display: flex;
-    
+    z-index: 10000;
     justify-content: space-between;
 }
 .dsc-carousel__btns > i {

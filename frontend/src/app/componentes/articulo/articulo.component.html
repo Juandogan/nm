@@ -25,7 +25,12 @@
                            </p>
                           </div>
                           <br>
-                           <!-- <button class="btn btn-dark" (click)="subir()">Subir</button> -->
+                           <button class="btn btn-dark" (click)="subir()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                            </svg> 
+                            
+                            SUBIR</button> 
 
                            <br><br> 
                        
@@ -37,11 +42,12 @@
                <div class="col-sm-12	col-md-3 col-lg-3	col-xl-3 "   style="background-color:rgb(255, 255, 255); height: 5000px;" >
                   <div class=" quitar600"style="margin-top:10px">
 
-                    <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
+                    <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
                       <img src="../../../assets/banner Noticias.png" width="100%"  alt="" style="margin-bottom:10px">
                     </a>
                     <hr>
-                    <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
+                    <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
+                    
                       <img src="../../../assets/participa.jpg" width="100%"  alt=""
                         style="margin-top:10px; object-fit: cover;">
                       </a>
@@ -96,32 +102,45 @@
               -->
          <div style="text-align: left; margin-left:10px">
 
-          <button class="btn btn-dark" (click)="alerta()" style="opacity: 0.5;margin-top:10px">  
+          <!-- <button class="btn btn-dark" (click)="alerta()" style="opacity: 0.5;margin-top:10px">  
             <svg style="margin-right: 4px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
               <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
             </svg>    
             Comentar
         
-          </button>
+          </button> -->
            </div>
            </form>
          </div>
              
-        <app-carousel2 [data]="nota"></app-carousel2>
+        
            <div *ngIf="nota" class="quitar">
             <app-articulo-relacionado [data]="nota[0]"></app-articulo-relacionado>
            </div>
 <br><br>
-        <div style="background-color: #3E2800;   margin-top:20px" >
+<br><br>
+        <div style="background-color: white;   margin-top:20px" >
+          <!-- <h5 style="color:white;margin-left: -12px;margin-right: -12px; padding-left:15px; margin-bottom: -3px;
+            margin-top:20px; background-color: orange;">ÚLTIMOS ARTICULOS</h5> -->
+
+            <h1 class="titulo" style="font-size:25px; margin-left:0px;margin-bottom: 10px; color:orange">| ÚLTIMOS ARTICULOS</h1>
+            
+          <div style="margin-left:-12px; margin-right: -12px;">
+            <app-carousel2 [items]="articulos|posiciones:1" [data]="articulos|posiciones:1"></app-carousel2> 
+          </div>
+<div>
           <h5 style="color:white;margin-left: -10px;margin-right: -10px; padding-left:15px; 
            margin-top:20px; background-color: orange;">EDICIONES ANTERIORES</h5>
+           <div style="margin-left:-10px; margin-right: -10px;">
           <app-carousel [data]="nota[0]"  ></app-carousel> 
+        </div>
+        </div>
         </div>   
     
-
+       
 
         
-        <div   style="
+        <div style="
  
            background-color:white;                     
            /* height:100%

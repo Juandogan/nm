@@ -13,6 +13,7 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 })
 export class AdmComponent implements OnInit {
   public Editor = ClassicEditor;
+
  //variables para abrir y cerrar los inputs
 inputActivo= true
 inputActivo2= true
@@ -36,6 +37,9 @@ openInput6:Boolean = true;
   loader = true;
   aux=1
   table=true 
+  loadingGuardar:Boolean = false
+  loadingSubir:Boolean = true
+  SubirEstado:Boolean = true
 
 //data y buscadores
   articulos: Articulos[] = [] 
@@ -152,16 +156,22 @@ resultadoImagen8:string =""
 
   }
 
+  nuevaEdicion(){
+    this.crudService.unArticulo = new Articulos
+
+
+
+  }
+
   cargarEdit(x){
         this.crudService.getOneArticulo(x).subscribe(res=>{this.articuloBusqueda = res as Articulos[]
-      
-   
+         
       if(this.articuloBusqueda.length > 2){   
         this.crudService.snack('No se encontro');
             return
          }
          else{
-
+          this.crudService.unArticulo._id = this.articuloBusqueda._id
           this.crudService.unArticulo.fecha = String(this.fechaPublicacion)
           this.crudService.unArticulo.titulo = this.titulo;
           this.crudService.unArticulo.subtitulo = this.subtitulo
@@ -410,8 +420,6 @@ resultadoImagen8:string =""
          this.crudService.unArticulo.resultadoID = this.articuloBusqueda?._id
          this.crudService.unArticulo.resultadoCategoria = this.articuloBusqueda?.subtitulo
          this.crudService.unArticulo.resultadoImagen = this.articuloBusqueda?.imagen1
-         this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
          this.crudService.unArticulo.art1 = this.resultadoTitulo          
          
          this.busqueda = ""  
@@ -427,8 +435,6 @@ resultadoImagen8:string =""
           this.crudService.unArticulo.resultadoID2 = this.articuloBusqueda?._id
           this.crudService.unArticulo.resultadoCategoria2 = this.articuloBusqueda?.subtitulo
           this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen1
-          this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
           this.crudService.unArticulo.art2 = this.resultadoTitulo2
            this.busqueda = "" 
           this.aux=3
@@ -441,8 +447,6 @@ resultadoImagen8:string =""
           this.crudService.unArticulo.resultadoID3 = this.articuloBusqueda?._id
           this.crudService.unArticulo.resultadoCategoria3 = this.articuloBusqueda?.subtitulo
           this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen1
-          this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
           this.crudService.unArticulo.art3 = this.resultadoTitulo3
            this.busqueda = ""  
                    this.aux=4
@@ -454,8 +458,7 @@ resultadoImagen8:string =""
           this.crudService.unArticulo.resultadoID4 = this.articuloBusqueda?._id
           this.crudService.unArticulo.resultadoCategoria4 = this.articuloBusqueda?.subtitulo
           this.crudService.unArticulo.resultadoImagen4 = this.articuloBusqueda?.imagen1
-          this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
+
           this.crudService.unArticulo.nota = this.articuloBusqueda?.nota
           this.crudService.unArticulo.art4 = this.resultadoTitulo4
           this.busqueda = ""   
@@ -468,8 +471,6 @@ resultadoImagen8:string =""
             this.resultadoTitulo5 = this.articuloBusqueda?.titulo
             this.crudService.unArticulo.resultadoCategoria5 = this.articuloBusqueda?.subtitulo
             this.crudService.unArticulo.resultadoImagen5 = this.articuloBusqueda?.imagen1
-            this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
             this.crudService.unArticulo.art5 = this.resultadoTitulo5
              this.busqueda = "" 
              this.aux = 6
@@ -480,8 +481,6 @@ resultadoImagen8:string =""
               this.resultadoTitulo6 = this.articuloBusqueda?.titulo
               this.crudService.unArticulo.resultadoCategoria6 = this.articuloBusqueda?.subtitulo
               this.crudService.unArticulo.resultadoImagen6 = this.articuloBusqueda?.imagen1
-              this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
               this.crudService.unArticulo.art6 = this.resultadoTitulo6
                this.busqueda = ""  
                this.aux = 7
@@ -491,8 +490,6 @@ resultadoImagen8:string =""
                 this.resultadoTitulo7 = this.articuloBusqueda?.titulo
                 this.crudService.unArticulo.resultadoCategoria7 = this.articuloBusqueda?.subtitulo
                 this.crudService.unArticulo.resultadoImagen7 = this.articuloBusqueda?.imagen1
-                this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-         this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
                 this.crudService.unArticulo.art7 = this.resultadoTitulo7
                  this.busqueda = ""  
                  this.aux = 8
@@ -502,8 +499,6 @@ resultadoImagen8:string =""
                   this.resultadoTitulo8 = this.articuloBusqueda?.titulo
                   this.crudService.unArticulo.resultadoCategoria8 = this.articuloBusqueda?.subtitulo
                   this.crudService.unArticulo.resultadoImagen8 = this.articuloBusqueda?.imagen1
-                  this.crudService.unArticulo.resultadoImagen2 = this.articuloBusqueda?.imagen2
-                  this.crudService.unArticulo.resultadoImagen3 = this.articuloBusqueda?.imagen3
                   this.crudService.unArticulo.art8 = this.resultadoTitulo8
                    this.busqueda = ""  
                 
@@ -565,10 +560,7 @@ onUpload(){
     this.crudService.unArticulo.imagen1 = String(link) ;
     this.imagen1  = String(link) ;
      
-     
-     this.ocultar2 = false
-     this.loading2=false;
-     this.loading3=true;
+    this.loadingSubir = false
      
    })
 
@@ -582,7 +574,7 @@ fnOcultar(){
 };
 
  onFileChange(e){
-
+  this.SubirEstado = false;
   this.uploadedFiles = e.target.files;
 };
    
@@ -599,7 +591,7 @@ fnOcultar(){
 
 
      agregarPublicacion(){
-
+      this.loadingGuardar = true
       this.crudService.unArticulo.fecha = String(this.fechaPublicacion)
       this.crudService.unArticulo.titulo = this.titulo;
        this.crudService.unArticulo.subtitulo = this.subtitulo
@@ -647,7 +639,9 @@ fnOcultar(){
         if( this.crudService.unArticulo?._id)
         {  
               this.crudService.modificarArticulo(this.crudService.unArticulo)
-        .subscribe(res => {this.crudService.snack('Modificado!')});
+        .subscribe(res => {
+          this.loadingGuardar= false
+          this.crudService.snack('Modificado!')});
        
       }
         else  {
@@ -707,11 +701,11 @@ fnOcultar(){
                     this.crudService.unArticulo.imagen1 = this.articuloBusqueda?.imagen1
                     this.crudService.unArticulo.imagen2 = this.articuloBusqueda?.imagen2
                     this.crudService.unArticulo.imagen3 = this.articuloBusqueda?.imagen3
-     console.log(this.crudService.unArticulo,'bandera')
+     
           
           this.crudService.addArticulo(this.crudService.unArticulo).subscribe(res => { this.crudService.snack('creado'); 
-          console.log("guardo")
-
+          this.loadingGuardar= false
+          
             this.pedirArticulos()
             })
       }

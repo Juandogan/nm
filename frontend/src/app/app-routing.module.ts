@@ -12,7 +12,7 @@ const routes: Routes = [
 
 
   {path:'', component: MainComponent },
-  // {path:'edicion/:_id', component: MainComponent, resolve: {data: ResolveNotaService}},
+  {path:'edicion/:_id', component: Main2Component, resolve: {data: ResolveNotaService}},
   {path:'articulo/:_id', component: ArticuloComponent, resolve: {data: ResolveNotaService}},
   {path:'suscripcion', component: SuscripcionComponent},
   {path:'adm', component: AdmComponent},

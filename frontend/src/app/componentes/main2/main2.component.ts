@@ -1,4 +1,5 @@
 import { Component, OnInit ,OnDestroy} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { Articulos } from 'src/app/models/articulos';
 import { CrudService } from 'src/app/services/crud.service';
@@ -24,13 +25,19 @@ nota:any
 loader= true;
 editorial = ""
 
-  constructor(public crudService:CrudService) { }
+  constructor(public crudService:CrudService, private ruta:ActivatedRoute) { }
  
 
   ngOnInit(): void {
+     this.ruta.data.subscribe((data)=>{
+     this.nota = Object.entries(data).map(i => i[1]);
+    this.editorial = this.nota[0]?.autor
+       console.log(this.nota,'llega por link')
+       this.loading = false
+       this.articulos = this.nota
+     })
 
-
-      this.pedirArticulos()
+      // this.pedirArticulos()
   }
 
 
@@ -50,7 +57,7 @@ console.log(res)
       }
 
     }
-     this.loading = true
+     this.loading = false
     window.scroll(0,0)
 
     

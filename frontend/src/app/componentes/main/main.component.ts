@@ -11,7 +11,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit,  OnDestroy {
- 
+  // public carrouselData : Carousel []  = carouselDataItems
   searchTerm$ = new Subject<string>();
   buscar:any
   buscarMensaje:string = ""
@@ -20,6 +20,7 @@ export class MainComponent implements OnInit,  OnDestroy {
 public color = "rgb(33,33,33)"
 
 articulos: any
+articulos2: Articulos[] = [];
 nota:any
 loader= true;
 editorial = ""
@@ -30,14 +31,7 @@ editorial = ""
   ngOnInit(): void {
 
 
-      // this.ruta.data.subscribe((data)=>{
-      // this.nota = Object.entries(data).map(i => i[1]);
-        
-      //   this.editorial = this.nota[0]?.autor
-      //   console.log(this.nota,'llega por link')
-      //   this.loading = false
-      //   this.articulos = this.nota
-      // })
+  
       this.pedirArticulos()
   }
 
@@ -46,6 +40,7 @@ editorial = ""
     const resultPost =  [];
     this.crudService.getArticulos().subscribe(res =>{
     this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
+    this.articulos2 = this.articulos
     for(const post of this.articulos){
       var aux = post?.categoria
       if (aux?.indexOf('revista'.toLowerCase()) > -1)
