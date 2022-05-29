@@ -89,7 +89,7 @@ export class Carousel2Component implements OnInit {
       backPosition = this.items.length - 1;
       finalPercentage = -100 * backPosition;
     }
-    this.items.find(i => i.id === 0).marginLeft = finalPercentage;
+    this.items[0].marginLeft = finalPercentage;
     this.currentPosition = backPosition;
 
   }
