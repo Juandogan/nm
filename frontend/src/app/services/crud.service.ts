@@ -42,8 +42,9 @@ export class CrudService {
 
   //CRUD  
    uploadFile(formData:any){
-  console.log('Bandera', formData)
-   return this.http.post('/upload' , formData)   // en produccion poner '/upload' por this.URL_API2
+  console.log('Bandera por aca pasa NM', formData)
+  
+   return this.http.post('http://168.197.50.191/upload' , formData)   // en produccion poner '/upload' por this.URL_API2
 
     }
 

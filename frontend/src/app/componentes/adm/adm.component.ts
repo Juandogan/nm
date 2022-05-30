@@ -555,7 +555,7 @@ onUpload(){
    this.crudService.uploadFile(formData).subscribe(res => {
     console.log("formdata", formData)
       var link = Object.values(res) 
-     console.log(link)
+     console.log(link,'este link lo cuida dios')
      
     this.crudService.unArticulo.imagen1 = String(link) ;
     this.imagen1  = String(link) ;
