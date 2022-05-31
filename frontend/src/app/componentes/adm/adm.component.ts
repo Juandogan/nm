@@ -158,7 +158,71 @@ resultadoImagen8:string =""
 
   nuevaEdicion(){
     this.crudService.unArticulo = new Articulos
-
+    this.resultadoTitulo=""
+    this.resultadoTitulo2=""
+    this.resultadoTitulo3=""
+    this.resultadoTitulo4=""
+    this.resultadoTitulo5=""
+    this.resultadoTitulo6=""
+    this.resultadoTitulo7=""
+    this.resultadoTitulo8=""
+  
+    
+  //JSON
+  this.id = ""
+  this._id= "";
+  this.titulo = "";
+  this.tituloAlt  = "";
+  this.subtitulo  = "";
+  this.imagen1 ;
+  this.nota  = "";
+  this.autor  = "";
+  this.hash  = "";
+  this.categoria  = "";
+  this.fotografia  = "";
+  this.edicionFotografia  = "";
+  this.imagen2=""
+  this.imagen3=""
+  this.likes = 0
+  
+  
+  
+  this.fechaPublicacion =new Date();  
+  this.art1   =""
+  this.art2   =""
+  this.art3   =""
+  this.art4   =""
+  this.art5   =""
+  this.art6   =""
+  this.art7   =""
+  this.art8   =""
+  
+  this.resultadoID=""
+  this.resultadoID2=""
+  this.resultadoID3=""
+  this.resultadoID4=""
+  this.resultadoID5=""
+  this.resultadoID6=""
+  this.resultadoID7=""
+  this.resultadoID8=""
+  
+  this.resultadoCategoria   =""
+  this.resultadoCategoria2   =""
+  this.resultadoCategoria3   =""
+  this.resultadoCategoria4   =""
+  this.resultadoCategoria5   =""
+  this.resultadoCategoria6   =""
+  this.resultadoCategoria7   =""
+  this.resultadoCategoria8   =""
+  this.resultadoImagen   =""
+  this.resultadoImagen2   =""
+  this.resultadoImagen3   =""
+  this.resultadoImagen4   =""
+  this.resultadoImagen5   =""
+  this.resultadoImagen6   =""
+  this.resultadoImagen7   =""
+  this.resultadoImagen8   =""
+  
 
 
   }

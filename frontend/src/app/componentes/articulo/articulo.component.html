@@ -39,8 +39,8 @@
                </div>  
 
                
-               <div class="col-sm-12	col-md-3 col-lg-3	col-xl-3 "   style="background-color:rgb(255, 255, 255); height: 5000px;" >
-                  <div class=" quitar600"style="margin-top:10px">
+               <div class="quitar600 col-sm-12	col-md-3 col-lg-3	col-xl-3 "   style="background-color:rgb(255, 255, 255); height: 5000px;" >
+                  <div style="margin-top:10px">
 
                     <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
                       <img src="../../../assets/banner Noticias.png" width="100%"  alt="" style="margin-bottom:10px">
@@ -63,7 +63,7 @@
                          <hr>
                          <div id="content">
                          <div class="sticky" >
-                        <a href="http://www.culturademontania.org.ar/museo/2.htm" target="_blank">
+                        <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
                       <img  src="../../../assets/banner Noticias.png" width="100%" height="100%" alt=""
                                             style="margin-top:20px; object-fit: cover;">
                       </a>
@@ -114,12 +114,12 @@
          </div>
              
         
-           <div *ngIf="nota" class="quitar">
+           <div *ngIf="nota" class="quitar quitar600">
             <app-articulo-relacionado [data]="nota[0]"></app-articulo-relacionado>
            </div>
 <br><br>
 <br><br>
-        <div style="background-color: white;   margin-top:20px" >
+        <div  class="quitar600" style="background-color: white;   margin-top:20px" >
           <!-- <h5 style="color:white;margin-left: -12px;margin-right: -12px; padding-left:15px; margin-bottom: -3px;
             margin-top:20px; background-color: orange;">ÚLTIMOS ARTICULOS</h5> -->
 
@@ -132,7 +132,7 @@
           <h5 style="color:white;margin-left: -10px;margin-right: -10px; padding-left:15px; 
            margin-top:20px; background-color: orange;">EDICIONES ANTERIORES</h5>
            <div style="margin-left:-10px; margin-right: -10px;">
-          <app-carousel [data]="nota[0]"  ></app-carousel> 
+          <app-carousel [data]="nota[0]"></app-carousel> 
         </div>
         </div>
         </div>   
@@ -157,7 +157,7 @@
            "> 
           
           
-          <div class="flex-container" style="text-align: center; margin-top:-100px"> 
+          <div class="flex-container quitar600" style="text-align: center; margin-top:-100px"> 
            <div class="flex-items" >
              <div style="text-align:left;" >
               

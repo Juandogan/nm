@@ -1,5 +1,8 @@
 
+<style>
 
+
+ </style>
 <div class="cuerpo margenL margenR"> 
 
     <div class="barraInfo">
@@ -13,8 +16,8 @@
     <br>
   
   
-      <button class="btn btn-dark" (click)="nuevo=true" (click)="table=false; nuevaEdicion()"  >Crear una nueva Edición</button>  
-      <button style="margin-left:10px" class="btn btn-dark ">Publicidad</button>  
+      <button *ngIf="!nuevo" class="btn btn-dark"  (click)="table=false; nuevaEdicion(); nuevo=true"  >Crear una nueva Edición</button>  
+      <button *ngIf="!nuevo" style="margin-left:10px" class="btn btn-dark ">Publicidad</button>  
       
 
 </div>
@@ -74,13 +77,16 @@
 
 
 <div *ngIf="nuevo">
+ 
  <br><br> 
 
 <div class="row" style="margin-top:-10px">
-    <div class="col-6">
-      <div style="margin-top:10px; max-width:100%;" >
+    <div class="col-6">      
+      <div style=" max-width:100%;" >
         <div style="margin-left:40px; min-height: 91px;"> 
-         <h6 style ="text-align: left;margin-bottom: 10px; margin-top: -51px;">IMAGEN DE PORTADA 1200X600</h6>
+          <h1 class="titulo">Crear | PUBLICACIÓN</h1>
+          <hr>
+         <h6 style ="text-align: left;margin-bottom: 10px; margin-top: 0px;">IMAGEN DE PORTADA 1200X600</h6>
           <div class="input-group"  >
               <input class="form-control" type="file" id="formFile"  type="file"  style="  overflow: none"  (change)="onFileChange($event); " width="100%">
               <div class="input-group-append">
@@ -182,13 +188,14 @@
 
     </div>
    </div>  
-<div class="col-6 " >
+<div class="col-6  " >
   <div style="margin-left:20px; margin-right:20px">
   
-  <div style="text-align:left;margin-top: -63px; ">
+  <div style="text-align:left; margin-top: -63px; ">
        
+    <h1 class="titulo">Agregar | ARTICULOS</h1>
+    <hr>
     
-    <br>
 
 
               <h6>#1</h6>        
@@ -475,50 +482,49 @@
 </div>
 <br> 
 
-<div style="text-align: left; margin-top:20px">
-  
-<button class="btn btn-dark " (click)=" agregarPublicacion()" [disabled]=this.loadingGuardar style="margin-right: 10px">
-  
-  <svg *ngIf="!loadingGuardar"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-record-btn-fill" viewBox="0 0 16 16">
-    <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-  </svg>
-  <img *ngIf="loadingGuardar" src="../../../assets/loader.gif" width="20px" alt="" > 
-  Guardar</button>
 
-<a  routerLink="../edicion/{{this.crudService.unArticulo._id}}" target="_blank">
+ 
 
-  <button class="btn btn-dark ml-2" > 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel2-fill" viewBox="0 0 16 16">
-      <path d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809L8.447.276Z"/>
-      <path fill-rule="evenodd" d="M.5 11a.5.5 0 0 0 0 1h2.86l-.845 3.379a.5.5 0 0 0 .97.242L3.89 14h8.22l.405 1.621a.5.5 0 0 0 .97-.242L12.64 12h2.86a.5.5 0 0 0 0-1H.5Zm3.64 2 .25-1h7.22l.25 1H4.14Z"/>
+</div>
+
+</div>
+
+
+</div>
+<div style="text-align: left; margin-top:0px">
+  <hr>
+  <button class="btn btn-dark " (click)=" agregarPublicacion()" [disabled]=this.loadingGuardar style="margin-right: 10px; margin-left:40px">
+    
+    <svg *ngIf="!loadingGuardar"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-record-btn-fill" viewBox="0 0 16 16">
+      <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
     </svg>
-    Vista previa </button>
-
-</a>
-
-
-<a  (click)="this.table = true" (click)="nuevo=false">
-
-  <button class="btn btn-dark" style="margin-left:10px" > 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
-      <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
-    </svg>
-     Volver</button>
-
-</a>
-
-<br><br><br>
-</div>
-
-<br><br>
-
-</div>
-
-</div>
-
-
-</div>
-
+    <img *ngIf="loadingGuardar" src="../../../assets/loader.gif" width="20px" alt="" > 
+    Guardar</button>
+  
+  <a  routerLink="../edicion/{{this.crudService.unArticulo._id}}" target="_blank">
+  
+    <button class="btn btn-dark ml-2" > 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel2-fill" viewBox="0 0 16 16">
+        <path d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809L8.447.276Z"/>
+        <path fill-rule="evenodd" d="M.5 11a.5.5 0 0 0 0 1h2.86l-.845 3.379a.5.5 0 0 0 .97.242L3.89 14h8.22l.405 1.621a.5.5 0 0 0 .97-.242L12.64 12h2.86a.5.5 0 0 0 0-1H.5Zm3.64 2 .25-1h7.22l.25 1H4.14Z"/>
+      </svg>
+      Vista previa </button>
+  
+  </a>
+  
+  
+  <a  (click)="this.table = true" (click)="nuevo=false">
+  
+    <button class="btn btn-dark" style="margin-left:10px" > 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+        <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+      </svg>
+       Volver</button>
+  
+  </a>
+  
+  <br><br><br>
+  </div>
 </div>      
 
 </div>

@@ -37,6 +37,7 @@ import { CkeditorComponent } from './componentes/ckeditor/ckeditor.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { Main2Component } from './componentes/main2/main2.component';
 import { PosicionesPipe } from './pipes/posiciones.pipe';
+import { Filtrox10Pipe } from './pipes/filtrox10.pipe';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { PosicionesPipe } from './pipes/posiciones.pipe';
     CkeditorComponent,
     Main2Component,
     PosicionesPipe,
+    Filtrox10Pipe,
 
     
   ],

@@ -6,7 +6,11 @@ body { margin: 0px;padding:0px; }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  
-
+.ck .ck-editor__main .ck-editor__editable:not(.ck-focused) {
+    border-color: var(--ck-color-base-border);
+    height: 183px;
+}
+   
 .blue-snackbar{background-color:rgb(185, 14, 14) ; color:rgb(255, 255, 255);  top:50px }
 .mat-snack-bar-container {
     text-align: center;

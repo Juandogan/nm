@@ -82,16 +82,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;};">
  margin-bottom:10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
     
-aux2 = aux2.split('<p').join(`<p style="
-                                  font-weight: 400;
-                                  margin-top:-10px;
-                                  font-size: 20px; 
-                                  line-height: 32px;
-                                  color:white;
-                                  text-align:justify;  
-                         text-justify:inter-character;
-                                  "`)
-                                                                          
+                                    
                                         // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
                                         // aux2 = aux2.split('</p></strong>').join('</p></b>')
 
@@ -102,7 +93,7 @@ aux2 = aux2.split('<p').join(`<p style="
 
                                         aux2 = aux2.split('<img').join('<img style="width:100%; margin-top:10px; margin-bottom:10px"')
                                         
-                                        aux2 = aux2.split('<strong>').join('<strong style="font-size:20px;line-height: 0px!important; ">')
+                                       
                                         aux2 = aux2.split('https://www.youtube.com/watch?v=').join('https://www.youtube.com/embed/')
                                         aux2 = aux2.split(' ,').join(', ')
                                         aux2 = aux2.split(' .').join('. ')

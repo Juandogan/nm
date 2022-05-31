@@ -29,9 +29,6 @@
      <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> 
    <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
     <p class="editorialParrafo" 
-     style="font-size:24px!important;
-     margin-right:30px;margin-bottom:20px; 
-     margin-top:10px; margin-left:20px" 
      [innerHTML]=saltos2(this.editorial)|sanetizer > 
      </p>
 
@@ -71,11 +68,11 @@
 
 </div>
 <br>
-<div  class="quitar600" style="height:377px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
+<div   style="height:377px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
   <br>
 <div style="background-color: #8b5a00;">  
 
-<h1 class="indice"  style="margin-left: 23px;margin-bottom: 15px;">Ediciones anteriores </h1>
+<h1 class="indice quitar600"  style="margin-left: 23px;margin-bottom: 15px;">Ediciones anteriores </h1>
 </div>
 <!-- <div class="row" style="margin-top:30px; margin-left:10px; padding-right:35px ;z-index: -1000">
   <div class="col-sm-8	col-md-5 col-lg-4	col-xl-2">
@@ -118,9 +115,10 @@
   </div>
 
 </div> -->
-<div style="margin-left:20px; margin-right:20px">
+<div class="quitar600" style="margin-left:20px; margin-right:20px">
 <app-carousel  [data]="articulos[0]"  ></app-carousel> 
 </div>
+<app-carousel2 [items]="articulos" [data]="articulos"></app-carousel2> 
 </div>
 
 
