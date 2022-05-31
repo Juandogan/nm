@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CrudService } from 'src/app/services/crud.service';
 import { Articulos } from 'src/app/models/articulos';
 import { ActivatedRoute } from '@angular/router';
-
+import { Location } from '@angular/common';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 
@@ -147,13 +147,17 @@ resultadoImagen8:string =""
 
 
 
-  constructor(public crudService:CrudService, private ruta: ActivatedRoute) { }
+  constructor(public crudService:CrudService, private ruta: ActivatedRoute, location:Location) { }
 
   ngOnInit(): void {
     this.fecha = String(new Date())
 
     this.pedirArticulos();
 
+  }
+
+  reload(){
+    location.reload()
   }
 
   nuevaEdicion(){
@@ -603,7 +607,7 @@ resultadoImagen8:string =""
       this.crudService.deleteArticulo(id).subscribe(res =>{
         this.crudService.snack(res);  
         this.loader = true ;
-        this.pedirArticulos(); })
+        this.reload() })
       
       }
       
@@ -619,7 +623,7 @@ onUpload(){
    this.crudService.uploadFile(formData).subscribe(res => {
     console.log("formdata", formData)
       var link = Object.values(res) 
-     console.log(link,'este link lo cuida dios')
+     console.log(link,"linkN")
      
     this.crudService.unArticulo.imagen1 = String(link) ;
     this.imagen1  = String(link) ;
@@ -706,6 +710,7 @@ fnOcultar(){
         .subscribe(res => {
           this.loadingGuardar= false
           this.crudService.snack('Modificado!')});
+          this.reload()
        
       }
         else  {
@@ -769,8 +774,7 @@ fnOcultar(){
           
           this.crudService.addArticulo(this.crudService.unArticulo).subscribe(res => { this.crudService.snack('creado'); 
           this.loadingGuardar= false
-          
-            this.pedirArticulos()
+          this.reload()
             })
       }
       
