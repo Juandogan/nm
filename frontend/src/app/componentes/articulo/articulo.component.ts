@@ -126,7 +126,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
  sumarContador(){
  
   //incrementa el contador
-  this.crudService.unArticulo.vistas = this.nota[0]?.vistas + 1 
+  this.crudService.unArticulo.vistas = this.auxContador + 1 
   this.crudService.unArticulo.imagen1 = this.nota[0]?.imagen1
   this.crudService.unArticulo.imagen2 = this.nota[0]?.imagen2
   this.crudService.unArticulo.imagen3 = this.nota[0]?.imagen3
@@ -184,7 +184,6 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoID8 = this.nota[0]?.resultadoID8
 
 
-  
 
 
 
@@ -203,7 +202,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
 
    ngOnDestroy(){
 
-  this.sumarContador()
+  
   window.scroll(0,0)
 
  

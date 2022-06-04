@@ -31,6 +31,8 @@ openInput4:Boolean = true;
 openInput5:Boolean = true;
 openInput6:Boolean = true;
   //VARIABLES
+
+  estadoFiltros : string =""
   
   //LOADERS
   loading = false;
@@ -162,6 +164,7 @@ resultadoImagen8:string =""
 
   nuevaEdicion(){
     this.crudService.unArticulo = new Articulos
+    console.log(this.crudService.unArticulo)
     this.resultadoTitulo=""
     this.resultadoTitulo2=""
     this.resultadoTitulo3=""
@@ -170,8 +173,7 @@ resultadoImagen8:string =""
     this.resultadoTitulo6=""
     this.resultadoTitulo7=""
     this.resultadoTitulo8=""
-  
-    
+      
   //JSON
   this.id = ""
   this._id= "";
@@ -479,9 +481,11 @@ resultadoImagen8:string =""
     
         this.crudService.snack('No se encontro');
         // 
-  return
+       return
       } 
       this.crudService.unArticulo._id = this.articuloBusqueda._id
+
+      
   
         if(this.aux === 1 ){
          this.resultadoTitulo = this.articuloBusqueda?.titulo
@@ -571,7 +575,8 @@ resultadoImagen8:string =""
                    this.busqueda = ""  
                 
 
-                  return }
+                  return 
+                }
          
                   this.crudService.unArticulo.autor = this.autor
                   this.crudService.unArticulo.imagen1 = this.imagen1
@@ -698,7 +703,7 @@ fnOcultar(){
       //  this.crudService.unArticulo.resultadoImagen8 = this.resultadoImagen8
 
       this.crudService.unArticulo.categoria = "revista"
-                    this.crudService.unArticulo._id  = this._id
+      this.crudService.unArticulo._id  = this._id
 
 
 
@@ -706,11 +711,12 @@ fnOcultar(){
            
         if( this.crudService.unArticulo?._id)
         {  
+
               this.crudService.modificarArticulo(this.crudService.unArticulo)
         .subscribe(res => {
           this.loadingGuardar= false
           this.crudService.snack('Modificado!')});
-          this.reload()
+          // this.reload()
        
       }
         else  {
@@ -718,12 +724,13 @@ fnOcultar(){
           this.crudService.unArticulo.categoria = "revista" // guado Revista paa filtrar
           this.crudService.unArticulo.titulo = this.titulo;
           this.crudService.unArticulo.subtitulo = this.subtitulo
+          
       this.crudService.unArticulo.fechaMod = String(this.fechaPublicacion)
       this.crudService.unArticulo.autor = this.articuloBusqueda?.autor
       this.crudService.unArticulo.imagen1 = this.articuloBusqueda?.imagen1
       this.crudService.unArticulo.imagen2 = this.articuloBusqueda?.imagen2
       this.crudService.unArticulo.imagen3 = this.articuloBusqueda?.imagen3
-      
+      console.log('por aca',this.crudService.unArticulo.imagen3)
       // this.crudService.unArticulo.fecha = String(this.fechaPublicacion)
       // this.crudService.unArticulo.titulo = this.titulo;
       // this.crudService.unArticulo.subtitulo = this.subtitulo
@@ -761,20 +768,28 @@ fnOcultar(){
       //  this.crudService.unArticulo.resultadoImagen4 = this.resultadoImagen4
       //  this.crudService.unArticulo.resultadoImagen5 = this.resultadoImagen5
       //  this.crudService.unArticulo.resultadoImagen6 = this.resultadoImagen6
-      //  this.crudService.unArticulo.resultadoImagen7 = this.resultadoImagen7
-      //  this.crudService.unArticulo.resultadoImagen8 = this.resultadoImagen8
+//        this.crudService.unArticulo.resultadoImagen7 = this.resultadoImagen7
+  //     this.crudService.unArticulo.resultadoImagen8 = this.resultadoImagen8
 
-      this.crudService.unArticulo.categoria = "revista"
+                    this.crudService.unArticulo.categoria = "revista"
                     this.crudService.unArticulo._id  = this._id
                     this.crudService.unArticulo.autor = this.articuloBusqueda?.autor     
                     this.crudService.unArticulo.imagen1 = this.articuloBusqueda?.imagen1
-                    this.crudService.unArticulo.imagen2 = this.articuloBusqueda?.imagen2
-                    this.crudService.unArticulo.imagen3 = this.articuloBusqueda?.imagen3
-     
-          
-          this.crudService.addArticulo(this.crudService.unArticulo).subscribe(res => { this.crudService.snack('creado'); 
+                    this.crudService.unArticulo.imagen2 = this.imagen2
+                    this.crudService.unArticulo.imagen3 = this.imagen3
+                    // console.log('antes de agregar', this.crudService.unArticulo.imagen2 )
+
+                    console.log('7 ty 8 ', this.crudService.unArticulo.resultadoID7)
+                    console.log('7 ty 8 ', this.crudService.unArticulo.resultadoID8)
+                    
+                    console.log('7 ty 8 ', this.crudService.unArticulo.resultadoCategoria7)
+                    console.log('7 ty 8 ', this.crudService.unArticulo.resultadoCategoria8)
+
+console.log(this.crudService.unArticulo)
+          this.crudService.addArticulo(this.crudService.unArticulo)
+          .subscribe(res => { this.crudService.snack('creado'); 
           this.loadingGuardar= false
-          this.reload()
+          // this.reload()
             })
       }
       

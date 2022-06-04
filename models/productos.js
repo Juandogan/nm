@@ -53,8 +53,7 @@ const ProductoSchema = new Schema({
   resultadoImagen3:{type: String, required : false},
   resultadoImagen4:{type: String, required : false},
   resultadoImagen5:{type: String, required : false},
-  resultadoImagen6:{type: String, required : false},
-  
+  resultadoImagen6:{type: String, required : false},  
   resultadoImagen7:{type: String, required : false},
   resultadoImagen8:{type: String, required : false},
 

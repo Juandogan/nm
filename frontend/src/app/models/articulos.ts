@@ -28,8 +28,8 @@ export class Articulos {
         resultadoID4 = '',
         resultadoID5 = '',        
         resultadoID6 = '',
-        resultadoID7 = "", 
-        resultadoID8="",
+        resultadoID7 = '', 
+        resultadoID8='',
         posicion = 0,
         
         art1='',
@@ -85,14 +85,14 @@ this.art8 =  art8
 this.marginLeft = marginLeft
 this.posicion =posicion
 
-this.resultadoCategoria=  resultadoCategoria
-this.resultadoCategoria2= resultadoCategoria2
-this.resultadoCategoria3= resultadoCategoria3
-this.resultadoCategoria4= resultadoCategoria4
-this.resultadoCategoria5= resultadoCategoria5
-this.resultadoCategoria6= resultadoCategoria6
-this.resultadoCategoria7= resultadoCategoria7
-this.resultadoCategoria8= resultadoCategoria8
+this.resultadoCategoria =  resultadoCategoria
+this.resultadoCategoria2 = resultadoCategoria2
+this.resultadoCategoria3 = resultadoCategoria3
+this.resultadoCategoria4 = resultadoCategoria4
+this.resultadoCategoria5 = resultadoCategoria5
+this.resultadoCategoria6 = resultadoCategoria6
+this.resultadoCategoria7 = resultadoCategoria7
+this.resultadoCategoria8 = resultadoCategoria8
 
 
 this.resultadoImagen  = resultadoImagen
