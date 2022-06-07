@@ -20,12 +20,8 @@ export class BIndiceComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.descripcion = this.data?.descripcion  
-    this.link = this.data?.resultadoImagen
-    this.titulo = this.data?.art1
-    this.ruta =this.data?.resultadoID
-
-    console.log(this.descripcion,'sdsdsdsdssd')
+  this.cambioImagen1()
+    
      
   }
 

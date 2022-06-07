@@ -7,14 +7,14 @@ import { CrudService } from 'src/app/services/crud.service';
   styleUrls: ['./a-portada.component.css']
 })
 export class APortadaComponent implements OnInit {
-  
+  @Input('nro') nro : any ;
   @Input('data') data : any ;
-
+ numero=0
  link=""
   constructor(private crudService:CrudService) { }
 
   ngOnInit(): void {
-
+   this.numero = this.nro + 137
    this.link = this.data.imagen1
   }
 

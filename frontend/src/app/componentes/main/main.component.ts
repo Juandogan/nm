@@ -24,7 +24,7 @@ articulos2: Articulos[] = [];
 nota:any
 loader= true;
 editorial = ""
-
+numeroEdicion=0
   constructor(public crudService:CrudService,private ruta:ActivatedRoute) { }
  
 
@@ -44,14 +44,18 @@ editorial = ""
     for(const post of this.articulos){
       var aux = post?.categoria
       if (aux?.indexOf('revista'.toLowerCase()) > -1)
+
       {
-                
+
         resultPost.push(post) 
-      this.articulos = resultPost
+      this.articulos = resultPost.reverse()
       this.editorial = this.articulos[0]?.autor
      console.log(this.articulos,"esto es main 1")
+     if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
+      this.numeroEdicion = 139}
+     else{this.numeroEdicion = 138}
       }
-
+      
     }
     this.loading = false
     window.scroll(0,0)

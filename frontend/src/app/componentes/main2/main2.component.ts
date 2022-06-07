@@ -23,8 +23,8 @@ public color = "rgb(33,33,33)"
 articulos: any
 nota:any
 loader= true;
-editorial = ""
-
+editorial = "";
+numeroEdicion =0;
   constructor(public crudService:CrudService, private ruta:ActivatedRoute) { }
  
 
@@ -35,6 +35,13 @@ editorial = ""
        console.log(this.nota,'llega por link')
        this.loading = false
        this.articulos = this.nota
+       
+       if(this.articulos[0]._id === "62994ffa6c66ee10cd739c8a"){
+         this.numeroEdicion = 138
+               
+       } else{this.numeroEdicion = 139}
+
+       
      })
 
       // this.pedirArticulos()
@@ -50,19 +57,24 @@ console.log(res)
       var aux = post?.categoria
       if (aux?.indexOf('revista'.toLowerCase()) > -1)
       {
-                
+       
+        
         resultPost.push(post) 
       this.articulos = resultPost
      console.log(this.articulos,"esto es main 1")
-      }
+
+  
+
+     }
+     
+     
+     
 
     }
      this.loading = false
     window.scroll(0,0)
 
-    
-
-    
+       
   
   
       });//fin de subscribe
@@ -70,7 +82,7 @@ console.log(res)
 
     saltos2(data:string){
       var aux2 = data.split('<h2>').join(`<h2 style=" font-weight: 700; 
-line-height: 20px;
+line-height: 32px;
 letter-spacing: -1px;
 font-size:22px!important;
 color:white;
@@ -86,16 +98,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;};">
  margin-bottom:10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"`)
     
-aux2 = aux2.split('<p').join(`<p style="
-                                  font-weight: 400;
-                                  margin-top:-10px;
-                                  font-size: 20px; 
-                                  line-height: 28px;
-                                  color:white;
-                                  text-align:left;  
-                         text-justify:inter-character;
-                                  "`)
-                                                                          
+                                    
                                         // aux2 = aux2.split('<strong').join('<strong style="font-size:14px;  font-weight: 800;"')
                                         // aux2 = aux2.split('</p></strong>').join('</p></b>')
 
@@ -106,7 +109,7 @@ aux2 = aux2.split('<p').join(`<p style="
 
                                         aux2 = aux2.split('<img').join('<img style="width:100%; margin-top:10px; margin-bottom:10px"')
                                         
-                                        aux2 = aux2.split('<strong>').join('<strong style="font-size:20px;line-height: 0px!important; ">')
+                                       
                                         aux2 = aux2.split('https://www.youtube.com/watch?v=').join('https://www.youtube.com/embed/')
                                         aux2 = aux2.split(' ,').join(', ')
                                         aux2 = aux2.split(' .').join('. ')
@@ -125,6 +128,7 @@ aux2 = aux2.split('<p').join(`<p style="
     
     
        };
+
 
 
   
