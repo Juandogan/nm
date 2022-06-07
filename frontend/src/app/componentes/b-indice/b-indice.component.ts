@@ -26,6 +26,7 @@ export class BIndiceComponent implements OnInit {
     this.ruta =this.data?.resultadoID
 
     console.log(this.descripcion,'sdsdsdsdssd')
+     
   }
 
   cambioImagen1(){

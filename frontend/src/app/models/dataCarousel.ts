@@ -7,7 +7,7 @@ export const carouselDataItems : Carousel[] = [
         id: 0,
         fecha: '',
         titulo:'Mayo 2022 - Nº 138',
-        subtitulo:'http://revistadigital.culturademontania.org.ar/edicion/62994ffa6c66ee10cd739c8a',
+        subtitulo:'http://www.culturademontania.org.ar/Noticias/05_2022/revista_digital_ccam_ini_052022.html',
         link:'',
         image:'../../../assets/tapa138.jpg',
         order:'',

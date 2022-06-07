@@ -70,7 +70,7 @@ console.log(res)
 
     saltos2(data:string){
       var aux2 = data.split('<h2>').join(`<h2 style=" font-weight: 700; 
-line-height: 32px;
+line-height: 20px;
 letter-spacing: -1px;
 font-size:22px!important;
 color:white;
@@ -90,9 +90,9 @@ aux2 = aux2.split('<p').join(`<p style="
                                   font-weight: 400;
                                   margin-top:-10px;
                                   font-size: 20px; 
-                                  line-height: 32px;
+                                  line-height: 28px;
                                   color:white;
-                                  text-align:justify;  
+                                  text-align:left;  
                          text-justify:inter-character;
                                   "`)
                                                                           

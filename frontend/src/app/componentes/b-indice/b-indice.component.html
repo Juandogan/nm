@@ -119,28 +119,28 @@
     <div class="poner600" style="margin-top: 10px;">
       <div class="row">
       <div class="col-5"> 
-        <a routerLink="/articulo/{{this.ruta}}" >
+        <a  routerLink="/articulo/{{this.data?.resultadoID}}" >
         <img  class="img" src="{{this.data?.resultadoImagen}}" width="100%" alt="" style="height: 100px!important;">  
         </a> 
       </div>              
 
         <div  class="col-7" style=" background-color:#66562273;padding:0px" (click)="cambioImagen1()">
-          <a routerLink="/articulo/{{this.ruta}}">
+          <a routerLink="/articulo/{{this.data?.resultadoID}}">
           <p class="titulo truncar3" >{{this.data?.art1}}</a> 
         </div>
       </div>
       
       <div class="row  ">
         <div class="col-5"> 
-          <a routerLink="/articulo/{{this.ruta}}">
+          <a routerLink="/articulo/{{this.data?.resultadoID2}}">
        <img  class="img" src="{{data?.resultadoImagen2}}" width="100%" alt="" height="100%">  
        </a>
        </div>  
       
   
          
-          <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-            <a routerLink="/articulo/{{this.ruta}}">
+          <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen2()">
+            <a routerLink="/articulo/{{this.data?.resultadoID2}}">
             <p class="titulo" style="margin-left:0px">{{this.data?.art2}}</p> 
             </a>
               
@@ -149,15 +149,15 @@
         
         <div class="row ">
           <div class="col-5"> 
-            <a routerLink="/articulo/{{this.ruta}}">
+            <a routerLink="/articulo/{{this.data?.resultadoID3}}">
          <img class="img" src="{{data?.resultadoImagen3}}" width="100%" alt="" height="100%">  
         </a>
             </div>  
             
     
            
-            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-              <a routerLink="/articulo/{{this.ruta}}">
+            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen3()">
+              <a routerLink="/articulo/{{this.data?.resultadoID3}}">
             <p class="titulo"style="margin-left:0px">{{this.data?.art3}}</p> 
     </a>
             
@@ -168,7 +168,7 @@
                
         <div class="row ">
           <div class="col-5"> 
-          <a routerLink="/articulo/{{this.ruta}}">
+          <a routerLink="/articulo/{{this.data?.resultadoID4}}">
           <img class="img" src="{{data?.resultadoImagen4}}" width="100%" alt="" height="100%">  
         </a>
      
@@ -176,8 +176,8 @@
             
     
            
-            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-              <a routerLink="/articulo/{{this.ruta}}">
+            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen4()">
+              <a routerLink="/articulo/{{this.data?.resultadoID4}}">
       <p class="titulo"style="margin-left:0px">{{data?.art4}}</p> 
     </a>
             
@@ -188,15 +188,15 @@
                          
         <div class="row ">
           <div class="col-5"> 
-            <a routerLink="/articulo/{{this.ruta}}">
+            <a routerLink="/articulo/{{this.data?.resultadoID5}}">
          <img class="img" src="{{data?.resultadoImagen5}}" width="100%" height="100%" alt="">  
      </a>
             </div>  
             
     
            
-            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-              <a routerLink="/articulo/{{this.ruta}}">
+            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen5()">
+              <a routerLink="/articulo/{{this.data?.resultadoID5}}">
       <p class="titulo"style="margin-left:0px">{{data?.art5}}</p> 
         </a>
                 
@@ -205,15 +205,15 @@
                    
           <div class="row ">
             <div class="col-5"> 
-              <a routerLink="/articulo/{{this.ruta}}">
+              <a routerLink="/articulo/{{this.data?.resultadoID6}}">
            <img class="img" src="{{data?.resultadoImagen6}}" width="100%" height="100%"alt="">  
           </a>
               </div>  
               
       
              
-              <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-                <a routerLink="/articulo/{{this.ruta}}"> 
+              <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen6()">
+                <a routerLink="/articulo/{{this.data?.resultadoID6}}"> 
         <p class="titulo"style="margin-left:0px">{{data?.art6}}</p> 
         </a>
               
@@ -224,7 +224,7 @@
                           
             <div class="row ">
               <div class="col-5"> 
-                <a routerLink="/articulo/{{this.ruta}}">
+                <a routerLink="/articulo/{{this.data?.resultadoID7}}">
              <img class="img" src="{{data?.resultadoImagen7}}" width="100%" height="100%"alt="">  
              </a>
          
@@ -232,8 +232,8 @@
                 
         
                
-                <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen1()">
-                  <a routerLink="/articulo/{{this.ruta}}">
+                <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen7()">
+                  <a routerLink="/articulo/{{this.data?.resultadoID7}}">
           <p class="titulo"style="margin-left:0px"> {{data?.art7}}</p> 
           </a>
                 
@@ -244,15 +244,15 @@
                      
               <div class="row ">
                 <div class="col-5" style="margin-bottom: 20px;"> 
-                  <a routerLink="/articulo/{{this.ruta}}">
+                  <a routerLink="/articulo/{{this.data?.resultadoID8}}">
                <img class="img" src="{{data?.resultadoImagen8}}" width="100%" height="100%" alt="" >  
                       </a>
                   </div>  
                   
           
                  
-                  <div  class="col-7" style=" background-color:#66562273;margin-bottom: 20px;" (click)="cambioImagen1()">
-                    <a routerLink="/articulo/{{this.ruta}}">
+                  <div  class="col-7" style=" background-color:#66562273;margin-bottom: 20px;" (click)="cambioImagen8()">
+                    <a routerLink="/articulo/{{this.data?.resultadoID8}}">
                    <p class="titulo"style="margin-left:0px">{{data.art8}}</p> 
             </a>
                   
