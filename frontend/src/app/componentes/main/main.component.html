@@ -13,7 +13,7 @@
   <!-- <img src="../../../assets/fondo2.png" alt="" style="margin-top:-260px"> -->
   
         <div  *ngIf="!loading" style="text-align: left;">
-        <h1 class="indice" >INDICE - MAYO </h1>
+        <h1 class="indice" >INDICE - {{articulos[0]?.titulo}}  </h1>
         
         <app-b-indice [data]="articulos[0]" ></app-b-indice>
   
@@ -68,7 +68,7 @@
 
 </div>
 <br>
-<div   style="height:377px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
+<div class="quitar600"  style="height:377px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
   <br>
 <div style="background-color: #8b5a00;">  
 

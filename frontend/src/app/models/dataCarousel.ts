@@ -2,6 +2,17 @@ import { Carousel } from '../models/carousel'
 
 
 export const carouselDataItems : Carousel[] = [
+    {
+            
+        id: 0,
+        fecha: '',
+        titulo:'Mayo 2022 - Nº 138',
+        subtitulo:'http://revistadigital.culturademontania.org.ar/edicion/62994ffa6c66ee10cd739c8a',
+        link:'',
+        image:'../../../assets/tapa138.jpg',
+        order:'',
+        marginLeft :0   
+        },  
 {
             
     id: 1,
@@ -32,7 +43,6 @@ export const carouselDataItems : Carousel[] = [
   
             id: 3,
             fecha: '',
-        
             titulo:'Especial NOA Nº 135',
             subtitulo:'http://www.culturademontania.org.ar/Revista_Digital/02_2022/febrero_2022.htm',
             link:'',
