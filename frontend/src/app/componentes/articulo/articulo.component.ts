@@ -20,7 +20,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
 
   ngOnInit(): void {
       var height = document.getElementById("head").offsetHeight;
-      document.getElementById("content").style.height = height * 2.3 + 'px';
+      document.getElementById("content").style.height = height  + 'px';
       console.log(height)
       window.scroll(0,0)
       this.ruta.data.subscribe((data)=>{
@@ -103,16 +103,18 @@ export class ArticuloComponent implements OnInit,OnDestroy {
                                           aux2 = aux2.split(' ,').join(', ')
                                           aux2 = aux2.split(' .').join('. ')
                                           aux2 = aux2.split('<figure class="media"><oembed url="').join('<iframe width="100%" height="515" src="')
-                                          aux2 = aux2.split('<h4>').join('<h4 style="text-align:center; font-size:15px; margin-top:-20px; margin-bottom:30px;">')
+                                          aux2 = aux2.split('<h4>').join('<h4 style="text-align:center!important; font-size:15px; margin-top:-20px; margin-bottom:30px;">')
                                           aux2 = aux2.split('"></oembed></figure>').join('" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
                                           aux2 = aux2.split('<a ').join('<a target="_blank"')
+                                          aux2 = aux2.split('</a></p><p><strong>').join('</a></p><p style="text-align:center"><strong>')
+
                                           // aux2 = aux2.split('<img style="width:100%; margin-top:10px" src="').join('<a href="')
                                           // aux2 = aux2.split('ng">').join('ng"></a>')
                                           // aux2 = aux2.split('pg">').join('pg"></a>')
                     
                                           
       // console.log('sa' + aux2)
-      console.log(this.nota)
+      console.log(aux2)
         return (aux2)
       
       
@@ -126,6 +128,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
  sumarContador(){
  
   //incrementa el contador
+  this.crudService.unArticulo.comentarios = this.nota[0]?.comentarios
   this.crudService.unArticulo.vistas = this.auxContador + 1 
   this.crudService.unArticulo.imagen1 = this.nota[0]?.imagen1
   this.crudService.unArticulo.imagen2 = this.nota[0]?.imagen2

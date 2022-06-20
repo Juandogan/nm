@@ -22,7 +22,7 @@
  
 }
 
-    
+.poner600{display:none}
 
 
 h1{font-family: 'Roboto Slab', serif;}
@@ -375,6 +375,7 @@ ul{margin:0px; padding:5px;margin-left: 15px}
   }
 
   @media (max-width:600px){
+    .poner600{display:inline}
     .margenL{ margin-left: 0px; }
   .margenR{margin-right: 0px; } 
     .barra{margin-top:0px}

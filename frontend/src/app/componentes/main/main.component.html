@@ -1,8 +1,8 @@
-<div class="cuerpo margenL margenR" style="z-index:1000 ; "> 
+<div class="cuerpo margenL margenR" style="z-index:1000 ;" > 
     <div class="barraInfo">
       <h2 *ngIf="!loading"  class=" texto  quitar600 " style="font-size:12px;padding:5px"><b style="text-transform:uppercase;">Nro. {{numeroEdicion}} | MES:  {{articulos[0]?.titulo}} | AÑO 2022</b></h2>
       <div style="text-align: center;">
-      <div *ngIf="loading " class="loadingio-spinner-dual-ring-xg1vnrf2b6o" style=" margin-top: 150px;height: 500px;"><div class="ldio-z7fu6e1den">
+      <div *ngIf="loading " class="loadingio-spinner-dual-ring-xg1vnrf2b6o" style=" margin-top: 150px; min-height:1000px;"><div class="ldio-z7fu6e1den">
         
         <div></div><div><div></div></div>
         </div></div>
@@ -28,7 +28,7 @@
   <div>
      <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> 
    <!-- <img class="responsi2" src="../../../assets/LogoCCAM_Entero.png" width="100px" alt="" style="margin-top: 10px;"> -->
-    <p class="editorialParrafo"  style="line-height:27px"
+    <p class="editorialParrafo" 
      [innerHTML]=saltos2(this.editorial)|sanetizer > 
      </p>
 
@@ -68,11 +68,16 @@
 
 </div>
 <br>
-<div class="quitar600"  style="height:377px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
+<div  class="quitar600" style="height:410px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
   <br>
 <div style="background-color: #8b5a00;">  
 
 <h1 class="indice quitar600"  style="margin-left: 23px;margin-bottom: 15px;">Ediciones anteriores </h1>
+<div class="publiMobile">
+   
+
+</div>
+
 </div>
 <!-- <div class="row" style="margin-top:30px; margin-left:10px; padding-right:35px ;z-index: -1000">
   <div class="col-sm-8	col-md-5 col-lg-4	col-xl-2">
@@ -267,8 +272,8 @@
           <!-- logos y texto fooder mobile -->
         <div class="mobile" style="width:100%!important">
           <div  *ngIf="!loading  " class="flex-container "> 
-            <div class="flex-items" >
-              <div style="text-align:left;" >
+                    <div class="flex-items" >
+              <div style="text-align:center;" >
                 <a href=" culturademontania.org.ar" target="_blank">
               <img src="../../../assets/LogoCCAM_Entero.png" alt="" style="width: 80px; margin-top:470px; margin-left: 10px" >
             </a>

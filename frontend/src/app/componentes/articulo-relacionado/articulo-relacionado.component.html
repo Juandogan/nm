@@ -8,7 +8,7 @@
 
     <div class="row" >
 
-      <div *ngIf="this.nota.art1" class="card col-4">
+      <div *ngIf="this.nota.art1" class="card col-sm-12	col-md-12 col-lg-4	col-xl-4">
         <a routerLink="../../articulo/{{this.nota.resultadoID}}"  target="_blank">
           <img class="card-img-top sombra"src="{{this.nota.resultadoImagen}}" alt="" height="200px" style="object-fit: cover;">
           </a>
@@ -22,7 +22,7 @@
           </div>     
       </div>  
 
-      <div *ngIf="this.nota.art2"  class="card col-4" >
+      <div *ngIf="this.nota.art2"  class="card col-sm-6	col-md-6 col-lg-4	col-xl-4" >
         <a routerLink="../../articulo/{{this.nota.resultadoID2}}"  target="_blank">
           <img class="card-img-top sombra"src="{{nota.resultadoImagen2}}" alt="" height="200px" style="object-fit: cover;">
           </a>
@@ -34,7 +34,7 @@
           </div>     
       </div>  
 
-      <div *ngIf="this.nota.art3"  class="card col-4" >
+      <div *ngIf="this.nota.art3"  class="card col-sm-6	col-md-6 col-lg-4	col-xl-4" >
         <a routerLink="../../articulo/{{this.nota.resultadoID3}}"  target="_blank">
           <img class="card-img-top sombra"src="{{nota.resultadoImagen3}}" alt="" height="200px" style="object-fit: cover;">
         </a>
@@ -47,7 +47,7 @@
           
           </div>     
       </div>  
-      <div *ngIf="this.nota?.art4" class="card col-4"  >
+      <div *ngIf="this.nota?.art4" class="card col-sm-12	col-md-12 col-lg-4	col-xl-4"  >
         <a routerLink="../../articulo/{{this.nota.resultadoID4}}"  target="_blank">
           <img class="card-img-top sombra"src="{{nota?.resultadoImagen4}}" alt="" height="200px" style="object-fit: cover;">
         </a>
@@ -60,7 +60,7 @@
           
           </div>     
       </div>  
-      <div *ngIf="this.nota?.art5"  class="card col-4" >
+      <div *ngIf="this.nota?.art5"  class="card card col-sm-6	col-md-6 col-lg-4	col-xl-4" >
         <a routerLink="../../articulo/{{this.nota.resultadoID5}}"  target="_blank">
           <img class="card-img-top sombra"src="{{nota?.resultadoImagen5}}" alt="" height="200px" style="object-fit: cover;">
         </a>
@@ -73,7 +73,7 @@
           
           </div>     
       </div>  
-      <div *ngIf="this.nota?.art6" class="card col-4"  >
+      <div *ngIf="this.nota?.art6" class="card card col-sm-6	col-md-6 col-lg-4	col-xl-4"  >
         <a routerLink="../../articulo/{{this.nota.resultadoID6}}"  target="_blank">
           <img class="card-img-top sombra"src="{{nota?.resultadoImagen6}}" alt="" height="200px" style="object-fit: cover;">
         </a>

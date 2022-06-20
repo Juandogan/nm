@@ -38,6 +38,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { Main2Component } from './componentes/main2/main2.component';
 import { PosicionesPipe } from './pipes/posiciones.pipe';
 import { Filtrox10Pipe } from './pipes/filtrox10.pipe';
+import { ComentariosComponent } from './componentes/comentarios/comentarios.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { Filtrox10Pipe } from './pipes/filtrox10.pipe';
     Main2Component,
     PosicionesPipe,
     Filtrox10Pipe,
+    ComentariosComponent,
 
     
   ],

@@ -75,7 +75,8 @@ openInput6:Boolean = true;
   ocultar=true;
   ocultar2=true;
   inputDisable = true
-  
+  comentarios=""
+
   //inputs estos estan en NGMODEL en el html de cada input
   resultadoTitulo=""
   resultadoTitulo2=""
@@ -241,13 +242,13 @@ resultadoImagen8:string =""
             return
          }
          else{
+          this.crudService.unArticulo.comentarios= this.comentarios
           this.crudService.unArticulo._id = this.articuloBusqueda._id
           this.crudService.unArticulo.fecha = String(this.fechaPublicacion)
           this.crudService.unArticulo.titulo = this.titulo;
           this.crudService.unArticulo.subtitulo = this.subtitulo
-          
           this.crudService.unArticulo._id = this.articuloBusqueda._id
-           this.categoria = this.articuloBusqueda.categoria
+          this.categoria = this.articuloBusqueda.categoria
           this._id = this.articuloBusqueda._id
           this.titulo =  this.articuloBusqueda.titulo
           this.subtitulo =  this.articuloBusqueda.subtitulo
