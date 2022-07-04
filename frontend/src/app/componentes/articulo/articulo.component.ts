@@ -114,7 +114,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
                     
                                           
       // console.log('sa' + aux2)
-      console.log(aux2)
+      // console.log(aux2)
         return (aux2)
       
       

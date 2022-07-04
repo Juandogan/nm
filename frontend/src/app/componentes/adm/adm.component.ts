@@ -716,7 +716,8 @@ fnOcultar(){
               this.crudService.modificarArticulo(this.crudService.unArticulo)
         .subscribe(res => {
           this.loadingGuardar= false
-          this.crudService.snack('Modificado!')});
+          console.log('modifica esto:', this.crudService.unArticulo.art7)
+          this.crudService.snack('Modificado!x')});
           // this.reload()
        
       }

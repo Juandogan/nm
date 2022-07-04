@@ -7,7 +7,7 @@ const Productos  = require('../models/productos')
 
 //GET
 productosCtrl.getProductos = async (req,res) =>{
-const productos = await Productos.find();
+const productos = await Productos.find().limit(100);
 res.json(productos);
 
 };
@@ -15,6 +15,7 @@ res.json(productos);
 //POST
 productosCtrl.newProductos = async(req,res) => {
     const productos = new Productos({    
+        contadorComentarios:req.body.contadorComentarios,
         comentarios:req.body.comentarios,
         fecha:req.body.fecha,
         fechaMod:req.body.fechaMod,
@@ -84,6 +85,7 @@ productosCtrl.newProductos = async(req,res) => {
 productosCtrl.modificarProducto = async (req,res) => {
     const { id } = req.params;
     const producto = { 
+        contadorComentarios:req.body.contadorComentarios,
         comentarios:req.body.comentarios,
         fechaMod:req.body.fechaMod,
         titulo:req.body.titulo,

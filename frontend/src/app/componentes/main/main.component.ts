@@ -52,8 +52,8 @@ numeroEdicion=0
       this.editorial = this.articulos[0]?.autor
      console.log(this.articulos,"esto es main 1")
      if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
-      this.numeroEdicion = 139}
-     else{this.numeroEdicion = 138}
+      this.numeroEdicion = 140}
+     else{this.numeroEdicion = 140}
       }
       
     }

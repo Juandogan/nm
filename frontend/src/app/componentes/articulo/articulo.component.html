@@ -20,17 +20,16 @@
                  <br>
 
                  <div style="margin-left:10px; margin-right:10px">
-                            <p class="capital nota "  [innerHTML]=saltos2(nota[0]?.nota)|sanetizer >  
+                        <p class="capital nota "  [innerHTML]=saltos2(nota[0]?.nota)|sanetizer >   
                                             <!-- <p class="capital nota poner600" [innerHTML]=saltos(nota[0]?.nota)|sanetizer >                                                                  -->
-                            </p> 
+                             </p>  
                           </div>
                           <br>
-                           <button class="btn btn-dark" (click)="subir()">
+                           <button class="btn btn-dark" (click)="subir()" style="border-radius: 100px">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
                               <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                            </svg> 
-                            
-                            SUBIR</button> 
+                            </svg>          Subir                   
+                            </button> 
 
                            <br><br> 
                        
@@ -111,6 +110,7 @@
           </button> -->
            </div>
            </form>
+           <!-- <app-comentarios [data]="nota[0]"></app-comentarios> -->
          </div>
              
         
