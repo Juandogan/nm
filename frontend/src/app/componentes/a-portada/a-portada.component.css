@@ -1,12 +1,27 @@
 .titular{
     margin-top:-5px; 
-    text-shadow: 1px 1px 3px black; 
+    text-shadow: 1px 1px 3px #000000; 
     margin-left:20px;
     color:white;
     text-align: left;
     font-size: 30px;
+    
    
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 800;
+    line-height: 40px;
+    min-height: 100% ;
+   }
+
+   .titular2{
+    margin-top:-5px; 
+    text-shadow: 1px 1px 3px #000000; 
+    margin-left:20px;
+    color:white;
+    text-align: left;
+    font-size: 35px;
+    
+       /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-weight: 800;
     line-height: 40px;
     min-height: 100% ;
@@ -115,7 +130,7 @@
     .quitar1300{display: none;}
   }
     @media (max-width:600px){
-
+      .titular2{font-size: 25px; line-height: 28px; margin-left:10px}
       .quitar{display:none}
       .categoria{font-size:12px; margin-left:10px}
 

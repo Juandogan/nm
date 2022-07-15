@@ -16,8 +16,9 @@ export class CrudService {
 
   
   readonly URL_API  = "http://168.197.50.191/articulos";
-  readonly URL_APIx  = "http://localhost:3000/articulos";
-  readonly URL_API2 = "http://localhost:3000/adm";
+  readonly URL_API2  = "http://168.197.50.191/adm";
+  // readonly URL_APIx  = "http://localhost:3000/articulos";
+  // readonly URL_API2 = "http://localhost:3000/adm";
   
   cambioPantalla = true;
   Articulos:Articulos[]=[];
@@ -52,6 +53,14 @@ export class CrudService {
   getArticulos() {
     // var precio:number = Number(this.pedido.precio)    no se pa que funciona
     return this.http.get(this.URL_API);
+
+  };
+
+  
+
+  getArticulos2() {
+    // var precio:number = Number(this.pedido.precio)    no se pa que funciona
+    return this.http.get(this.URL_API2);
 
   };
 

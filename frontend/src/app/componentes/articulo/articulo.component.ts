@@ -35,7 +35,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
 
       pedirArticulos(){    // llamo al servicio del crud y susbscribo la respuesta luego guardo la data en el front en el servicio y en este componente.
         // const resultPost =  [];
-        this.crudService.getArticulos().subscribe(res =>{
+        this.crudService.getArticulos2().subscribe(res =>{
         this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
         this.articulos2 = this.articulos
         // for(const post of this.articulos){

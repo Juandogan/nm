@@ -4,13 +4,13 @@
 <h4  *ngIf="!this.nota.comentarios"  class="titulo" style="font-size: 16px; color:gray">No hay comentarios aún,  sé el primero!</h4><hr *ngIf="!this.nota.comentarios">
 
 <h1  *ngIf="this.nota.comentarios"  class="titulo">| COMENTARIOS({{this.comentarios.length}})</h1>
-<hr>
-<h5 class="comentarios" [innerHTML]=this.comentarios[0]></h5>
-<hr *ngIf="this.comentarios[0]">
-<h5 class="comentarios" [innerHTML]=this.comentarios[1]></h5>
 <hr *ngIf="this.comentarios[1]">
-<h5 class="comentarios" [innerHTML]=this.comentarios[2]></h5>
+<h5 *ngIf="this.comentarios[1]" class="comentarios" [innerHTML]=this.comentarios[1]></h5>
 <hr *ngIf="this.comentarios[2]">
+<h5  *ngIf="this.comentarios[2]" class="comentarios" [innerHTML]=this.comentarios[2]></h5>
+<hr *ngIf="this.comentarios[3]">
+<h5 *ngIf="this.comentarios[3]" class="comentarios" [innerHTML]=this.comentarios[3]></h5>
+<hr *ngIf="this.comentarios[3]">
 <!-- <h5 class="comentarios" [innerHTML]=this.comentarios[3]></h5>
 <hr *ngIf="this.comentarios[3]">
 <h5 class="comentarios" [innerHTML]=this.comentarios[4]></h5>
@@ -24,13 +24,19 @@
        
     Comentar</button>
 
-<div *ngIf="formulario">
+<div *ngIf="formulario" style="margin-top:20px">
 <h6 class="descripcionInput ">Nombre</h6>
 <div class="input-group ajusteAncho"     >
     <input [(ngModel)]="this.nombre"  
     type="text" class="form-control" placeholder="Nombre" 
     aria-label="Recipient's username" aria-describedby="basic-addon2">
  </div>   
+ <h6 class="descripcionInput mt-2">Email</h6>
+ <div class="input-group ajusteAncho"     >
+  <input [(ngModel)]="this.email"  
+  type="email" class="form-control" placeholder="Email" 
+  aria-label="Recipient's username" aria-describedby="basic-addon2">
+</div>  
  <br>
   
  <h6 class="descripcionInput">Comentarios</h6>
@@ -41,7 +47,8 @@
      </textarea>   
 </div>
 <!-- <h6 *ngIf=""" style="color:red"> Falta completar nombre y el mensaje</h6> -->
+<div class="mt-2">
 <button (click)="formulario=false; btnComentar = true; agregarPublicacion()"  class="btn btn-dark mt-2">Enviar</button>
 <button (click)="formulario=false; btnComentar = true; "  class="btn btn-dark mt-2 " style="margin-left:5px">Cancelar</button>
-
+</div>
 </div>

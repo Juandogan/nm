@@ -3,6 +3,7 @@ import { Articulos } from 'src/app/models/articulos';
 import { CrudService } from 'src/app/services/crud.service';
 import moment from 'moment';
 
+
 @Component({
   selector: 'app-comentarios',
   templateUrl: './comentarios.component.html',
@@ -11,6 +12,7 @@ import moment from 'moment';
 export class ComentariosComponent implements OnInit {
   comentario =""
   nombre =""
+  email = ""
   articulos: Articulos[] = [] 
   formulario = false
   btnComentar = true
@@ -23,9 +25,15 @@ export class ComentariosComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.nota)
+    this.nota.com
+
     var aux = this.nota.comentarios
     if( aux  ){
-      this.comentarios = aux.split("<hr>")
+      this.comentarios = aux.split("<hr>").reverse()
+      console.log(this.comentarios,'dale')
+    } else {
+      
+      this.comentarios = []
     }
 
 
@@ -52,9 +60,9 @@ else{
 
 const hoy = Date.now(); 
 if(this.nota.comentarios === undefined || this.nota.comentarios ===null){
-var post =   moment(hoy).format("DD/MM/YY hh:mm") + ' ' +'<b>'+ this.nombre  +'</b>'+ ': ' + '<br>' + this.comentario + '<hr>'
+var post = moment(hoy).format("DD/MM/YY hh:mm") + ' ' +'<b>'+ this.nombre  +'</b>'+ ': ' + '<br>' + this.comentario + '<hr>'
 } else {
-var post =  this.nota.comentarios + '<div class="badge badge-secondary">' + moment(hoy).format("DD/MM/YY hh:mm") + '</div>' + ' ' + '<b>'+ this.nombre  +'</b>'+ ': ' + '<br>'
+var post =  this.nota.comentarios + '<div>' + moment(hoy).format("DD/MM/YY hh:mm") + '</div>' + ' ' + '<b>'+ this.nombre  +'</b>'+ ': ' + '<br>'
  + this.comentario + '<hr>'
 }
   
@@ -66,8 +74,8 @@ var post =  this.nota.comentarios + '<div class="badge badge-secondary">' + mome
       {  
 
             this.crudService.modificarArticulo(this.nota)
-                  .subscribe(res => { this.comentario = "" ;this.nombre ="";               
-
+                  .subscribe(res => { this.comentario = "" ;this.nombre =""; this.email=""              
+                  this.comentario = this.nota
                 });
                     
         
