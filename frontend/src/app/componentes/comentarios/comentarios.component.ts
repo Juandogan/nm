@@ -2,6 +2,7 @@ import { Component, OnInit,Input } from '@angular/core';
 import { Articulos } from 'src/app/models/articulos';
 import { CrudService } from 'src/app/services/crud.service';
 import moment from 'moment';
+ 
 
 
 @Component({
@@ -18,6 +19,8 @@ export class ComentariosComponent implements OnInit {
   btnComentar = true
   mensaje = false
 
+  loading = false
+
   @Input('data') nota : any ;
 
   comentarios:any
@@ -25,8 +28,7 @@ export class ComentariosComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.nota)
-    this.nota.com
-
+   
     var aux = this.nota.comentarios
     if( aux  ){
       this.comentarios = aux.split("<hr>").reverse()
@@ -51,7 +53,8 @@ console.log(post)
 
  
   agregarPublicacion(){ 
-    if(this.nombre ==="" || this.comentario === ""){
+    if(this.nombre ==="" || this.comentario === "" || this.email === "" ){
+       this.crudService.snack('Los tres campos son obligatorios')
        
    return
     }
@@ -60,7 +63,7 @@ else{
 
 const hoy = Date.now(); 
 if(this.nota.comentarios === undefined || this.nota.comentarios ===null){
-var post = moment(hoy).format("DD/MM/YY hh:mm") + ' ' +'<b>'+ this.nombre  +'</b>'+ ': ' + '<br>' + this.comentario + '<hr>'
+  var post = moment(hoy).format("DD/MM/YY hh:mm") + ' ' +'<b>'+ this.nombre  +'</b>'+ ': ' + '<br>' + this.comentario + '<hr>'
 } else {
 var post =  this.nota.comentarios + '<div>' + moment(hoy).format("DD/MM/YY hh:mm") + '</div>' + ' ' + '<b>'+ this.nombre  +'</b>'+ ': ' + '<br>'
  + this.comentario + '<hr>'
@@ -71,11 +74,28 @@ var post =  this.nota.comentarios + '<div>' + moment(hoy).format("DD/MM/YY hh:mm
       this.nota.contadorComentarios = 'Nuevo'
       
         if( this.crudService.unArticulo?._id)
-      {  
-
+      {   
+          this.nota.correos = this.nota.correos + this.email + " - " 
+          // this.nota.comentarios =""  //borrar comentarios
+           this.loading = true
             this.crudService.modificarArticulo(this.nota)
+              
                   .subscribe(res => { this.comentario = "" ;this.nombre =""; this.email=""              
                   this.comentario = this.nota
+                  this.loading = false
+                  this.crudService.snack('Mensaje enviado')
+
+                  var aux = this.nota.comentarios
+                  if( aux  ){
+                    this.comentarios = aux.split("<hr>").reverse()
+                    console.log(this.comentarios,'dale')
+                    this.comentario = ""
+                  } else {
+                    
+                    return
+                  }
+              
+              
                 });
                     
         
@@ -85,10 +105,26 @@ var post =  this.nota.comentarios + '<div>' + moment(hoy).format("DD/MM/YY hh:mm
       else  {
         
 console.log(this.crudService.unArticulo)
+
+//this.nota.comentarios =""  borrar comentarios
+this.loading = true
+this.nota.correos = this.email + " - " 
         this.crudService.addArticulo(this.nota)
 
         .subscribe(res => { this.comentario = "" ;this.nombre =""; 
   this.formulario=false;
+  this.crudService.snack('Mensaje enviado')
+  this.loading = false
+  var aux = this.nota.comentarios
+  if( aux  ){
+    this.comentarios = aux.split("<hr>").reverse()
+    console.log(this.comentarios,'dale')
+  } else {
+    
+    this.comentarios = []
+  }
+
+
         
         // this.reload()
           })
