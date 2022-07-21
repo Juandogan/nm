@@ -54,12 +54,12 @@ console.log(post)
  
   agregarPublicacion(){ 
     if(this.nombre ==="" || this.comentario === "" || this.email === "" ){
-       this.crudService.snack('Los tres campos son obligatorios')
+       this.crudService.snack('Faltan datos')
        
    return
     }
 else{
-
+this.formulario=false;
 
 const hoy = Date.now(); 
 if(this.nota.comentarios === undefined || this.nota.comentarios ===null){
@@ -67,24 +67,27 @@ if(this.nota.comentarios === undefined || this.nota.comentarios ===null){
 } else {
 var post =  this.nota.comentarios + '<div>' + moment(hoy).format("DD/MM/YY hh:mm") + '</div>' + ' ' + '<b>'+ this.nombre  +'</b>'+ ': ' + '<br>'
  + this.comentario + '<hr>'
+
+ 
 }
   
-    
-      this.nota.comentarios = post    
-      this.nota.contadorComentarios = 'Nuevo'
-      
+
+
         if( this.crudService.unArticulo?._id)
       {   
           this.nota.correos = this.nota.correos + this.email + " - " 
-          // this.nota.comentarios =""  //borrar comentarios
+     
+
+           this.nota.comentarios = post    
+          this.nota.contadorComentarios = 'Nuevo' 
+          //this.nota.comentarios =""  //borrar comentarios
            this.loading = true
-            this.crudService.modificarArticulo(this.nota)
-              
-                  .subscribe(res => { this.comentario = "" ;this.nombre =""; this.email=""              
+           
+            this.crudService.modificarArticulo(this.nota).subscribe(res =>
+               { this.comentario = "" ;this.nombre =""; this.email=""              
                   this.comentario = this.nota
                   this.loading = false
                   this.crudService.snack('Mensaje enviado')
-
                   var aux = this.nota.comentarios
                   if( aux  ){
                     this.comentarios = aux.split("<hr>").reverse()
@@ -108,6 +111,8 @@ console.log(this.crudService.unArticulo)
 
 //this.nota.comentarios =""  borrar comentarios
 this.loading = true
+this.nota.comentarios = post    
+this.nota.contadorComentarios = 'Nuevo' 
 this.nota.correos = this.email + " - " 
         this.crudService.addArticulo(this.nota)
 
@@ -118,7 +123,7 @@ this.nota.correos = this.email + " - "
   var aux = this.nota.comentarios
   if( aux  ){
     this.comentarios = aux.split("<hr>").reverse()
-    console.log(this.comentarios,'dale')
+ 
   } else {
     
     this.comentarios = []
