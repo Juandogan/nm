@@ -49,10 +49,11 @@ numeroEdicion=0
 
       
      console.log(this.articulos,"esto es main 1")
-     if(aux?.indexOf('62c227e05b460b1532204eaf'.toLowerCase()) > -1){
+     if(aux?.indexOf('62f04fa687a2613db6b2238f'.toLowerCase()) > -1){
+      
       this.articulos.push(aux)
-      this.numeroEdicion = 140}
-     else{this.numeroEdicion = 140}
+      this.numeroEdicion = 141}
+     else{this.numeroEdicion = 141}
       }
       
     }

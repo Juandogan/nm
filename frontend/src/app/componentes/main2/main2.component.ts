@@ -40,6 +40,10 @@ numeroEdicion =0;
          this.numeroEdicion = 138
                
        } else{this.numeroEdicion = 139}
+       if(this.articulos[0]._id === "62f04fa687a2613db6b2238f"){
+        this.numeroEdicion = 141
+              
+      } else{this.numeroEdicion = 140}
 
        
      })
