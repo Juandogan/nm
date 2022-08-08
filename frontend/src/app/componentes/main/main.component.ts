@@ -47,11 +47,10 @@ numeroEdicion=0
 
       {
 
-        resultPost.push(post) 
-      this.articulos = resultPost.reverse()
-      this.editorial = this.articulos[0]?.autor
+      
      console.log(this.articulos,"esto es main 1")
-     if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
+     if(aux?.indexOf('62c227e05b460b1532204eaf'.toLowerCase()) > -1){
+      this.articulos.push(aux)
       this.numeroEdicion = 140}
      else{this.numeroEdicion = 140}
       }
@@ -63,8 +62,6 @@ numeroEdicion=0
     
 
     
-  
-  
       });//fin de subscribe
     } //fin de pedirProductosthis.
 

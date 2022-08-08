@@ -128,6 +128,8 @@ export class ArticuloComponent implements OnInit,OnDestroy {
  sumarContador(){
  
   //incrementa el contador
+  this.crudService.unArticulo.contadorComentarios = this.nota[0]?.contadorComentarios
+   this.crudService.unArticulo.correos = this.nota[0]?.correos
   this.crudService.unArticulo.comentarios = this.nota[0]?.comentarios
   this.crudService.unArticulo.vistas = this.auxContador + 1 
   this.crudService.unArticulo.imagen1 = this.nota[0]?.imagen1
