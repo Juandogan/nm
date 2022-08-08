@@ -5,7 +5,7 @@ export const carouselDataItems : Carousel[] = [
 
     {
             
-        id: -1 ,
+        id: 0 ,
         fecha: '',
         titulo:'Julio 2022 - Nº 140',
         subtitulo:'http://www.culturademontania.org.ar/Noticias/07_2022/revista_digital_ccam_ini_072022.html',

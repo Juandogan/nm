@@ -36,14 +36,26 @@ numeroEdicion =0;
        this.loading = false
        this.articulos = this.nota
        
-       if(this.articulos[0]._id === "62994ffa6c66ee10cd739c8a"){
-         this.numeroEdicion = 138
-               
-       } else{this.numeroEdicion = 139}
-       if(this.articulos[0]._id === "62f04fa687a2613db6b2238f"){
-        this.numeroEdicion = 141
-              
-      } else{this.numeroEdicion = 140}
+
+       
+
+       if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
+        this.numeroEdicion = 138 } 
+
+       if(this.articulos[0]._id === "62c227e05b460b1532204eaf"){
+         this.numeroEdicion = 139 } 
+
+         if(this.articulos[0]?._id == "62f04fa687a2613db6b2238f"){
+          this.numeroEdicion = 141
+                
+        } 
+      
+      //  else{
+        
+      //   console.log(this.articulos[0].)
+      //   this.numeroEdicion = 139}
+
+       
 
        
      })
