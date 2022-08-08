@@ -61,7 +61,7 @@ numeroEdicion=0
 
     
 
-    
+    this.editorial = this.articulos[2].autor  
       });//fin de subscribe
     } //fin de pedirProductosthis.
 
