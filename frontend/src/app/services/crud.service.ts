@@ -76,6 +76,7 @@ export class CrudService {
   };
 
   modificarArticulo(articulo:Articulos) {
+    console.log(articulo, 'antes de modificar')
     return this.http.put(this.URL_API + `/${articulo._id}` , articulo);
 
   };

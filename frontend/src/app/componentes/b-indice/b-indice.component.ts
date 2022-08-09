@@ -20,6 +20,7 @@ export class BIndiceComponent implements OnInit {
 
   ngOnInit(): void {
     
+    console.log('barnder',  this.data)
   this.cambioImagen1()
     
      

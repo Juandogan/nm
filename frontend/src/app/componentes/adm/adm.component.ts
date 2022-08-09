@@ -679,10 +679,10 @@ fnOcultar(){
       // this.crudService.unArticulo.art3 = this.resultadoTitulo3
       // this.crudService.unArticulo.art4 = this.resultadoTitulo4
       // this.crudService.unArticulo.art5 = this.resultadoTitulo5
-      // this.crudService.unArticulo.art6 = this.resultadoTitulo6
+     // this.crudService.unArticulo.art6 = this.resultadoTitulo6
       // this.crudService.unArticulo.art7 = this.resultadoTitulo7
-      // this.crudService.unArticulo.art8 = this.resultadoTitulo8
-      // this.crudService.unArticulo.fechaMod = String(this.fechaMod)
+     // this.crudService.unArticulo.art8 = this.resultadoTitulo8
+      //// this.crudService.unArticulo.fechaMod = String(this.fechaMod)
       
  
       //  this.crudService.unArticulo.resultadoID = this.resultadoID
@@ -713,6 +713,8 @@ fnOcultar(){
         if( this.crudService.unArticulo?._id)
         {  
 
+          this.crudService.unArticulo.art7 = this.resultadoTitulo7
+          this.crudService.unArticulo.art8 = this.resultadoTitulo8
               this.crudService.modificarArticulo(this.crudService.unArticulo)
         .subscribe(res => {
           this.loadingGuardar= false
@@ -736,8 +738,8 @@ fnOcultar(){
       // this.crudService.unArticulo.fecha = String(this.fechaPublicacion)
       // this.crudService.unArticulo.titulo = this.titulo;
       // this.crudService.unArticulo.subtitulo = this.subtitulo
-      // this.crudService.unArticulo.art1 = this.resultadoTitulo
-      // this.crudService.unArticulo.art2 = this.resultadoTitulo2
+       this.crudService.unArticulo.art1 = this.resultadoTitulo
+       this.crudService.unArticulo.art2 = this.resultadoTitulo2
       // this.crudService.unArticulo.art3 = this.resultadoTitulo3
       // this.crudService.unArticulo.art4 = this.resultadoTitulo4
       // this.crudService.unArticulo.art5 = this.resultadoTitulo5
