@@ -40,10 +40,10 @@ numeroEdicion =0;
        
 
        if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
-        this.numeroEdicion = 138 } 
+        this.numeroEdicion = 139 } 
 
        if(this.articulos[0]._id === "62c227e05b460b1532204eaf"){
-         this.numeroEdicion = 139 } 
+         this.numeroEdicion = 140 } 
 
          if(this.articulos[0]?._id == "62f04fa687a2613db6b2238f"){
           this.numeroEdicion = 141
