@@ -52,8 +52,8 @@ numeroEdicion=0
      if(aux?.indexOf('62f04fa687a2613db6b2238f'.toLowerCase()) > -1){
       
       this.articulos.push(aux)
-      this.numeroEdicion = 141}
-     else{this.numeroEdicion = 141}
+      this.numeroEdicion = 142}
+     else{this.numeroEdicion = 142}
       }
       
     }

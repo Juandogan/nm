@@ -47,9 +47,13 @@ numeroEdicion =0;
 
          if(this.articulos[0]?._id == "62f04fa687a2613db6b2238f"){
           this.numeroEdicion = 141
-                
+                                }   
+        
+        if(this.articulos[0]?._id === "6312a3d8beb93c380ef95ef6"){
+          this.numeroEdicion = 142
+              
+          
         } 
-      
       //  else{
         
       //   console.log(this.articulos[0].)

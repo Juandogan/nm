@@ -3,6 +3,19 @@ import { Carousel } from '../models/carousel'
 
 export const carouselDataItems : Carousel[] = [
 
+
+    {
+            
+        id: 0 ,
+        fecha: '',
+        titulo:'Agosto 2022 - Nº 141',
+        subtitulo:'http://www.culturademontania.org.ar/Noticias/07_2022/revista_digital_ccam_ini_072022.html',
+        link:'',
+        image:'../../../assets/tapa141.jpg',
+        order:'',
+        marginLeft :0   
+        }, 
+
     {
             
         id: 0 ,
