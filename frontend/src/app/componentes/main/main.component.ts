@@ -17,7 +17,7 @@ export class MainComponent implements OnInit,  OnDestroy {
   buscarMensaje:string = ""
   claseAnima = false;
   loading = true;
-public color = "rgb(33,33,33)"
+  public color = "rgb(33,33,33)"
 
 articulos: any
 articulos2: Articulos[] = [];
@@ -49,7 +49,7 @@ numeroEdicion=0
 
       
      console.log(this.articulos,"esto es main 1")
-     if(aux?.indexOf('62f04fa687a2613db6b2238f'.toLowerCase()) > -1){
+     if(aux?.indexOf('6312a3d8beb93c380ef95ef6'.toLowerCase()) > -1){
       
       this.articulos.push(aux)
       this.numeroEdicion = 142}
