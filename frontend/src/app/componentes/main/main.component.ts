@@ -52,6 +52,7 @@ numeroEdicion=0
      if(aux?.indexOf('6312a3d8beb93c380ef95ef6'.toLowerCase()) > -1){
       
       this.articulos.push(aux)
+      console.log('xxx',this.articulos)
       this.numeroEdicion = 142}
      else{this.numeroEdicion = 142}
       }
@@ -60,7 +61,7 @@ numeroEdicion=0
     this.loading = false
     window.scroll(0,0)
 
-    
+    console.log('xxx',this.articulos)
 
     this.editorial = this.articulos[3].autor  
       });//fin de subscribe
