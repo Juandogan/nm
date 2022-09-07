@@ -63,7 +63,7 @@ numeroEdicion=0
 
     console.log('xxx',this.articulos)
 
-    this.editorial = this.articulos[3].autor  
+    this.editorial = this.articulos[4].autor  
       });//fin de subscribe
     } //fin de pedirProductosthis.
 

@@ -31,7 +31,7 @@ numeroEdicion =0;
   ngOnInit(): void {
      this.ruta.data.subscribe((data)=>{
      this.nota = Object.entries(data).map(i => i[1]);
-    this.editorial = this.nota[0]?.autor
+    this.editorial = this.nota[4]?.autor
        console.log(this.nota,'llega por link')
        this.loading = false
        this.articulos = this.nota
