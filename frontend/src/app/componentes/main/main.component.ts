@@ -49,12 +49,13 @@ numeroEdicion=0
 
       
      console.log(this.articulos,"esto es main 1")
-     if(aux?.indexOf('6312a3d8beb93c380ef95ef6'.toLowerCase()) > -1){
+    //  if(aux?.indexOf('6312a3d8beb93c380ef95ef6'.toLowerCase()) > -1){
+     if(aux?.indexOf('633e1ad041678f4c7488fc34'.toLowerCase()) > -1){
       
       this.articulos.push(aux)
       console.log('xxx',this.articulos)
-      this.numeroEdicion = 142}
-     else{this.numeroEdicion = 142}
+      this.numeroEdicion = 143}
+     else{this.numeroEdicion = 143}
       }
       
     }
@@ -63,7 +64,7 @@ numeroEdicion=0
 
     console.log('xxx',this.articulos)
 
-    this.editorial = this.articulos[4].autor  
+    this.editorial = this.articulos[5].autor  
       });//fin de subscribe
     } //fin de pedirProductosthis.
 

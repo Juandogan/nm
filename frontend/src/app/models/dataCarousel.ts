@@ -2,7 +2,17 @@ import { Carousel } from '../models/carousel'
 
 
 export const carouselDataItems : Carousel[] = [
-
+    {
+            
+        id: 0 ,
+        fecha: '',
+        titulo:'Septiembre 2022 - Nº 142',
+        subtitulo:'http://www.culturademontania.org.ar/Noticias/09_2022/revista_digital_ccam_ini_092022.html',
+        link:'',
+        image:'../../../assets/tapa142.jpeg',
+        order:'',
+        marginLeft :0   
+        }, 
 
     {
             
