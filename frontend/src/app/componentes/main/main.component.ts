@@ -54,8 +54,8 @@ numeroEdicion=0
       
       this.articulos.push(aux)
       console.log('xxx',this.articulos)
-      this.numeroEdicion = 143}
-     else{this.numeroEdicion = 143}
+      this.numeroEdicion = 144}
+     else{this.numeroEdicion = 144}
       }
       
     }
@@ -64,7 +64,7 @@ numeroEdicion=0
 
     console.log('xxx',this.articulos)
 
-    this.editorial = this.articulos[5].autor  
+    this.editorial = this.articulos[6].autor  
       });//fin de subscribe
     } //fin de pedirProductosthis.
 

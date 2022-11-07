@@ -63,6 +63,8 @@ Salvo las imangenes
 en raaiz/  cp -RT -f /home/img/ /home/CCAM_PROD/subidas/
 
 
+home/nm /cp -RT -f subidas/ /home/img
+este ultimo fnciona nov. 2022
 
 
 
