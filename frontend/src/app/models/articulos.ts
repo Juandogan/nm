@@ -12,6 +12,10 @@ export class Articulos {
         resultadoCategoria6='',
         resultadoCategoria7='',
         resultadoCategoria8='',
+        resultadoCategoria9='',
+        resultadoCategoria10='',
+        resultadoCategoria11='',
+        resultadoCategoria12='',
 
 
         resultadoImagen='',
@@ -22,6 +26,10 @@ export class Articulos {
         resultadoImagen6='',
         resultadoImagen7='',
         resultadoImagen8='',
+        resultadoImagen9='',
+        resultadoImagen10='',
+        resultadoImagen11='',
+        resultadoImagen12='',
 
         resultadoID = '',
         resultadoID2 = '',
@@ -31,6 +39,10 @@ export class Articulos {
         resultadoID6 = '',
         resultadoID7 = '', 
         resultadoID8='',
+        resultadoID9='',
+        resultadoID10='',
+        resultadoID11='',
+        resultadoID12='',
         posicion = 0,
         
         art1='',
@@ -41,6 +53,10 @@ export class Articulos {
         art6='', 
         art7='', 
         art8='', 
+        art9='', 
+        art10='', 
+        art11='', 
+        art12='', 
         
         
         
@@ -85,6 +101,10 @@ this.art5 =  art5
 this.art6 =  art6
 this.art7 =  art7
 this.art8 =  art8
+this.art9 =  art9
+this.art10 =  art10
+this.art11 =  art11
+this.art12 =  art12
 this.marginLeft = marginLeft
 this.posicion =posicion
 
@@ -96,6 +116,10 @@ this.resultadoCategoria5 = resultadoCategoria5
 this.resultadoCategoria6 = resultadoCategoria6
 this.resultadoCategoria7 = resultadoCategoria7
 this.resultadoCategoria8 = resultadoCategoria8
+this.resultadoCategoria9 = resultadoCategoria9
+this.resultadoCategoria10 = resultadoCategoria10
+this.resultadoCategoria11 = resultadoCategoria11
+this.resultadoCategoria12 = resultadoCategoria12
 
 
 this.resultadoImagen  = resultadoImagen
@@ -106,6 +130,10 @@ this.resultadoImagen5 = resultadoImagen5
 this.resultadoImagen6 = resultadoImagen6 
 this.resultadoImagen7 = resultadoImagen7 
 this.resultadoImagen8 = resultadoImagen8 
+this.resultadoImagen9 = resultadoImagen9
+this.resultadoImagen10 = resultadoImagen10 
+this.resultadoImagen11 = resultadoImagen11 
+this.resultadoImagen12 = resultadoImagen12 
 
 
 
@@ -136,6 +164,10 @@ this.resultadoID5 = resultadoID5
 this.resultadoID6 = resultadoID6
 this.resultadoID7 = resultadoID7
 this.resultadoID8 = resultadoID8
+this.resultadoID9 = resultadoID9
+this.resultadoID10 = resultadoID10
+this.resultadoID11 = resultadoID11
+this.resultadoID12 = resultadoID12
 
     }
 
@@ -157,6 +189,10 @@ this.resultadoID8 = resultadoID8
     art6:string;
     art7:string;
     art8:string;
+    art9:string;
+    art10:string;
+    art11:string;
+    art12:string;
     
     posicion:number;
     
@@ -187,6 +223,10 @@ this.resultadoID8 = resultadoID8
     resultadoID6:string;
     resultadoID7:string;
     resultadoID8:string;
+    resultadoID9:string;
+    resultadoID10:string;
+    resultadoID11:string;
+    resultadoID12:string;
 
     resultadoCategoria:string;
     resultadoCategoria2:string;
@@ -196,6 +236,10 @@ this.resultadoID8 = resultadoID8
     resultadoCategoria6:string;
     resultadoCategoria7:string;
     resultadoCategoria8:string;
+    resultadoCategoria9:string;
+    resultadoCategoria10:string;
+    resultadoCategoria11:string;
+    resultadoCategoria12:string;
 
 
     resultadoImagen:string;
@@ -206,6 +250,10 @@ this.resultadoID8 = resultadoID8
     resultadoImagen6:string;
     resultadoImagen7:string;
     resultadoImagen8:string;
+    resultadoImagen9:string;
+    resultadoImagen10:string;
+    resultadoImagen11:string;
+    resultadoImagen12:string;
 
 
 }

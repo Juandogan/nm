@@ -155,6 +155,12 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.art4 = this.nota[0]?.art4
   this.crudService.unArticulo.art5 = this.nota[0]?.art5
   this.crudService.unArticulo.art6 = this.nota[0]?.art6
+  this.crudService.unArticulo.art7 = this.nota[0]?.art7
+  this.crudService.unArticulo.art8 = this.nota[0]?.art8
+  this.crudService.unArticulo.art9 = this.nota[0]?.art9
+  this.crudService.unArticulo.art10 = this.nota[0]?.art10
+  this.crudService.unArticulo.art11 = this.nota[0]?.art11
+  this.crudService.unArticulo.art12 = this.nota[0]?.art12
 
 
   this.crudService.unArticulo.fecha = this.nota[0]?.fecha
@@ -167,6 +173,11 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoCategoria6 = this.nota[0]?.resultadoCategoria6
   this.crudService.unArticulo.resultadoCategoria7 = this.nota[0]?.resultadoCategoria7
   this.crudService.unArticulo.resultadoCategoria8 = this.nota[0]?.resultadoCategoria8
+  this.crudService.unArticulo.resultadoCategoria9 = this.nota[0]?.resultadoCategoria9
+  this.crudService.unArticulo.resultadoCategoria10 = this.nota[0]?.resultadoCategoria10
+  this.crudService.unArticulo.resultadoCategoria11 = this.nota[0]?.resultadoCategoria11
+  this.crudService.unArticulo.resultadoCategoria12 = this.nota[0]?.resultadoCategoria12
+
 
 
   this.crudService.unArticulo.resultadoImagen = this.nota[0]?.resultadoImagen
@@ -177,6 +188,10 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoImagen6 = this.nota[0]?.resultadoImagen6
   this.crudService.unArticulo.resultadoImagen7 = this.nota[0]?.resultadoImagen7
   this.crudService.unArticulo.resultadoImagen8 = this.nota[0]?.resultadoImagen8
+  this.crudService.unArticulo.resultadoImagen9 = this.nota[0]?.resultadoImagen9
+  this.crudService.unArticulo.resultadoImagen10 = this.nota[0]?.resultadoImagen10
+  this.crudService.unArticulo.resultadoImagen11 = this.nota[0]?.resultadoImagen11
+  this.crudService.unArticulo.resultadoImagen12 = this.nota[0]?.resultadoImagen12
 
 
   this.crudService.unArticulo.resultadoID = this.nota[0]?.resultadoID
@@ -187,6 +202,10 @@ export class ArticuloComponent implements OnInit,OnDestroy {
   this.crudService.unArticulo.resultadoID6 = this.nota[0]?.resultadoID6
   this.crudService.unArticulo.resultadoID7 = this.nota[0]?.resultadoID7
   this.crudService.unArticulo.resultadoID8 = this.nota[0]?.resultadoID8
+  this.crudService.unArticulo.resultadoID9 = this.nota[0]?.resultadoID9
+  this.crudService.unArticulo.resultadoID10 = this.nota[0]?.resultadoID10
+  this.crudService.unArticulo.resultadoID11 = this.nota[0]?.resultadoID11
+  this.crudService.unArticulo.resultadoID12 = this.nota[0]?.resultadoID12
 
 
 

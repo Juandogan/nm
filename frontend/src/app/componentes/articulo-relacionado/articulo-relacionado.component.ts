@@ -18,6 +18,7 @@ export class ArticuloRelacionadoComponent implements OnInit {
   constructor(public crudService:CrudService) { }
 
   ngOnInit(): void {
+    console.log("este es el posta", this.nota)
 
   }
 

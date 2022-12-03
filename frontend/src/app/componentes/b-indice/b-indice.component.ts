@@ -12,6 +12,7 @@ export class BIndiceComponent implements OnInit {
   
   link= ""
   titulo =''
+  autor = ""
   descripcion= ''
   ruta=''
   constructor() {
@@ -32,6 +33,7 @@ export class BIndiceComponent implements OnInit {
     this.link= this.data?.resultadoImagen
     this.titulo= this.data?.art1
     this.ruta =this.data?.resultadoID
+    
 
   }
 
