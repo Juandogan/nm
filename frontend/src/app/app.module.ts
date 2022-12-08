@@ -66,6 +66,7 @@ import { ComentariosComponent } from './componentes/comentarios/comentarios.comp
     Filtrox10Pipe,
     ComentariosComponent,
 
+
     
   ],
   imports: [
@@ -77,7 +78,7 @@ import { ComentariosComponent } from './componentes/comentarios/comentarios.comp
     MatSnackBarModule,
     CKEditorModule,
     FormsModule,
-  
+    
   ],
   providers: [CrudService, ResolveNotaService],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CrudService } from 'src/app/services/crud.service';
 
+
 @Component({
   selector: 'app-a-portada',
   templateUrl: './a-portada.component.html',

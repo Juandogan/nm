@@ -50,9 +50,14 @@ numeroEdicion =0;
                                 }   
         
         if(this.articulos[0]?._id === "6312a3d8beb93c380ef95ef6"){
-          this.numeroEdicion = 142
-              
-          
+          this.numeroEdicion = 142                       
+        } 
+        
+        if(this.articulos[0]?._id === "633e1ad041678f4c7488fc34"){
+          this.numeroEdicion = 143                       
+        } 
+        if(this.articulos[0]?._id === "6368765d41678f4c74893535"){
+          this.numeroEdicion = 144                       
         } 
       //  else{
         
