@@ -5,7 +5,7 @@
     </div>
     <div class="dsc-carousel__content">
         <ng-container *ngFor="let section of items;" style="width:100px">
-            <a href="{{section.subtitulo}}" target="_blank" style="color:orange">
+            
             <div class="dsc-carousel__content-item" [ngStyle]="{'background-image': 'url(' + section.image +')', 'margin-left': section.marginLeft + '%', 'object-fit':'fill', 'width':'200px', 'border-radius':'2px' }">
                 <!-- <h2 style="font-size:12px!important; padding-top:6px; margin-bottom:20px;"></h2> -->
                 <a href="{{section.subtitulo}}" target="_blank" style="color:orange">
@@ -19,7 +19,7 @@
 
             
             </div>
-        </a>
+       
         </ng-container>
     </div>
     <!-- <div class="dsc-carousel__steps">

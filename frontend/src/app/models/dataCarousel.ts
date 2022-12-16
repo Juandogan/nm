@@ -13,8 +13,6 @@ export const carouselDataItems : Carousel[] = [
         order:'',
         marginLeft :0    
     },
-
-
     {
         id: 0 ,
         fecha: '',

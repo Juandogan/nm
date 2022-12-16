@@ -20,7 +20,7 @@
                  <br>
 
                  <div style="margin-left:10px; margin-right:10px; margin-top:-20px;">
-                        <p class="nota "  [innerHTML]=saltos2(nota[0]?.nota)|sanetizer >   
+                        <p class="nota"  [innerHTML]=saltos2(nota[0]?.nota)|sanetizer >   
                                             <!-- <p class="capital nota poner600" [innerHTML]=saltos(nota[0]?.nota)|sanetizer >                                                                  -->
                              </p>  
                           </div>
@@ -37,7 +37,7 @@
                               </svg>          Próximo                  
                               </button> 
    -->
-                           <br><br> 
+                           
                        
  
                       </div>
@@ -86,55 +86,24 @@
            </div> 
            
            <div > 
-            <form>
-             <!-- <div class="form-group" style="margin-left: 10px; margin-right: 20px;">
-            
-               <h1   class="titulo" style="margin-left:0px;margin-bottom: 10px; font-size:25px!important; color:orange">| COMENTARIOS</h1>
-               <hr class="hrMargen">
-              
-               <p style="color:brown" >  Erika Garcia <b> comentó:</b></p>
-               <p style="margin-top:-10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque corporis odit beatae quas totam exercitationem vitae aliquid, ipsa voluptas error libero nam magni dolorem amet nulla repudiandae officiis cupiditate, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque corporis odit beatae quas totam exercitationem vitae aliquid, ipsa voluptas error libero nam magni dolorem amet nulla repudiandae officiis cupiditate.</p>
-               <hr class="hrMargen">
-               <p style="color:brown" >  Erika Garcia <b> comentó:</b></p>
-               <p style="margin-top:-10px">Muchas gracias por compartir tan completa nota!</p>
-
-               <hr  class="hrMargen">
-               <p style="color:brown" >  Erika Garcia <b> comentó:</b></p>
-               <p style="margin-top:-10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam neque corporis odit beatae quas totam exercitationem vitae aliquid, ipsa voluptas error libero nam magni dolorem amet nulla repudiandae officiis cupiditate.</p>
-
-               <hr class="hrMargen">
-               
-             </div>
-              -->
-         <div style="text-align: left; margin-left:10px">
-
-          <!-- <button class="btn btn-dark" (click)="alerta()" style="opacity: 0.5;margin-top:10px">  
-            <svg style="margin-right: 4px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text-fill" viewBox="0 0 16 16">
-              <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z"/>
-            </svg>    
-            Comentar
         
-          </button> -->
-           </div>
-           </form>
              <!-- <app-comentarios [data]="nota[0]"></app-comentarios>   -->
          </div>
              
         
-           <div *ngIf="nota" class=" ">
+           <div *ngIf="nota" >
             <app-articulo-relacionado [data]="nota[0]"></app-articulo-relacionado>
            </div>
-<br><br>
-<br><br>
+
         <div  class="quitar600" style="background-color: white;   margin-top:20px" >
           <!-- <h5 style="color:white;margin-left: -12px;margin-right: -12px; padding-left:15px; margin-bottom: -3px;
             margin-top:20px; background-color: orange;">ÚLTIMOS ARTICULOS</h5> -->
 
             <!-- <h1 class="titulo" style="font-size:25px; margin-left:0px;margin-bottom: 10px; color:orange">| ÚLTIMOS ARTICULOS</h1> -->
             
-          <div style="margin-left:-12px; margin-right: -12px;">
+          <!-- <div style="margin-left:-12px; margin-right: -12px;"> -->
             <!-- <app-carousel2 [items]="articulos|posiciones:1" [data]="articulos|posiciones:1"></app-carousel2>  -->
-          </div> 
+          <!-- </div>  -->
 <div>
           <h5 style="color:white;margin-left: -10px;margin-right: -10px; padding-left:15px; 
            margin-top:20px; background-color: orange;">EDICIONES ANTERIORES</h5>
