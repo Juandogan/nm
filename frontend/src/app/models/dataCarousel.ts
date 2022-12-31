@@ -6,6 +6,16 @@ export const carouselDataItems : Carousel[] = [
     {
         id: 0 ,
         fecha: '',
+        titulo:'Enero 2023 - Nº 145',
+        subtitulo:'http://www.culturademontania.org.ar/Noticias/11_2022/revista_digital_ccam_ini_112022.html',
+        link:'',
+        image:'../../../assets/Tapa_Revista_Digital_DIC2022.png',
+        order:'',
+        marginLeft :0    
+    },
+    {
+        id: 0 ,
+        fecha: '',
         titulo:'Noviembre 2022 - Nº 144',
         subtitulo:'http://www.culturademontania.org.ar/Noticias/11_2022/revista_digital_ccam_ini_112022.html',
         link:'',

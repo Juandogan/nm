@@ -26,7 +26,7 @@ export class ArticuloComponent implements OnInit,OnDestroy {
       this.ruta.data.subscribe((data)=>{
       this.nota = Object.entries(data).map(i => i[1]);
       this.auxContador =  this.nota[0].vistas
-      this.sumarContador()
+      // this.sumarContador()
       this.pedirArticulos()
       })
       
