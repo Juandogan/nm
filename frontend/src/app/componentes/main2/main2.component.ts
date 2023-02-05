@@ -25,6 +25,7 @@ nota:any
 loader= true;
 editorial = "";
 numeroEdicion =0;
+anio ="2022"
   constructor(public crudService:CrudService, private ruta:ActivatedRoute) { }
  
 
@@ -60,8 +61,13 @@ numeroEdicion =0;
           this.numeroEdicion = 144                       
         } 
         if(this.articulos[0]?._id === "638e98e81043d2136d64bdbe"){
-          this.numeroEdicion = 145                       
+          this.numeroEdicion = 145                      
+          this.anio ="2023" 
         } 
+        if(this.articulos[0]?._id === "63af15591043d2136d64eda8"){
+          this.numeroEdicion = 146              
+          this.anio ="2023"        
+        }
       //  else{
         
       //   console.log(this.articulos[0].)
