@@ -71,7 +71,7 @@ anio ="2022"
         } 
         if(this.articulos[0]?._id === "638e98e81043d2136d64bdbe"){
           this.numeroEdicion = 145                      
-          this.anio ="2023" 
+          this.anio ="2022" 
         } 
         if(this.articulos[0]?._id === "63af15591043d2136d64eda8"){
           this.numeroEdicion = 146              
