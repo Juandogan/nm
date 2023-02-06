@@ -39,6 +39,7 @@ import { Main2Component } from './componentes/main2/main2.component';
 import { PosicionesPipe } from './pipes/posiciones.pipe';
 import { Filtrox10Pipe } from './pipes/filtrox10.pipe';
 import { ComentariosComponent } from './componentes/comentarios/comentarios.component';
+import { Indice2Component } from './componentes/indice2/indice2.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { ComentariosComponent } from './componentes/comentarios/comentarios.comp
     PosicionesPipe,
     Filtrox10Pipe,
     ComentariosComponent,
+    Indice2Component,
 
 
     

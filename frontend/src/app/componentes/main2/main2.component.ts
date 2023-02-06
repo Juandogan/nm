@@ -41,24 +41,33 @@ anio ="2022"
        
 
        if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
-        this.numeroEdicion = 139 } 
+        this.numeroEdicion = 139 
+        this.anio ="2022" 
+      
+      } 
 
        if(this.articulos[0]._id === "62c227e05b460b1532204eaf"){
-         this.numeroEdicion = 140 } 
+         this.numeroEdicion = 140 
+         this.anio ="2022" 
+        } 
 
          if(this.articulos[0]?._id == "62f04fa687a2613db6b2238f"){
           this.numeroEdicion = 141
+          this.anio ="2022" 
                                 }   
         
         if(this.articulos[0]?._id === "6312a3d8beb93c380ef95ef6"){
-          this.numeroEdicion = 142                       
+          this.numeroEdicion = 142  
+          this.anio ="2022"                      
         } 
         
         if(this.articulos[0]?._id === "633e1ad041678f4c7488fc34"){
-          this.numeroEdicion = 143                       
+          this.numeroEdicion = 143   
+          this.anio ="2022"                     
         } 
         if(this.articulos[0]?._id === "6368765d41678f4c74893535"){
-          this.numeroEdicion = 144                       
+          this.numeroEdicion = 144   
+          this.anio ="2022"                     
         } 
         if(this.articulos[0]?._id === "638e98e81043d2136d64bdbe"){
           this.numeroEdicion = 145                      
