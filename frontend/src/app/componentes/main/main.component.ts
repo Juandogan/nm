@@ -19,12 +19,14 @@ export class MainComponent implements OnInit,  OnDestroy {
   loading = true;
   public color = "rgb(33,33,33)"
 
+
 articulos: any
 articulos2: Articulos[] = [];
 nota:any
 loader= true;
 editorial = ""
 numeroEdicion=0
+anio=""
   constructor(public crudService:CrudService,private ruta:ActivatedRoute) { }
  
 
@@ -41,6 +43,45 @@ numeroEdicion=0
     this.crudService.getArticulos().subscribe(res =>{
     this.articulos = res as Articulos[]; // guardo resultados de la peticion en variable productos del este componente.
     this.articulos2 = this.articulos
+    
+
+    if(this.articulos[0]._id === "629e7b966c66ee10cd73a4a3"){
+      this.numeroEdicion = 139 
+      this.anio ="2022" 
+    
+    } 
+
+     if(this.articulos[0]._id === "62c227e05b460b1532204eaf"){
+       this.numeroEdicion = 140 
+       this.anio ="2022" 
+      } 
+
+       if(this.articulos[0]?._id == "62f04fa687a2613db6b2238f"){
+        this.numeroEdicion = 141
+        this.anio ="2022" 
+                              }   
+      
+      if(this.articulos[0]?._id === "6312a3d8beb93c380ef95ef6"){
+        this.numeroEdicion = 142  
+        this.anio ="2022"                      
+      } 
+      
+      if(this.articulos[0]?._id === "633e1ad041678f4c7488fc34"){
+        this.numeroEdicion = 143   
+        this.anio ="2022"                     
+      } 
+      if(this.articulos[0]?._id === "6368765d41678f4c74893535"){
+        this.numeroEdicion = 144   
+        this.anio ="2022"                     
+      } 
+      if(this.articulos[0]?._id === "638e98e81043d2136d64bdbe"){
+        this.numeroEdicion = 145                      
+        this.anio ="2022" 
+      } 
+      if(this.articulos[0]?._id === "63af15591043d2136d64eda8"){
+        this.numeroEdicion = 146              
+        this.anio ="2023"        
+      }
     for(const post of this.articulos){
       var aux = post?.categoria
       if (aux?.indexOf('revista'.toLowerCase()) > -1)
