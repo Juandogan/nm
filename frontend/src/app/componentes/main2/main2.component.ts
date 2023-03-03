@@ -77,6 +77,12 @@ anio ="2022"
           this.numeroEdicion = 146              
           this.anio ="2023"        
         }
+        if(this.articulos[0]?._id === "63df0ad31043d2136d653d7a"){
+          this.numeroEdicion = 147              
+          this.anio ="2023"        
+        }
+
+        
       //  else{
         
       //   console.log(this.articulos[0].)

@@ -82,6 +82,13 @@ anio=""
         this.numeroEdicion = 146              
         this.anio ="2023"        
       }
+      if(this.articulos[0]?._id === "63df0ad31043d2136d653d7a"){
+        this.numeroEdicion = 147              
+        this.anio ="2023"        
+      }
+         
+      
+      
     for(const post of this.articulos){
       var aux = post?.categoria
       if (aux?.indexOf('revista'.toLowerCase()) > -1)
@@ -91,12 +98,12 @@ anio=""
       
      console.log(this.articulos,"esto es main 1")
     //  if(aux?.indexOf('6312a3d8beb93c380ef95ef6'.toLowerCase()) > -1){
-     if(aux?.indexOf('63df0ad31043d2136d653d7a'.toLowerCase()) > -1){
+     if(aux?.indexOf('64008f81c8818a12ad604fad'.toLowerCase()) > -1){
       
       this.articulos.push(aux)
       console.log('xxx',this.articulos)
-      this.numeroEdicion = 147}
-     else{this.numeroEdicion = 147}
+      this.numeroEdicion = 148}
+     else{this.numeroEdicion = 148}
       }
       
     }
