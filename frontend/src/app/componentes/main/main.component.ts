@@ -112,7 +112,7 @@ anio=""
 
     console.log('xxx',this.articulos)
 
-    this.editorial = this.articulos[12].autor  
+    this.editorial = this.articulos[13].autor  
       });//fin de subscribe
     } //fin de pedirProductosthis.
 
