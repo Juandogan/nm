@@ -109,10 +109,11 @@ h1{font-family: 'Roboto Slab', serif;}
         }
 
 .indice{
-  text-shadow: 2px 2px 10px black;
+  margin-top: 20px;
   margin-left: 20px;
   font-family: 'Oswald', sans-serif;
 text-transform: uppercase;
+  
   margin-bottom: 20px;
   font-size: 25px;
   letter-spacing: 1px;
@@ -490,6 +491,11 @@ ul{margin:0px; padding:5px;margin-left: 15px}
             .margenR{margin-right: 0%;} 
             .logoCCAM{margin-left: 60px;}
             .logonm{width: 150px;  margin-left:-27px}
+            }
+
+
+            @media (max-width:767px){
+              .quitar{display:none}
             }
 
 @media (max-width:600px){

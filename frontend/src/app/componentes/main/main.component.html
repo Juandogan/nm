@@ -8,10 +8,34 @@
         </div></div>
       </div>
   
-      <app-a-portada  *ngIf="!loading"  [data]="articulos[13]" ></app-a-portada>
+      <app-a-portada  *ngIf="!loading"  [data]="articulos[13]" style="zoom: 0.9;"></app-a-portada>
   
-  <!-- <img src="../../../assets/fondo2.png" alt="" style="margin-top:-260px"> -->
+  <!-- CUERPO · PUBLICDADES-->
+  <div class="row quitar600" style="margin-top:5px;  padding-right:35px ">
+    <div class="col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4 ">
+      <div >
+       <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
+         <img src="../../../assets/banner Noticias.png" width="100%" height="500px" alt="" style="padding-left:20px"></a>
+      </div>
+    </div>
   
+    <div class="col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4">
+      <div >
+       <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-entrenamiento.html" target="_blank">
+         <img src="../../../assets/otros.png" width="100%" height="500px" alt=""></a>
+      </div>
+    </div>
+  
+    <div class="col-sm-4	col-md-4	col-lg-4	col-xl-4	col-xxl-4 quitar" style="padding-right: 0px" >
+      <div >
+       <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
+         <img src="../../../assets/formarparte.png" width="100%" height="500px"  alt=""></a>
+      </div>
+    </div>  
+  </div>
+
+
+
         <div  *ngIf="!loading" style="text-align: left;">
         <h1 class="indice" >INDICE - {{articulos[13]?.titulo}} </h1>
         
@@ -23,7 +47,7 @@
   <br>
    <div style="color: white;"> 
  
-    <h1 class="indice subefuente fuenteTest" >EDITORIAL - NRO {{numeroEdicion}} | {{articulos[13]?.titulo}} 2023</h1>
+    <h1 class="indice subefuente fuenteTest">EDITORIAL - NRO {{numeroEdicion}} | {{articulos[13]?.titulo}} 2023</h1>
   <div class="fondoEditorial" style="object-fit: cover; background-image: url('../../../assets/1.png');height: 750px; ">
   <div>
      <img class="responsi" src="../../../assets/logonm.png" width="155px" alt="" style="margin-top: 10px;margin-left: 15px;"> 
@@ -46,35 +70,13 @@
   <img src="../../../assets/image 12.png" width="100%" height="200px" alt="" style="margin-top: 0px;"> 
   </div> -->
 
-<div class="row quitar600" style="margin-top:30px;  padding-right:35px ">
-  <div class="col-4 xl-12 ">
-    <div >
-     <a href="http://www.culturademontania.org.ar/Suscripcion-form/suscripcion.html" target="_blank">
-       <img src="../../../assets/banner Noticias.png" width="100%" height="500px" alt="" style="padding-left:20px"></a>
-    </div>
-  </div>
 
-  <div class="col-4">
-    <div >
-     <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-entrenamiento.html" target="_blank">
-       <img src="../../../assets/otros.png" width="100%" height="500px" alt=""></a>
-    </div>
-  </div>
-
-  <div class="col-4" style="padding-right: 0px">
-    <div >
-     <a href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-equipo.html" target="_blank">
-       <img src="../../../assets/formarparte.png" width="100%" height="500px"  alt=""></a>
-    </div>
-  </div>
-
-</div>
 <br>
-<div  class="quitar600" style="height:410px ; background-color: #3E2800;margin-top:30px; margin-left:20px; margin-right: 20px ;">
-  <br>
+<div  style="height:521px ; background-color: #ffa600;">
+  
 <div style="background-color: #8b5a00;">  
 
-<h1 class="indice quitar600"  style="margin-left: 23px;margin-bottom: 15px;">Ediciones anteriores </h1>
+<!-- <h1 class="indice quitar600"  style="margin-left: 23px;margin-bottom: 15px;">Ediciones anteriores </h1> -->
 <div class="publiMobile">
    
 
@@ -83,8 +85,9 @@
 </div>
 
 
-<div class="quitar600" style="margin-left:20px; margin-right:20px">
-<app-carousel  [data]="articulos[9]"  ></app-carousel> 
+<div>
+<!-- <app-carousel  [data]="articulos[9]"  ></app-carousel>  -->
+<app-carousel-revista></app-carousel-revista>
 </div>
 <!-- <app-carousel2 [items]="articulos" [data]="articulos"></app-carousel2>  -->
 </div>

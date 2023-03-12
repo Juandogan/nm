@@ -40,6 +40,8 @@ import { PosicionesPipe } from './pipes/posiciones.pipe';
 import { Filtrox10Pipe } from './pipes/filtrox10.pipe';
 import { ComentariosComponent } from './componentes/comentarios/comentarios.component';
 import { Indice2Component } from './componentes/indice2/indice2.component';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { CarouselRevistaComponent } from './componentes/carousel-revista/carousel-revista.component';
 
 
 @NgModule({
@@ -67,6 +69,7 @@ import { Indice2Component } from './componentes/indice2/indice2.component';
     Filtrox10Pipe,
     ComentariosComponent,
     Indice2Component,
+    CarouselRevistaComponent
 
 
     
@@ -80,6 +83,8 @@ import { Indice2Component } from './componentes/indice2/indice2.component';
     MatSnackBarModule,
     CKEditorModule,
     FormsModule,
+    NgxUsefulSwiperModule,
+   
     
   ],
   providers: [CrudService, ResolveNotaService],

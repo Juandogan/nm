@@ -142,20 +142,27 @@
 
     
 <!-- SOLO EN DISPOSITIVOS MOBILES -->
-    <div class="poner600" style="margin-top: 10px;">
-      <div class="row">
+    <div class="poner600" style=" background-color: black;">
+      <div class="row" style="margin-top: 10px;">
       <div class="col-5"> 
         <a  routerLink="/articulo/{{this.data?.resultadoID}}" >
         <img  class="img" src="{{this.data?.resultadoImagen}}" width="100%" alt="" style="height: 100px!important;">  
         </a> 
       </div>              
 
-        <div  class="col-7" style=" background-color:#66562273;padding:0px" (click)="cambioImagen1()">
+        <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;padding:0px" (click)="cambioImagen1()">
           <a routerLink="/articulo/{{this.data?.resultadoID}}">
           <p class="titulo truncar3" >{{this.data?.art1}}</a> 
+  
+          <h6 style="padding-left: 12px; margin-top: -10px; font-size: 12px; "  >
+            <svg style="margin-top: -3px; margin-left:-3px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Alex Guillermo</h6>
         </div>
       </div>
       
+
       <div class="row  ">
         <div class="col-5"> 
           <a routerLink="/articulo/{{this.data?.resultadoID2}}">
@@ -165,11 +172,19 @@
       
   
          
-          <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen2()">
+          <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;" (click)="cambioImagen2()">
             <a routerLink="/articulo/{{this.data?.resultadoID2}}">
-            <p class="titulo" style="margin-left:0px">{{this.data?.art2}}</p> 
+            <p class="titulo" style="margin-left:0px">
+             
+              {{this.data?.art2}}</p> 
             </a>
               
+            <h6 style=" margin-top: -10px; font-size: 12px;" >
+              <svg style="margin-top: -3px; margin-left:-3px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              </svg>
+              Alex Guillermo</h6>
+
           </div>
         </div>
         
@@ -182,15 +197,24 @@
             
     
            
-            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen3()">
+            <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;" (click)="cambioImagen3()">
               <a routerLink="/articulo/{{this.data?.resultadoID3}}">
             <p class="titulo"style="margin-left:0px">{{this.data?.art3}}</p> 
     </a>
             
+          <h6 style="margin-top: -10px; font-size: 12px;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Lucas Sbriglio</h6>
                 
             </div>
           </div>
-      
+
+          <div style="  width: 100%; background-color:orange; margin-top: 10px; margin-bottom: 10px;border-radius: 10px">
+                <img src="../../../assets/banner Noticias.png"  width="100%" alt="">
+
+          </div>
                
         <div class="row ">
           <div class="col-5"> 
@@ -202,15 +226,22 @@
             
     
            
-            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen4()">
+            <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;" (click)="cambioImagen4()">
               <a routerLink="/articulo/{{this.data?.resultadoID4}}">
       <p class="titulo"style="margin-left:0px">{{data?.art4}}</p> 
     </a>
             
+          <h6 style="padding-left: 12px; margin-top: -10px; font-size: 12px;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Alex Guillermo</h6>
                 
             </div>
           </div>
       
+         
+
                          
         <div class="row ">
           <div class="col-5"> 
@@ -221,11 +252,16 @@
             
     
            
-            <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen5()">
+            <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;" (click)="cambioImagen5()">
               <a routerLink="/articulo/{{this.data?.resultadoID5}}">
       <p class="titulo"style="margin-left:0px">{{data?.art5}}</p> 
         </a>
-                
+               
+          <h6 style="padding-left: 10px; margin-top: -10px; font-size: 12px;" >
+            <svg  style="margin-top:-5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Alex Guillermo</h6> 
             </div>
           </div>
                    
@@ -238,16 +274,24 @@
               
       
              
-              <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen6()">
+              <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;" (click)="cambioImagen6()">
                 <a routerLink="/articulo/{{this.data?.resultadoID6}}"> 
         <p class="titulo"style="margin-left:0px">{{data?.art6}}</p> 
         </a>
               
+          <h6 style="padding-left: 12px; margin-top: -10px; font-size: 12px;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Alex Guillermo</h6>
                   
               </div>
             </div>
         
-                          
+            <div style="  width: 100%; background-color:orange; margin-top: 10px; margin-bottom: 10px;border-radius: 10px">
+              <img src="../../../assets/museo.jpg"  width="100%" alt="">
+
+        </div>               
             <div class="row ">
               <div class="col-5"> 
                 <a routerLink="/articulo/{{this.data?.resultadoID7}}">
@@ -258,11 +302,16 @@
                 
         
                
-                <div  class="col-7" style=" background-color:#66562273;" (click)="cambioImagen7()">
+                <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;" (click)="cambioImagen7()">
                   <a routerLink="/articulo/{{this.data?.resultadoID7}}">
           <p class="titulo"style="margin-left:0px"> {{data?.art7}}</p> 
           </a>
                 
+          <h6 style="padding-left: 12px; margin-top: -10px; font-size: 12px;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Alex Guillermo</h6>
                     
                 </div>
               </div>
@@ -277,15 +326,23 @@
                   
           
                  
-                  <div  class="col-7" style=" background-color:#66562273;margin-bottom: 20px;" (click)="cambioImagen8()">
+                  <div  class="col-7" style="border-radius: 10px; background-color:#ffa500;margin-bottom: 20px;" (click)="cambioImagen8()">
                     <a routerLink="/articulo/{{this.data?.resultadoID8}}">
                    <p class="titulo"style="margin-left:0px">{{data.art8}}</p> 
             </a>
                   
+          <h6 style="padding-left: 0px; margin-top: -10px; font-size: 12px;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+            Mario Yacante</h6>
                       
                   </div>
                 </div>
-            
+                <div style="  width: 100%; background-color:orange; margin-top: 10px; margin-bottom: 10px;border-radius: 10px">
+                  <img src="../../../assets/patagonia.PNG"  width="100%" alt="">
+    
+            </div> 
  
     </div>
       
