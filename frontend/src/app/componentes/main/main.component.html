@@ -9,7 +9,7 @@
       </div>
   
       <app-a-portada  *ngIf="!loading"  [data]="articulos[13]" style="zoom: 0.9;"></app-a-portada>
-  
+     
   <!-- CUERPO · PUBLICDADES-->
   <div class="row quitar600" style="margin-top:5px;  padding-right:35px ">
     <div class="col-sm-6	col-md-4	col-lg-4	col-xl-4	col-xxl-4 ">
@@ -38,12 +38,22 @@
 
         <div  *ngIf="!loading" style="text-align: left;">
         <h1 class="indice" >INDICE - {{articulos[13]?.titulo}} </h1>
+        <app-indice [data]="articulos[13]"></app-indice>
         
-        <app-b-indice [data]="articulos[13]" ></app-b-indice>
-        <a class="quitar600" href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-taller.html" target="_blank">
+        <!-- <app-b-indice [data]="articulos[13]" ></app-b-indice> -->
+        <div style="margin-right: 33px;">
+        <a class="quitar600" style="
+         border-left: 18px solid orange;
+         margin-right: 120px;
+         
+         "
+
+          href="http://www.culturademontania.org.ar/Suscripcion-form/inscripcion-taller.html" 
+          target="_blank">
           <img src="../../../assets/Indice Cartel.png" width="100%" alt=""  >
           </a>
-
+        </div>
+          <app-indice [data]="articulos[13]"></app-indice>
   <br>
    <div style="color: white;"> 
  

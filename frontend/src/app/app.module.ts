@@ -42,6 +42,7 @@ import { ComentariosComponent } from './componentes/comentarios/comentarios.comp
 import { Indice2Component } from './componentes/indice2/indice2.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { CarouselRevistaComponent } from './componentes/carousel-revista/carousel-revista.component';
+import { IndiceComponent } from './componentes/indice/indice.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { CarouselRevistaComponent } from './componentes/carousel-revista/carouse
     Filtrox10Pipe,
     ComentariosComponent,
     Indice2Component,
-    CarouselRevistaComponent
+    CarouselRevistaComponent,
+    IndiceComponent
 
 
     
